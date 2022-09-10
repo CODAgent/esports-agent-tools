@@ -1,6 +1,9 @@
 # Readme to get setup
 ## this is makeshift for now
 
+### To Do List
+- [Click Here](todo.md)
+
 ### For web_scrapper.py 
 - libraries
     - Selenium --> opens a web browser and runs tasks in it using a script.  need web browser drivers installed 
