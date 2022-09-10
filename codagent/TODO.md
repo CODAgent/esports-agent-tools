@@ -8,6 +8,18 @@
 - fix platforms bug --> **DONE** 
     - issue when there is not a platform included
 
+## CSV writer
+- goal is just to display the data wanted in an easy format
+- options
+    - display all data no matter what kind of tourney it is 
+    - dipslay data based on filters 
+        - idea: function input takes in a filter keyword, filter keyword triggers based on if statements
+        - game
+        - monetary type of tourney 
+        - team size type of tourney 
+        - gamemode type of tourney 
+
+
 
 ## Main
 - function that writes tourney info to a csv file
@@ -24,7 +36,7 @@
 ---
 ## Housekeeping
 - make "requirements.txt" file
-- make git local repo
-- edit gitignore 
+- make git local repo --> **DONE**
+- edit gitignore
 - polish the readme 
-- connect git local repo with a new esports agent repo
+- connect git local repo with a new esports agent repo --> **DONE**
