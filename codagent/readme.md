@@ -2,7 +2,7 @@
 ## this is makeshift for now
 
 ### To Do List
-- [Click Here](todo.md)
+- [Click Here](TODO.md)
 
 ### For web_scrapper.py 
 - libraries
