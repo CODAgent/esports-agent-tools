@@ -11,10 +11,11 @@
 ## CSV writer
 - goal is just to display the data wanted in an easy format
 - options
-    - display all data no matter what kind of tourney it is 
+    - display all data no matter what kind of tourney it is --> **DONE**
     - dipslay data based on filters 
         - idea: function input takes in a filter keyword, filter keyword triggers based on if statements
         - game
+            - might need to scrape for the game because i don't think this is data that I currently scrape for 
         - monetary type of tourney 
         - team size type of tourney 
         - gamemode type of tourney 

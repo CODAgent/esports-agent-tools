@@ -1,3 +1,7 @@
+#### Esports Agent Inc
+#### Brett O'Connor, Co-CEO
+
+# Imports
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -26,7 +30,6 @@ def get_all_info(tourney_ids, driver, URL_begin):
     all_info = []
     for i in range(len(tourney_ids)):
         URL = URL_begin + str(tourney_ids[i]) + "/overview"
-
         driver.get(URL)
         print(tourney_ids[i])
         print("page rendered")
@@ -35,4 +38,4 @@ def get_all_info(tourney_ids, driver, URL_begin):
 
     return all_info
 
-print(len(get_all_info(tourney_ids, driver, URL_all_info)))
+# print(len(get_all_info(tourney_ids, driver, URL_all_info)))
