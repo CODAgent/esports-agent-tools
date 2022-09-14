@@ -16,9 +16,33 @@
         - idea: function input takes in a filter keyword, filter keyword triggers based on if statements
         - game
             - might need to scrape for the game because i don't think this is data that I currently scrape for 
+                - it seems that the only place where the game is mentioned is in the tourney title
         - monetary type of tourney 
+            - Free Entry 
+            - Paid Entry
+            - Free Entry No Prize
         - team size type of tourney 
+            - 1v1
+            - 2v2
+            - 3v3
+            - 4v4
         - gamemode type of tourney 
+            - variant
+            - snd
+            - other
+        - series type
+            - best of 1 
+            - best of 3 
+            - best of 5
+        - tourney type (single, double elim)
+            - single elim
+            - double elim
+        - number of teams registered 
+            - input a threshold amount (greater than, less than, equal to)
+        - prize pool 
+            - input a threshold amount
+        - buy in 
+            - input a threshold amount 
 
 
 
