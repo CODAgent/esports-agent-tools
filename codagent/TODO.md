@@ -19,9 +19,10 @@
             - if no --> easy case: create the csv file with the site data 
     - dipslay data based on filters --> this will be done from the 'all data' csv file, no web scrapping is needed for this because it should have already been done before
         - idea: function input takes in a filter keyword, filter keyword triggers based on if statements
+            - want to display the data exactly the same as the 'all data' file, just for simplicity, readability, and to make it easier on the developer (me) 
         - game
             - might need to scrape for the game because i don't think this is data that I currently scrape for 
-                - it seems that the only place where the game is mentioned is in the tourney title
+                - it seems that the only place where the game is mentioned is in the tourney title --> will try to solve this issue later
         - monetary type of tourney 
             - Free Entry 
             - Paid Entry
@@ -31,7 +32,7 @@
             - 2v2
             - 3v3
             - 4v4
-        - gamemode type of tourney 
+        - gamemode type of tourney --> this is also only found in the title, will handle this issue later
             - variant
             - snd
             - other

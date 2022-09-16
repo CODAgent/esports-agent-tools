@@ -112,3 +112,23 @@ def write_all(data, path="all_data.csv"):
 # write_all(test_data_2)
 # write_all(data)
     
+# Inputs: None
+# Returns: a dict that maps as such --> {<filter category>: <array of acceptable filter criterion>, ....}
+# Prints the return as well
+def get_valid_filter_terms():
+    valids = {'date': ['day-month-year'], 'money': ['free entry', 'paid entry', 'free entry no prize'], 'platforms': ['console only', 'pc only', 'all'], 'team size': ['1v1', '2v2', '3v3', '4v4'], 'elimination type': ['single', 'double'], 'number of teams': ['threshold value'], 'series type': ['bo1', 'bo3', 'bo5'], 'prize': ['threshold value'] }
+    print("The following mapping are the valid categories and their respective criterion to be used for filtering: ")
+    print(valids)
+    return valids
+
+# FOR TEST 
+# get_valid_filter_terms()
+
+# Inputs: path to all data file, filter category, filter criterion, output file name
+# Returns: None
+# Prints out status messages
+    # "Done.  Filtered file created." 
+    # "Invalid filter category.  No filtered file created."
+    # "Invalid filter criterion.  No filtered file created."
+def filter_write():
+    return None
