@@ -12,7 +12,12 @@
 - goal is just to display the data wanted in an easy format
 - options
     - display all data no matter what kind of tourney it is --> **DONE**
-    - dipslay data based on filters 
+    - basically need a function that fetches data on the site and dumps it into a large csv file --> **DONE** *has NOT been stress tested yet*
+        - this large csv file will contain all the data from when this tool is deployed
+        - the function needs to check if there is already an 'all data' csv file
+            - if yes --> then collect all the data from that file and append the new, unique data from the site to it
+            - if no --> easy case: create the csv file with the site data 
+    - dipslay data based on filters --> this will be done from the 'all data' csv file, no web scrapping is needed for this because it should have already been done before
         - idea: function input takes in a filter keyword, filter keyword triggers based on if statements
         - game
             - might need to scrape for the game because i don't think this is data that I currently scrape for 
@@ -43,6 +48,9 @@
             - input a threshold amount
         - buy in 
             - input a threshold amount 
+- add infrastructure for a backup all data file --> maybe in version 2.0
+    - maybe look into an automated script to do this? 
+    - maybe even look into an automated data mining script (one that does so every other day or something)
 
 
 
@@ -55,7 +63,12 @@
     
 ### GUI
 - plotting graphs w/ different filters and parameters
-- button for generating excel files 
+- button for generating filtered csv files 
+- button to mine data? 
+
+## Mining 
+- need to add infrastructure to mine data every 1 or 2 days 
+- based on where the 'all data' file will be stored, I may need to change some path stuff for the csv writing 
 
 
 ---
