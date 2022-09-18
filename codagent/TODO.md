@@ -48,7 +48,11 @@
             - input a threshold amount (greater than, less than, equal to)
         - prize pool 
             - input a threshold amount
-        - buy in 
+        - buy in --> **DONE**
+            - free entry
+                - issue here because switcheroos are denoted as $0 buy-ins
+            - paid entry 
+            - free entry no prize
             - input a threshold amount 
 - add infrastructure for a backup all data file --> **DONE**
     - maybe look into an automated script to do this? 
@@ -67,6 +71,7 @@
 - plotting graphs w/ different filters and parameters
 - button for generating filtered csv files 
 - button to mine data? 
+- get averages of data with filters on 
 
 ## Mining 
 - need to add infrastructure to mine data every 1 or 2 days 
@@ -85,3 +90,4 @@
 ## For Version 2.0
 - automate 
 - sort all data by date to make filtering quicker 
+- fix issue on filtering where switcheroos appear as a $0 buy-in

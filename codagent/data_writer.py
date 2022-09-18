@@ -237,7 +237,96 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
                 print("Filtered by date file created.")
 
 
-    # if filter_category == "money":
+    # money (buy-in) looks for either:
+    # (1) free entry --> buy-in = $0
+    # (2) paid entry --> buy-in > $0
+    # (3) free entry no prize --> buy-in = $0 and prize = $0
+    # (4) a threshold amount --> Ex: '>,5' or '<,5' format: '<greater than or less than>,<value>'
+    # expected input for 'filter_criterion' is a list
+    if filter_category == "money":
+        if filter_criterion[0] == "free entry":
+            data = []
+            with open(path, 'r') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    row_buy = row['Buy-in Per Player'].split('$')
+                    row_buy_int = float(row_buy[1])
+                    if row_buy_int == 0.0:
+                            data.append(row)
+            with open(output_path, 'w', newline='') as fw:
+                writer = csv.DictWriter(fw, fieldnames=header)
+                writer.writeheader()
+                for d in data: 
+                    writer.writerow(d)
+
+            print("Filtered by buy-in file created.")
+
+        if filter_criterion[0] == "paid entry":
+            data = []
+            with open(path, 'r') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    row_buy = row['Buy-in Per Player'].split('$')
+                    row_buy_int = float(row_buy[1])
+                    if row_buy_int > 0.0:
+                            data.append(row)
+            with open(output_path, 'w', newline='') as fw:
+                writer = csv.DictWriter(fw, fieldnames=header)
+                writer.writeheader()
+                for d in data: 
+                    writer.writerow(d)
+
+            print("Filtered by buy-in file created.")
+
+        if filter_criterion[0] == "free entry no prize":
+            data = []
+            with open(path, 'r') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    row_buy = row['Buy-in Per Player'].split('$')
+                    row_buy_int = float(row_buy[1])
+                    row_prize = row['Prize Pool'].split('$')
+                    row_prize_int = float(row_prize[1])
+                    if row_buy_int == 0.0 and row_prize_int == 0.0:
+                            data.append(row)
+            with open(output_path, 'w', newline='') as fw:
+                writer = csv.DictWriter(fw, fieldnames=header)
+                writer.writeheader()
+                for d in data: 
+                    writer.writerow(d)
+
+            print("Filtered by buy-in file created.")
+
+        if len(filter_criterion[0].split(' ')) == 1:
+            ineq = filter_criterion[0].split(',')[0]
+            value = float(filter_criterion[0].split(',')[1])
+            data = []
+            with open(path, 'r') as f:
+                reader = csv.DictReader(f)
+                if ineq == '>':
+                    for row in reader:
+                        row_buy = row['Buy-in Per Player'].split('$')
+                        row_buy_int = float(row_buy[1])
+                        
+                        if row_buy_int > value:
+                            data.append(row)
+
+                if ineq == '<':
+                    for row in reader:
+                        row_buy = row['Buy-in Per Player'].split('$')
+                        row_buy_int = float(row_buy[1])
+                        
+                        if row_buy_int < value:
+                                data.append(row)
+
+            with open(output_path, 'w', newline='') as fw:
+                writer = csv.DictWriter(fw, fieldnames=header)
+                writer.writeheader()
+                for d in data: 
+                    writer.writerow(d)
+
+            print("Filtered by buy-in file created.")
+
 
     # if filter_category == "platforms":
 
@@ -254,4 +343,4 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     return None
 
 # FOR TEST
-filter_write('date', ['2022'], output_path='filtered_by_year.csv')
+filter_write('money', ['>,5'], output_path='filtered_by_buy_in.csv')
