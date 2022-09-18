@@ -9,7 +9,7 @@ import requests
 import re
 
 from web_scrapper import get_tournament_info, get_tournament_ids   
-from data_writer import write_all
+from data_writer import write_all, create_backup
 
 
 # FOR TEST

@@ -9,6 +9,7 @@ import requests
 import re
 import csv
 import os
+import shutil
 
 # FOR TEST
 # might not need this import when we're done making this
@@ -27,6 +28,18 @@ import os
 test_data = [{'date': 'September 12, 2022', 'time': '10:20 PM', 'title': '2v2 1ND MW SND', 'per_person': '$4', 'platforms': ['xbox', 'playstation', 'battle.net'], 'team_size': '2', 'tournament_type': 'single elimination', 'players_in_match': '2v2', 'teams_registered': '2', 'gamemode': 'Best of 1', 'prize_pool': '$14'}, {'date': 'September 12, 2022', 'time': '9:20 PM', 'title': '3v3 1ND CW SND', 'per_person': '$4', 'platforms': ['xbox', 'playstation', 'battle.net'], 'team_size': '3', 'tournament_type': 'single elimination', 'players_in_match': '3v3', 'teams_registered': '4', 'gamemode': 'Best of 1', 'prize_pool': '$33'}]
 test_data_2 = [{'date': 'September 13, 2022', 'time': '10:22 PM', 'title': '3v3 1ND MW SND', 'per_person': '$8', 'platforms': ['xbox', 'playstation', 'battle.net'], 'team_size': '2', 'tournament_type': 'single elimination', 'players_in_match': '3v3', 'teams_registered': '4', 'gamemode': 'Best of 1', 'prize_pool': '$28'}, {'date': 'September 12, 2022', 'time': '9:20 PM', 'title': '3v3 1ND CW SND', 'per_person': '$4', 'platforms': ['xbox', 'playstation', 'battle.net'], 'team_size': '3', 'tournament_type': 'single elimination', 'players_in_match': '3v3', 'teams_registered': '4', 'gamemode': 'Best of 1', 'prize_pool': '$33'}]
 
+# Input: file path, back up file path
+# Returns: None
+# Prints a successful message when done
+def create_backup(file_path, backup_file_path):
+    shutil.copy(file_path, backup_file_path)
+    print("Backup has been created at: ", backup_file_path)
+    return None
+
+# FOR TEST
+# file_path = './all_data.csv'
+# backup_file_path = './all_data_backup.csv'
+# create_backup(file_path, backup_file_path)
 
 # Write all data to CSV file
 # Input: data to write, path (optional, default is "all_data.csv")
@@ -36,6 +49,7 @@ test_data_2 = [{'date': 'September 13, 2022', 'time': '10:22 PM', 'title': '3v3 
     # "Done.  New data written."
     # "Done.  No new data written."
 def write_all(data, path="all_data.csv"):
+    backup_path = "backup_" + path
     # header for the csv file 
     header = ['Date', 'Time', 'Title', 'Buy-in Per Player', 'Platforms', 'Team Size', 'Tournament Type (Ex: Single Elimination)', 'Players in Match', 'Number of Teams Registered', 'Series Type (Ex: Best of 3)', 'Prize Pool']
     field_names = ['date', 'time', 'title', 'per_person', 'platforms', 'team_size', 'tournament_type', 'players_in_match', 'teams_registered', 'gamemode', 'prize_pool']
@@ -105,6 +119,9 @@ def write_all(data, path="all_data.csv"):
             print("Done.  No new data written.")
 
         return None
+
+
+
 
 
 # FOR TEST
