@@ -133,7 +133,7 @@ def write_all(data, path="all_data.csv"):
 # Returns: a dict that maps as such --> {<filter category>: <array of acceptable filter criterion>, ....}
 # Prints the return as well
 def get_valid_filter_terms():
-    valids = {'date': ['day-month-year'], 'money': ['free entry', 'paid entry', 'free entry no prize'], 'platforms': ['console only', 'pc only', 'all'], 'team size': ['1v1', '2v2', '3v3', '4v4'], 'elimination type': ['single', 'double'], 'number of teams': ['threshold value'], 'series type': ['bo1', 'bo3', 'bo5'], 'prize': ['threshold value'] }
+    valids = {'date': ['month day, year', 'month year', 'year'], 'money': ['free entry', 'paid entry', 'free entry no prize'], 'platforms': ['console only', 'pc only', 'all'], 'team size': ['1v1', '2v2', '3v3', '4v4'], 'elimination type': ['single', 'double'], 'number of teams': ['threshold value'], 'series type': ['bo1', 'bo3', 'bo5'], 'prize': ['threshold value'] }
     print("The following mapping are the valid categories and their respective criterion to be used for filtering: ")
     print(valids)
     return valids
@@ -141,11 +141,117 @@ def get_valid_filter_terms():
 # FOR TEST 
 # get_valid_filter_terms()
 
-# Inputs: path to all data file, filter category, filter criterion, output file name
+# Inputs: path to all data file, filter category, filter criterion
 # Returns: None
 # Prints out status messages
     # "Done.  Filtered file created." 
     # "Invalid filter category.  No filtered file created."
     # "Invalid filter criterion.  No filtered file created."
-def filter_write():
+def filter_write(filter_category, filter_criterion, path='all_data.csv', output_path='filtered_data.csv'):
+    # header info
+    header = ['Date', 'Time', 'Title', 'Buy-in Per Player', 'Platforms', 'Team Size', 'Tournament Type (Ex: Single Elimination)', 'Players in Match', 'Number of Teams Registered', 'Series Type (Ex: Best of 3)', 'Prize Pool']
+
+    # date looks for either:
+    # (1) a start day-month-year and an end day-month-year
+    # (2) a month-year
+    # (3) a year
+    # expected input for 'filter_criterion' is a list
+    if filter_category == "date":
+        # filter_path = 'filtered_by_date.csv'
+        month_map = {'January': 1, 'February': 2, 'March': 3, 'April': 4, 'May': 5, 'June': 6, 'July': 7, 'August': 8, 'September': 9, 'October': 10, 'November': 11, 'December': 12}
+        # month_map = {'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6, 'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12}
+        # for case (1)
+        if len(filter_criterion) == 2:
+            start = filter_criterion[0].split(' ')
+            start_day = start[1][0:len(start[1])-1]
+            start_day_num = int(start_day)
+            start_month_num = month_map[start[0]]
+            start_year_num = int(start[2])
+
+            end = filter_criterion[1].split(' ')
+            end_day = end[1][0:len(end[1])-1]
+            end_day_num = int(end_day)
+            end_month_num = month_map[end[0]]
+            end_year_num = int(end[2])
+            
+            data = []
+            with open(path, 'r') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    row_date = row['Date'].split(' ')
+                    row_day = int(row_date[1][0:len(row_date[1])-1])
+                    if int(row_date[2]) >= start_year_num and int(row_date[2]) <= end_year_num:
+                        if month_map[row_date[0]] >= start_month_num and month_map[row_date[0]] <= end_month_num:
+                            if row_day >= start_day_num and row_day <= end_day_num:
+                                data.append(row)
+            with open(output_path, 'w', newline='') as fw:
+                writer = csv.DictWriter(fw, fieldnames=header)
+                writer.writeheader()
+                for d in data: 
+                    writer.writerow(d)
+
+            print("Filtered by date file created.")
+
+                    
+        if len(filter_criterion) == 1:
+            date = filter_criterion[0].split(' ') 
+
+            # for case (2)
+            if len(date) == 2:
+                month_num = month_map[date[0]]
+                year_num = int(date[1])
+
+                data = []
+                with open(path, 'r') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        row_date = row['Date'].split(' ')
+                        if int(row_date[2]) == year_num:
+                            if month_map[row_date[0]] == month_num:
+                                data.append(row)
+                with open(output_path, 'w', newline='') as fw:
+                    writer = csv.DictWriter(fw, fieldnames=header)
+                    writer.writeheader()
+                    for d in data: 
+                        writer.writerow(d)
+
+                print("Filtered by date file created.")
+
+            # # for case (3)
+            if len(date) == 1:
+                year_num = int(date[0])
+
+                data = []
+                with open(path, 'r') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        row_date = row['Date'].split(' ')
+                        if int(row_date[2]) == year_num:
+                                data.append(row)
+                with open(output_path, 'w', newline='') as fw:
+                    writer = csv.DictWriter(fw, fieldnames=header)
+                    writer.writeheader()
+                    for d in data: 
+                        writer.writerow(d)
+
+                print("Filtered by date file created.")
+
+
+    # if filter_category == "money":
+
+    # if filter_category == "platforms":
+
+    # if filter_category == "team size":
+
+    # if filter_category == "elimination type":
+
+    # if filter_category == "number of teams":
+
+    # if filter_category == "series type":
+
+    # if filter_category == "prize":
+
     return None
+
+# FOR TEST
+filter_write('date', ['2022'], output_path='filtered_by_year.csv')

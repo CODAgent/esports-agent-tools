@@ -23,6 +23,7 @@
         - game
             - might need to scrape for the game because i don't think this is data that I currently scrape for 
                 - it seems that the only place where the game is mentioned is in the tourney title --> will try to solve this issue later
+        - date --> **DONE**
         - monetary type of tourney 
             - Free Entry 
             - Paid Entry
@@ -49,7 +50,7 @@
             - input a threshold amount
         - buy in 
             - input a threshold amount 
-- add infrastructure for a backup all data file --> maybe in version 2.0
+- add infrastructure for a backup all data file --> **DONE**
     - maybe look into an automated script to do this? 
     - maybe even look into an automated data mining script (one that does so every other day or something)
 
@@ -79,3 +80,8 @@
 - edit gitignore
 - polish the readme 
 - connect git local repo with a new esports agent repo --> **DONE**
+
+--- 
+## For Version 2.0
+- automate 
+- sort all data by date to make filtering quicker 
