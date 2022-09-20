@@ -343,4 +343,4 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     return None
 
 # FOR TEST
-filter_write('money', ['>,5'], output_path='filtered_by_buy_in.csv')
+# filter_write('money', ['>,5'], output_path='filtered_by_buy_in.csv')
