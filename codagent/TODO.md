@@ -7,6 +7,9 @@
     - scrape from the esportsagent.gg/tournament site, get the ahrefs and get the links to the tourneys we want
 - fix platforms bug --> **DONE** 
     - issue when there is not a platform included
+- platform bug 
+    - when there is a console only tournament, the data is scrapped as an all platform tournament
+    - this will probably be broken until a certain date, until then all scraped data for platform stuff is inaccurate
 
 ## CSV writer
 - goal is just to display the data wanted in an easy format
@@ -24,7 +27,7 @@
             - might need to scrape for the game because i don't think this is data that I currently scrape for 
                 - it seems that the only place where the game is mentioned is in the tourney title --> will try to solve this issue later
         - date --> **DONE**
-        - monetary type of tourney 
+        - monetary type of tourney --> **DONE**
             - Free Entry 
             - Paid Entry
             - Free Entry No Prize
@@ -86,6 +89,7 @@
     - pip3  install webdriver-manager
     - pip3 install requests
     - to run a requirements file: pip3 install -r requirements.txt
+    - to make requirements file: pip freeze > requirement.txt
 - make git local repo --> **DONE**
 - edit gitignore
 - polish the readme 

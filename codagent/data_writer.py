@@ -328,7 +328,38 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
             print("Filtered by buy-in file created.")
 
 
-    # if filter_category == "platforms":
+    # platforms looks for either:
+    # (1) console only --> xbox OR playstation
+    # (2) pc only --> battlenet OR steam
+    # (3) all --> anything else
+    # expected input for 'filter_criterion' is a list
+    if filter_category == "platforms":
+        data = []
+        with open(path, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                row_plat = row['Platforms']
+                # row_plat = "['playstation']"
+                # print(row_plat.__contains__('xbox'))
+                if filter_criterion[0] == "console only": 
+                    if (row_plat.__contains__('xbox') or row_plat.__contains__('playstation')) and not(row_plat.__contains__('battle.net')) and not(row_plat.__contains__('steam')):
+                        data.append(row)
+                    
+                if filter_criterion[0] == "pc only": 
+                    if (row_plat.__contains__('battle.net') or row_plat.__contains__('steam')) and not(row_plat.__contains__('xbox')) and not(row_plat.__contains__('playstation')):
+                        data.append(row)
+
+                if filter_criterion[0] == "all": 
+                    if (row_plat.__contains__('battle.net') or row_plat.__contains__('steam')) and row_plat.__contains__('xbox') and row_plat.__contains__('playstation'):
+                        data.append(row)
+                        
+        with open(output_path, 'w', newline='') as fw:
+            writer = csv.DictWriter(fw, fieldnames=header)
+            writer.writeheader()
+            for d in data: 
+                writer.writerow(d)
+
+        print("Filtered by platform file created.")
 
     # if filter_category == "team size":
 
@@ -343,4 +374,4 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     return None
 
 # FOR TEST
-# filter_write('money', ['>,5'], output_path='filtered_by_buy_in.csv')
+filter_write('platforms', ['all'], output_path='filtered_by_platform.csv')
