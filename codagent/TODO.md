@@ -31,6 +31,10 @@
             - Free Entry 
             - Paid Entry
             - Free Entry No Prize
+        - platform
+            - Console only
+            - PC only 
+            - All
         - team size type of tourney 
             - 1v1
             - 2v2
