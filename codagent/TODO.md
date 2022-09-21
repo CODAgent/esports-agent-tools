@@ -81,6 +81,11 @@
 ---
 ## Housekeeping
 - make "requirements.txt" file
+    - pip3  install bs4
+    - pip3  install selenium
+    - pip3  install webdriver-manager
+    - pip3 install requests
+    - to run a requirements file: pip3 install -r requirements.txt
 - make git local repo --> **DONE**
 - edit gitignore
 - polish the readme 
