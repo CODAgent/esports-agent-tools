@@ -361,6 +361,9 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
 
         print("Filtered by platform file created.")
 
+    # team size looks for:
+    # (1) team size --> 1v1, 2v2, 3v3, 4v4, 5v5, 6v6
+    # expected input for 'filter_criterion' is a list
     if filter_category == "team size":
         data = []
         with open(path, 'r') as f:
@@ -400,15 +403,52 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
         print("Filtered by team size file created.")
 
 
-    # if filter_category == "elimination type":
+    # elimination type looks for:
+    # (1) type of elimination --> single, double
+    # expected input for 'filter_criterion' is a list
+    if filter_category == "elimination type":
+        data = []
+        with open(path, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                row_value = row['Tournament Type (Ex: Single Elimination)']
 
+                if filter_criterion[0] == "single":    
+                    if row_value == "single elimination":
+                        data.append(row)
+
+                if filter_criterion[0] == "double":
+                    if row_value == "double elimination":
+                        data.append(row)
+        
+        with open(output_path, 'w', newline='') as fw:
+            writer = csv.DictWriter(fw, fieldnames=header)
+            writer.writeheader()
+            for d in data: 
+                writer.writerow(d)
+
+        print("Filtered by elimination type file created.")
+
+
+    # number of teams looks for:
+    # (1) a threshold amount --> Ex: '>,5' or '<,5' format: '<greater than or less than>,<value>'
+    # expected input for 'filter_criterion' is a list
     # if filter_category == "number of teams":
 
+
+    # series type looks for:
+    # (1) series type --> bo1, bo2, bo3 
+    # expected input for 'filter_criterion' is a list
     # if filter_category == "series type":
 
+
+    # prize looks for:
+    # (1) a threshold amount --> Ex: '>,5' or '<,5' format: '<greater than or less than>,<value>'
+    # expected input for 'filter_criterion' is a list
     # if filter_category == "prize":
+
 
     return None
 
 # FOR TEST
-# filter_write('team size', ['6v6'], output_path='filtered_by_team_size.csv')
+filter_write('elimination type', ['double'], output_path='filtered_by_elimination_type.csv')

@@ -31,16 +31,16 @@
             - Free Entry 
             - Paid Entry
             - Free Entry No Prize
-        - platform
+        - platform --> **DONE**
             - Console only
             - PC only 
             - All
-        - team size type of tourney 
+        - team size type of tourney --> **DONE**
             - 1v1
             - 2v2
             - 3v3
             - 4v4
-        - gamemode type of tourney --> this is also only found in the title, will handle this issue later
+        - gamemode type of tourney --> this is also only found in the title, will handle this issue later --> add this for version 2.0
             - variant
             - snd
             - other
@@ -48,7 +48,7 @@
             - best of 1 
             - best of 3 
             - best of 5
-        - tourney type (single, double elim)
+        - tourney type (single, double elim) --> **DONE**
             - single elim
             - double elim
         - number of teams registered 
@@ -64,6 +64,7 @@
 - add infrastructure for a backup all data file --> **DONE**
     - maybe look into an automated script to do this? 
     - maybe even look into an automated data mining script (one that does so every other day or something)
+- make documentation document for the filtering
 
 
 
@@ -104,3 +105,5 @@
 - automate 
 - sort all data by date to make filtering quicker 
 - fix issue on filtering where switcheroos appear as a $0 buy-in
+- add filtering for gamemode
+- add filtering for different games
