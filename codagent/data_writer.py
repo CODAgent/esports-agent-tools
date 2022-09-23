@@ -133,7 +133,7 @@ def write_all(data, path="all_data.csv"):
 # Returns: a dict that maps as such --> {<filter category>: <array of acceptable filter criterion>, ....}
 # Prints the return as well
 def get_valid_filter_terms():
-    valids = {'date': ['month day, year', 'month year', 'year'], 'money': ['free entry', 'paid entry', 'free entry no prize'], 'platforms': ['console only', 'pc only', 'all'], 'team size': ['1v1', '2v2', '3v3', '4v4'], 'elimination type': ['single', 'double'], 'number of teams': ['threshold value'], 'series type': ['bo1', 'bo3', 'bo5'], 'prize': ['threshold value'] }
+    valids = {'date': ['month day, year', 'month year', 'year'], 'money': ['free entry', 'paid entry', 'free entry no prize'], 'platforms': ['console only', 'pc only', 'all'], 'team size': ['1v1', '2v2', '3v3', '4v4', '5v5', '6v6'], 'elimination type': ['single', 'double'], 'number of teams': ['threshold value'], 'series type': ['bo1', 'bo3', 'bo5'], 'prize': ['threshold value'] }
     print("The following mapping are the valid categories and their respective criterion to be used for filtering: ")
     print(valids)
     return valids
@@ -361,7 +361,44 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
 
         print("Filtered by platform file created.")
 
-    # if filter_category == "team size":
+    if filter_category == "team size":
+        data = []
+        with open(path, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                row_value = int(row['Team Size'])
+                if filter_criterion[0] == "1v1":
+                    if row_value == 1:
+                        data.append(row)
+
+                if filter_criterion[0] == "2v2":
+                    if row_value == 2:
+                        data.append(row)
+
+                if filter_criterion[0] == "3v3":
+                    if row_value == 3:
+                        data.append(row)
+
+                if filter_criterion[0] == "4v4":
+                  if row_value == 4:
+                      data.append(row)
+
+                if filter_criterion[0] == "5v5":
+                  if row_value == 5:
+                      data.append(row)
+
+                if filter_criterion[0] == "6v6":
+                    if row_value == 6:
+                        data.append(row)
+
+        with open(output_path, 'w', newline='') as fw:
+            writer = csv.DictWriter(fw, fieldnames=header)
+            writer.writeheader()
+            for d in data: 
+                writer.writerow(d)
+
+        print("Filtered by team size file created.")
+
 
     # if filter_category == "elimination type":
 
@@ -374,4 +411,4 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     return None
 
 # FOR TEST
-# filter_write('platforms', ['all'], output_path='filtered_by_platform.csv')
+# filter_write('team size', ['6v6'], output_path='filtered_by_team_size.csv')
