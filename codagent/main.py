@@ -9,7 +9,7 @@ import requests
 import re
 
 from web_scrapper import get_tournament_info, get_tournament_ids   
-from data_writer import write_all, create_backup
+from data_writer import write_all, create_backup, filter_write, get_valid_filter_terms
 
 
 # FOR TEST
@@ -39,22 +39,45 @@ def get_all_info(tourney_ids, driver, URL_begin):
 # FOR TEST
 # print(len(get_all_info(tourney_ids, driver, URL_all_info)))
 
-
-
+def define_action(action):
+    return action 
 
 
 #### MAIN FUNCTION ####
 def main():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    main_path = 'all_data.csv'
+    backup_path = 'backup_all_data.csv'
+    filter_path = 'filtered_data.csv'
 
-    URL_begin = "https://esportsagent.gg/tournament" 
-    URL_all_info = "https://esportsagent.gg"
+    ######################################################
+    ######## EDIT THIS TO DO WHAT YOU WANT TO DO ######### 
+    ######################################################
+    # Options: 'mine', 'how to filter', 'filter', 'backup'
+    action = define_action('filter')
+    ######################################################
+    ######################################################
+    ######################################################
 
-    tourney_ids = get_tournament_ids(driver, URL_begin)
-    all_info = get_all_info(tourney_ids, driver, URL_all_info)
+    if action == 'mine':
+        driver = webdriver.Chrome(ChromeDriverManager().install())
 
-    # path = 'all_data.csv'
-    write_all(all_info)
+        URL_begin = "https://esportsagent.gg/tournament" 
+        URL_all_info = "https://esportsagent.gg"
+
+        tourney_ids = get_tournament_ids(driver, URL_begin)
+        all_info = get_all_info(tourney_ids, driver, URL_all_info)
+
+        write_all(all_info, path=main_path)
+        
+    if action == 'how to filter':
+        get_valid_filter_terms()
+
+    if action == 'filter':
+        # filter_write(column_title, ['filter values']) --> see readme for more instructions
+        filter_write('date', ['September 22, 2022', 'September 22, 2022'], path=main_path, output_path=filter_path)
+
+    if action == 'backup':
+        create_backup(main_path, backup_path)
 
 
 main()

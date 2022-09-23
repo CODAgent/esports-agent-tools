@@ -98,6 +98,11 @@
 - make git local repo --> **DONE**
 - edit gitignore
 - polish the readme 
+    - main readme 
+        - codagent readme 
+            - how to mine --> **DONE**
+            - how to filter
+                - how to filter filtered 
 - connect git local repo with a new esports agent repo --> **DONE**
 
 --- 
