@@ -468,7 +468,32 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     # series type looks for:
     # (1) series type --> bo1, bo2, bo3 
     # expected input for 'filter_criterion' is a list
-    # if filter_category == "series type":
+    if filter_category == "series type":
+        data = []
+        with open(path, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                row_value = row['Series Type (Ex: Best of 3)']
+
+                if filter_criterion[0] == "bo1":    
+                    if row_value == "Best of 1":
+                        data.append(row)
+
+                if filter_criterion[0] == "bo3":    
+                    if row_value == "Best of 3":
+                        data.append(row)
+
+                if filter_criterion[0] == "bo5":    
+                    if row_value == "Best of 5":
+                        data.append(row)
+        
+        with open(output_path, 'w', newline='') as fw:
+            writer = csv.DictWriter(fw, fieldnames=header)
+            writer.writeheader()
+            for d in data: 
+                writer.writerow(d)
+
+        print("Filtered by series type file created.")
 
 
     # prize looks for:
@@ -509,4 +534,4 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     return None
 
 # FOR TEST
-filter_write('prize', ['>,31.0'], output_path='filtered_by_prize_pool.csv')
+# filter_write('series type', ['bo5'], output_path='filtered_by_series_type.csv')

@@ -44,7 +44,7 @@
             - variant
             - snd
             - other
-        - series type
+        - series type --> **DONE**
             - best of 1 
             - best of 3 
             - best of 5
