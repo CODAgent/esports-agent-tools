@@ -53,7 +53,7 @@
             - double elim
         - number of teams registered --> **DONE**
             - input a threshold amount (greater than, less than, equal to)
-        - prize pool 
+        - prize pool --> **DONE**
             - input a threshold amount
         - buy in --> **DONE**
             - free entry

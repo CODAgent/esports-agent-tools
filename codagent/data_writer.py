@@ -474,10 +474,39 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     # prize looks for:
     # (1) a threshold amount --> Ex: '>,5' or '<,5' format: '<greater than or less than>,<value>'
     # expected input for 'filter_criterion' is a list
-    # if filter_category == "prize":
+    if filter_category == "prize":
+        if len(filter_criterion[0].split(' ')) == 1:
+            ineq = filter_criterion[0].split(',')[0]
+            value = float(filter_criterion[0].split(',')[1])
+            data = []
+            with open(path, 'r') as f:
+                reader = csv.DictReader(f)
+                if ineq == '>':
+                    for row in reader:
+                        row_prize = row['Prize Pool'].split('$')
+                        row_prize_int = float(row_prize[1])
+                        
+                        if row_prize_int > value:
+                            data.append(row)
+
+                if ineq == '<':
+                    for row in reader:
+                        row_prize = row['Prize Pool'].split('$')
+                        row_prize_int = float(row_prize[1])
+                        
+                        if row_prize_int < value:
+                                data.append(row)
+
+            with open(output_path, 'w', newline='') as fw:
+                writer = csv.DictWriter(fw, fieldnames=header)
+                writer.writeheader()
+                for d in data: 
+                    writer.writerow(d)
+
+            print("Filtered by prize pool file created.")
 
 
     return None
 
 # FOR TEST
-# filter_write('number of teams', ['<,4.9'], output_path='filtered_by_number_of_teams.csv')
+filter_write('prize', ['>,31.0'], output_path='filtered_by_prize_pool.csv')
