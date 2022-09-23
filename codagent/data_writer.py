@@ -38,7 +38,7 @@ def create_backup(file_path, backup_file_path):
 
 # FOR TEST
 # file_path = './all_data.csv'
-# backup_file_path = './all_data_backup.csv'
+# backup_file_path = './backup_all_data.csv'
 # create_backup(file_path, backup_file_path)
 
 # Write all data to CSV file
@@ -374,4 +374,4 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     return None
 
 # FOR TEST
-filter_write('platforms', ['all'], output_path='filtered_by_platform.csv')
+# filter_write('platforms', ['all'], output_path='filtered_by_platform.csv')
