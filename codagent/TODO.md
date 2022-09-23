@@ -51,7 +51,7 @@
         - tourney type (single, double elim) --> **DONE**
             - single elim
             - double elim
-        - number of teams registered 
+        - number of teams registered --> **DONE**
             - input a threshold amount (greater than, less than, equal to)
         - prize pool 
             - input a threshold amount

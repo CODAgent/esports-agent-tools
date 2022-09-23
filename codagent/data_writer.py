@@ -433,7 +433,36 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     # number of teams looks for:
     # (1) a threshold amount --> Ex: '>,5' or '<,5' format: '<greater than or less than>,<value>'
     # expected input for 'filter_criterion' is a list
-    # if filter_category == "number of teams":
+    if filter_category == "number of teams":
+        if len(filter_criterion[0].split(' ')) == 1:
+            ineq = filter_criterion[0].split(',')[0]
+            value = float(filter_criterion[0].split(',')[1])
+            data = []
+            with open(path, 'r') as f:
+                reader = csv.DictReader(f)
+                if ineq == '>':
+                    for row in reader:
+                        row_teams = row['Number of Teams Registered']
+                        row_teams_int = float(row_teams)
+                        
+                        if row_teams_int > value:
+                            data.append(row)
+
+                if ineq == '<':
+                    for row in reader:
+                        row_teams = row['Number of Teams Registered']
+                        row_teams_int = float(row_teams)
+                        
+                        if row_teams_int < value:
+                                data.append(row)
+
+            with open(output_path, 'w', newline='') as fw:
+                writer = csv.DictWriter(fw, fieldnames=header)
+                writer.writeheader()
+                for d in data: 
+                    writer.writerow(d)
+
+            print("Filtered by number of teams file created.")
 
 
     # series type looks for:
@@ -451,4 +480,4 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
     return None
 
 # FOR TEST
-filter_write('elimination type', ['double'], output_path='filtered_by_elimination_type.csv')
+# filter_write('number of teams', ['<,4.9'], output_path='filtered_by_number_of_teams.csv')
