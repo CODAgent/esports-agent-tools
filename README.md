@@ -10,6 +10,7 @@ Here are some tools that we use to help us out.
 
 ## <a id="alltools">Tools we have</a>
 - [CODAgent tourney analyzer](https://github.com/CODAgent/esports-agent-tools/tree/master/codagent/)
+    - Version: 1.0
 
 ---
 

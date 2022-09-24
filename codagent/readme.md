@@ -1,4 +1,4 @@
-# <a id="codagenttool">CODAgent Tourney Analytics Tool version 1.0</a>
+# <a id="codagenttool">CODAgent Tourney Analytics Tool Version 1.0</a>
 
 **NOTE: These instructions may change or be added to when there is a GUI Interface setup for Version 1.0**
 
