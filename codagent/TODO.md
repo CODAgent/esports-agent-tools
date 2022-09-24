@@ -2,8 +2,8 @@
 
 ## Web Scraper
 - web scraper function for one tourney --> **DONE**
-- make 'tournament_id_getter' function that checks each link to see if it is a valid tournament and adds it to a list of ids --> **DONE**
-- make 'tournament_id_getter' function better --> **DONE**
+- make 'tournament\_id\_getter' function that checks each link to see if it is a valid tournament and adds it to a list of ids --> **DONE**
+- make 'tournament\_id\_getter' function better --> **DONE**
     - scrape from the esportsagent.gg/tournament site, get the ahrefs and get the links to the tourneys we want
 - fix platforms bug --> **DONE** 
     - issue when there is not a platform included
@@ -20,7 +20,7 @@
         - the function needs to check if there is already an 'all data' csv file
             - if yes --> then collect all the data from that file and append the new, unique data from the site to it
             - if no --> easy case: create the csv file with the site data 
-    - dipslay data based on filters --> this will be done from the 'all data' csv file, no web scrapping is needed for this because it should have already been done before
+    - dipslay data based on filters --> this will be done from the 'all data' csv file, no web scrapping is needed for this because it should have already been done before --> **DONE**
         - idea: function input takes in a filter keyword, filter keyword triggers based on if statements
             - want to display the data exactly the same as the 'all data' file, just for simplicity, readability, and to make it easier on the developer (me) 
         - game
@@ -64,7 +64,7 @@
 - add infrastructure for a backup all data file --> **DONE**
     - maybe look into an automated script to do this? 
     - maybe even look into an automated data mining script (one that does so every other day or something)
-- make documentation document for the filtering
+- make documentation document for the filtering --> **DONE**
 
 
 
@@ -88,7 +88,7 @@
 
 ---
 ## Housekeeping
-- make "requirements.txt" file
+- make "requirements.txt" file --> **DONE**
     - pip3  install bs4
     - pip3  install selenium
     - pip3  install webdriver-manager
@@ -98,14 +98,14 @@
 - make git local repo --> **DONE**
 - edit gitignore
 - polish the readme 
-    - main readme 
-        - how to clone repo
-        - how to create a branch 
-        - how to update your branch to the latest changes
-        - codagent readme 
+    - main readme --> **DONE**
+        - how to clone repo --> **DONE**
+        - how to create a branch --> **DONE** 
+        - how to update your branch to the latest changes --> **DONE**
+        - codagent readme --> **DONE** 
             - how to mine --> **DONE**
-            - how to filter
-                - how to filter filtered 
+            - how to filter --> **DONE**
+                - how to filter filtered --> **DONE**
 - connect git local repo with a new esports agent repo --> **DONE**
 
 --- 

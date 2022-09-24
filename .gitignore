@@ -3,3 +3,4 @@ __pycache__
 codagent_tools_env
 *_env
 *~
+filtered_*

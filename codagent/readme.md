@@ -50,6 +50,7 @@
 ---
 
 ## <a id="codagenttoolminedata">How to mine data</a>
+
 1. Open up your terminal (CMD, PowerShell, Windows Terminal, Bash, etc.) 
 2. cd to the "codagent" directory. Ex:
 
@@ -99,18 +100,128 @@
     - If you are unable to get the drop downs to appear properly or if there is another error, contact the developer: [LonelyDock3](https://twitter.com/lonelydock3)
 
 ## <a id="codagenttoolfilterdata">How to filter data</a>
-- Coming soon
+
+**NOTE: You should NOT push any filtered data to the repository and, in fact, the way the repository is setup, you are not able to do so.**
+
+This means that once you filter data and look at the data, it is strongly recommended that you delete the filtered file.
+
+1. Open up your terminal (CMD, PowerShell, Windows Terminal, Bash, etc.) 
+2. cd to the "codagent" directory. Ex:
+
+    ``` 
+    cd /codagent 
+    ```
+
+3. Open the file called "main.py" and make sure the text in quotations on line 61 says 'mine'.
+    
+    - If this text does say 'filter', then proceed to step 4. 
+    - If this text does not say 'filter', then change this text to say 'filter' and proceed to step 4.
+
+4. There is a very specific way to filter specific data and this is done by editing certain fields in the "main.py" file in the "filter\_write" function located on line 77.
+
+    The "filter\_write" function is formated as follows: 
+    
+    ``` filter_write(filter_category, [filter_criterion]) ```
+    
+    It is recommended that you do not touch the "path" or "output\_path" inputs for filtering.
+    
+    The following exact terms are valid for the "filter\_category" input:
+    - 'date'
+        - Filters by date
+    - 'money'
+        - Filters by buy-in price
+    - 'platforms' 
+        - Filters by platforms (Console only, PC)
+        - *NOTE: There is a bug in the data mining for platforms so it is useless to use the platform filter right now*
+    - 'team size'
+        - Filters by team size
+    - 'elimination type'
+        - Filters by single or double elimination
+    - 'number of teams'
+        - Filters by number of teams that entered the tourney 
+    - 'series type'
+        - Filters by the series type (Best of 1, 3, 5)
+    - 'prize'
+        - Filters by the prize pool amount 
+    
+    The following are the accepted "filter\_criterion" input formats for each "filter\_category" for filtering:
+    - 'date'
+        - Input two days, ex: ['September 22, 2022', 'September 23, 2022']
+        - Input a month, ex: ['September 2022']
+        - Input a year, ex: ['2022']
+    - 'money'
+        - Input for free entry: ['free entry']
+        - Input for paid entry: ['paid entry']
+        - Input for free entry no prize: ['free entry no prize']
+        - Input a threshold amount (can only do greater than or less than)
+            - ex: ['>,4.9']
+            - ex: ['<,4.9']
+    - 'platforms' 
+        - Input for console only: ['console only']
+        - Input for pc only: ['pc only']
+        - Input for cross-platform: ['all']
+    - 'team size'
+        - Input for 1v1: ['1v1']
+        - Input for 2v2: ['2v2']
+        - Input for 3v3: ['3v3']
+        - Input for 4v4: ['4v4']
+        - Input for 5v5: ['5v5']
+        - Input for 6v6: ['6v6']
+    - 'elimination type'
+        - Input for single elimination: ['single']
+        - Input for double elimination: ['double']
+    - 'number of teams'
+        - Input a threshold amount (can only do greater than or less than)
+            - ex: ['>,4.9']
+            - ex: ['<,4.9']
+    - 'series type'
+        - Input for bo1: ['Best of 1']
+        - Input for bo3: ['Best of 3']
+        - Input for bo5: ['Best of 5']
+    - 'prize'
+        - Input a threshold amount (can only do greater than or less than)
+            - ex: ['>,4.9']
+            - ex: ['<,4.9']
+    
+    
+    *NOTE: You can also get a brief guide to using these if you edit line 61 in "main.py" to say 'how to filter' and then you run main.py in your terminal.*
+    
+    **TO FILTER:** Change the text within the "filter\_category" and the "filter\_criterion" within the "filter\_write" function on line 77 to the desired criteria you would like to filter out of all the data, based on the valid inputs above.
+
+5. Run "main.py" by typing this into your terminal and pressing Enter
+
+    ``` 
+    python3 main.py 
+    ```
+
+    - You might need to type this: 
+
+        ``` 
+        python main.py 
+        ```
+From here a file should have been generated called "filtered_data.csv".  You can open this file to see the filtered data.
 
 ### <a id="codagenttoolfilteronfilterdata">How to filter data on already-filtered data</a>
-- Coming soon
 
+1. To filter data that has already been filtered or, in other words, is within the "filtered\_data.csv" file, follow steps 1-4 [here](#codagenttoolfilterdata).
+
+2. After step 3 in the filter data guide, you must change the inputs called "path" and "output\_path", within the "filter_write" function in the "main.py" file on line 77, as follows:
+    - For the "path" input, change this to say 'filtered\_data.csv'.
+    - For the "output\_path" input, change this whatever you would like, but make sure it begins with 'filtered_' and it ends with '.csv'
+        - Ex: 'filtered\_on\_filtered\_data.csv'
+
+    Here's an example of how "filter\_write" should look: ``` filter_write('date', ['September 22, 2022', 'September 22, 2022'], path='filtered_data.csv', output_path='filtered_on_filtered_data.csv') ```
+
+3. Do step 5 from [here](#codagenttoolfilterdata) and then you will have your new super filtered data located at the file called whatever you named the "output\_path" input in the "filter\_write" function of the "main.py" file.
 
 --- 
 
 ### <a id="codagenttooltodo">To Do List (for developer)</a>
+
 - [Click Here](TODO.md)
 
 ### <a id="codagenttooldependencies">Dependencies</a>
+
 - libraries
     - Selenium --> opens a web browser and runs tasks in it using a script.  need web browser drivers installed 
     - ChromeDriver downloads
