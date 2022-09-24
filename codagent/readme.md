@@ -1,12 +1,16 @@
-# CODAgent Tourney Analytics Tool version 1.0
+# <a id="codagenttool">CODAgent Tourney Analytics Tool version 1.0</a>
 
 **NOTE: These instructions may change or be added to when there is a GUI Interface setup for Version 1.0**
 
-## Prerequisites
-1. Make sure you have cloned the repository and checked out a **new branch**
-    - The instructions to do this can be found [here](../README.md)
+---
 
-2. Make sure you are on **your** branch.  To do this do the following within your terminal: 
+## <a id="codagenttoolprereqs">Prerequisites</a>
+
+1. If you haven't already, follow the setup steps [here](../README.md#setup).
+2. Make sure you have cloned the repository and checked out a **new branch**
+    - The instructions to do this can be found [here](../README.md#clonerepo)
+
+3. Make sure you are on **your** branch.  To do this do the following within your terminal: 
     - Check what branch you are on:
 
         ``` 
@@ -17,19 +21,14 @@
     - If you are not on your branch: 
 
         ``` 
-        git checkout <your branch name> 
+        git checkout your-branch-name 
         ```
 
-    - If you are not on your branch and have forgotten your branch's name:
+    - If you are not on your branch and have forgotten your branch's name, make a new one by following [these steps](../README.md#createbranch).
 
-        ``` 
-        git checkout -b <give your branch a name> 
-        git checkout <the branch name you just gave your branch>
-        ```
-
-3. Install the dependencies
+4. Install the dependencies
     - Open your terminal
-    - Make sure you are the "codagent" folder on your terminal
+    - Make sure you are in the "codagent" folder on your terminal
         - If you are not then use cd: 
 
             ``` 
@@ -48,7 +47,9 @@
         pip install -r requirements.txt
         ```
 
-## How to mine data
+---
+
+## <a id="codagenttoolminedata">How to mine data</a>
 1. Open up your terminal (CMD, PowerShell, Windows Terminal, Bash, etc.) 
 2. cd to the "codagent" directory. Ex:
 
@@ -97,19 +98,19 @@
     - If this is what the drop downs say, then click the "Create pull request" button.  After this you are done!
     - If you are unable to get the drop downs to appear properly or if there is another error, contact the developer: [LonelyDock3](https://twitter.com/lonelydock3)
 
-## How to filter data
+## <a id="codagenttoolfilterdata">How to filter data</a>
 - Coming soon
 
-### How to filter data on already-filtered data
+### <a id="codagenttoolfilteronfilterdata">How to filter data on already-filtered data</a>
 - Coming soon
 
 
 --- 
 
-### To Do List (for developer)
+### <a id="codagenttooltodo">To Do List (for developer)</a>
 - [Click Here](TODO.md)
 
-### Dependencies
+### <a id="codagenttooldependencies">Dependencies</a>
 - libraries
     - Selenium --> opens a web browser and runs tasks in it using a script.  need web browser drivers installed 
     - ChromeDriver downloads

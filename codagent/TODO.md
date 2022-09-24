@@ -99,6 +99,9 @@
 - edit gitignore
 - polish the readme 
     - main readme 
+        - how to clone repo
+        - how to create a branch 
+        - how to update your branch to the latest changes
         - codagent readme 
             - how to mine --> **DONE**
             - how to filter
