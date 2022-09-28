@@ -57,6 +57,12 @@ Make sure you have python installed.  Preferably Python 3.  If you do not have p
     git clone paste-the-URL-you-just-copied-here
     ```
 
+7. After this, cd into the codebase by typing the following into your terminal and hitting enter:
+
+    ```
+    cd esports-agent-tools
+    ```
+
 This should clone the repository in the folder you created in step 1.  Contact [LonelyDock3](https://twitter.com/lonelydock3) if you have issues.
 
 ### <a id="createbranch">Create your own branch</a>
