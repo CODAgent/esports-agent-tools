@@ -58,7 +58,9 @@
     cd /codagent 
     ```
 
-3. Open the file called "main.py" and make sure the text in quotations on line 61 says 'mine'.
+3. Open the file called "main.py" and make sure the text in the following line of code says 'mine' (line 56):
+
+    ```action = define_action('mine')```
     
     - If this text does say 'mine', then proceed to step 4. 
     - If this text does not say 'mine', then change this text to say 'mine' and proceed to step 4.
@@ -112,8 +114,10 @@ This means that once you filter data and look at the data, it is strongly recomm
     cd /codagent 
     ```
 
-3. Open the file called "main.py" and make sure the text in quotations on line 61 says 'mine'.
+3. Open the file called "main.py" and make sure the text in the following line of code says 'filter' (line 56):
     
+    ```action = define_action('filter')```
+
     - If this text does say 'filter', then proceed to step 4. 
     - If this text does not say 'filter', then change this text to say 'filter' and proceed to step 4.
 
@@ -184,7 +188,7 @@ This means that once you filter data and look at the data, it is strongly recomm
             - ex: ['<,4.9']
     
     
-    *NOTE: You can also get a brief guide to using these if you edit line 61 in "main.py" to say 'how to filter' and then you run main.py in your terminal.*
+    *NOTE: You can also get a brief guide to using these if you edit line 56 in "main.py" to say 'how to filter' and then you run main.py in your terminal.*
     
     **TO FILTER:** Change the text within the "filter\_category" and the "filter\_criterion" within the "filter\_write" function on line 77 to the desired criteria you would like to filter out of all the data, based on the valid inputs above.
 
