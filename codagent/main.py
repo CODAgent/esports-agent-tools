@@ -44,19 +44,20 @@ def define_action(action):
 
 
 #### MAIN FUNCTION ####
-def main():
+def main(action=None):
     main_path = 'all_data.csv'
     backup_path = 'backup_all_data.csv'
     filter_path = 'filtered_data.csv'
 
-    ######################################################
-    ######## EDIT THIS TO DO WHAT YOU WANT TO DO ######### 
-    ######################################################
-    # Options: 'mine', 'how to filter', 'filter', 'backup'
-    action = define_action('mine')
-    ######################################################
-    ######################################################
-    ######################################################
+    if action == None:
+        ######################################################
+        ######## EDIT THIS TO DO WHAT YOU WANT TO DO ######### 
+        ######################################################
+        # Options: 'mine', 'how to filter', 'filter', 'backup'
+        action = define_action('mine')
+        ######################################################
+        ######################################################
+        ######################################################
 
     if action == 'mine':
         driver = webdriver.Chrome(ChromeDriverManager().install())
