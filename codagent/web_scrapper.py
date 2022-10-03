@@ -43,6 +43,8 @@ def get_tournament_info(driver, URL):
     
     # Tourney title
     title_res = soup.find_all('span', {'class': 'font-semibold text-2xl lg:text-3xl text-white'})
+    if len(title_res) < 1:
+        title_res = soup.find_all('span', {'class': 'font-semibold text-2xl lg:text-3xl text-gold'})
     title = title_res[0].text.strip()
     
     # Per person
