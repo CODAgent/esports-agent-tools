@@ -83,7 +83,7 @@
 - plotting graphs w/ different filters and parameters
 - get averages of data with filters on 
 - currently creating GUI skeleton in codagent\_tool.py but will be editing main.py to house the GUI code
-- layout 
+- layout (button on top, three 'frames' below it)
     - top button --> mining button
     - left side --> options
         - checkboxes of different options for an action button
