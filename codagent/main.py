@@ -53,12 +53,12 @@ def main():
     ######## EDIT THIS TO DO WHAT YOU WANT TO DO ######### 
     ######################################################
     # Options: 'mine', 'how to filter', 'filter', 'backup'
-    action = define_action('mine')
+    action = define_action('filter')
     ######################################################
     ######################################################
     ######################################################
 
-    if action == 'mine':
+    if action == 'main':
         driver = webdriver.Chrome(ChromeDriverManager().install())
 
         URL_begin = "https://esportsagent.gg/tournament" 
@@ -74,7 +74,7 @@ def main():
 
     if action == 'filter':
         # filter_write(column_title, ['filter values']) --> see readme for more instructions
-        filter_write('date', ['September 22, 2022', 'September 22, 2022'], path=main_path, output_path=filter_path)
+        filter_write('number of teams', ['>,4.9'], path='all_data.csv', output_path='filtered_data.csv')
 
     if action == 'backup':
         create_backup(main_path, backup_path)
