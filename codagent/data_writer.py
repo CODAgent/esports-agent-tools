@@ -56,7 +56,7 @@ def write_all(data, path="all_data.csv"):
 
     # Case: 'all data' file does not exist
     if not(os.path.isfile(path)):
-        with open(path, 'w', newline='') as f:
+        with open(path, 'w', newline='', errors='ignore') as f:
             writer = csv.writer(f)
             writer.writerow(header)
             dict_writer = csv.DictWriter(f, fieldnames=field_names)
@@ -108,7 +108,7 @@ def write_all(data, path="all_data.csv"):
         all_data = read_data + new_data
         if OVERALL_WRITE:
             # writing data
-            with open(path, 'w', newline='') as fw:
+            with open(path, 'w', newline='', errors='ignore') as fw:
                 writer = csv.writer(fw)
                 writer.writerow(header)
                 for ad in all_data:
