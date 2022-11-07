@@ -86,8 +86,9 @@
 - layout (button on top, three 'frames' below it)
     - top button --> mining button
     - left side --> options
-        - checkboxes of different options for an action button
-        - at the very bottom you need to select your input file (all_data.csv, filtered_data.csv, etc)
+        - checkboxes of different options for an action button --> **DONE**
+        - at the very bottom you need to select your input file (all_data.csv, filtered_data.csv, etc) --> **DONE**
+        - add functionality
     - right side --> actions 
         - filter
             - can do this for unlimited number of checked options 

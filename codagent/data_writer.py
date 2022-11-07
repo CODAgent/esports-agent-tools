@@ -466,7 +466,7 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
 
 
     # series type looks for:
-    # (1) series type --> bo1, bo2, bo3 
+    # (1) series type --> bo1, bo3, bo5 
     # expected input for 'filter_criterion' is a list
     if filter_category == "series type":
         data = []
