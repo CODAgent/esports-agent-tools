@@ -63,6 +63,21 @@ def dropdown_return(value):
 # get all csv files available
 csvs = glob.glob1(curr_path, '*.csv')
 
+# filter button click
+def filter_button():
+    tkinter.messagebox.showinfo(title=title, message='Filtering data')
+
+# stats button click
+def stats_button():
+    tkinter.messagebox.showinfo(title=title, message='Calculating stats')
+
+# plot button click
+def plot_button():
+    tkinter.messagebox.showinfo(title=title, message='Plotting data')
+
+# general report button click
+def report_button():
+    tkinter.messagebox.showinfo(title=title, message='Making report')
 
 
 # thought: for each action, make a popup that basically says "loading" until the 
@@ -216,20 +231,41 @@ actions_frame = Frame(frame, bg='#FFFFFF', highlightbackground='#000000', highli
 actions_frame.grid(row=1, column=1, sticky='ew')
 actions_title = Label(actions_frame, text='Actions', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
 actions_title.grid(row=0, column=0)
+p1 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
+p1.grid(row=1, column=0)
 
 # filter
 # need a dropdown to select input file 
 # need an entry to name the output file (if no .csv, then add .csv)
 # maybe use some recursive thing if there's multiple checkboxes selected? --> don't do this at first
+filter_btn = Button(actions_frame, text='Filter Data', command=filter_button, background='#DBEE66', font=('Helvetica', 16))
+filter_btn.grid(row=2, column=0, sticky='ew')
+p2 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
+p2.grid(row=3, column=0)
 
 
 # plot
 # support 2D (for now)
 # specify with a dropdown which checked box is X and which is Y
+plot_btn = Button(actions_frame, text='Plot Data', command=plot_button, background='#283FEB', font=('Helvetica', 16))
+plot_btn.grid(row=4, column=0, sticky='ew')
+p3 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
+p3.grid(row=5, column=0)
 
 
 # calculate
 # specify with a dropdown what operation should be performed (mean, median, mode, max, min, total)
+stats_btn = Button(actions_frame, text='Calculate Stats', command=stats_button, background='#EB8628', font=('Helvetica', 16))
+stats_btn.grid(row=6, column=0, sticky='ew')
+p4 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
+p4.grid(row=7, column=0)
+
+# report
+report_btn = Button(actions_frame, text='General Report', command=report_button, background='#0FF1E9', font=('Helvetica', 16))
+report_btn.grid(row=6, column=0, sticky='ew')
+p5 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
+p5.grid(row=7, column=0)
+
 
 
 # ---
