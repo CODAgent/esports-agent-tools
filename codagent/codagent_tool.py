@@ -5,6 +5,7 @@ import os
 import glob
 import tkinter.messagebox
 from tkinter import *
+import main
 
 curr_path = os.getcwd()
 
@@ -50,7 +51,10 @@ def hello():
 
 # mine skeleton
 def mine():
-    tkinter.messagebox.showinfo(title=title, message='Mining data')
+    mining = tkinter.messagebox.askyesno(title=title, message='Would you like to mine data?')
+    if (mining):
+        main.main(action='mine')
+        tkinter.messagebox.showinfo(title=title, message='Mining Done (See terminal for results)')
 
 # file selected function
 def selected_file(file):

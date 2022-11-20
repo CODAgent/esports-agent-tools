@@ -81,5 +81,5 @@ def main(action=None):
         create_backup(main_path, backup_path)
 
 
-main()
+# main()
 
