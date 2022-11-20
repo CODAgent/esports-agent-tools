@@ -12,7 +12,7 @@ curr_path = os.getcwd()
 title = 'CODAgent Analytics Tool'
 win = Tk()
 win.title('CODAgent Analytics Tool')
-win.geometry('1600x1600')
+win.geometry('2400x1600')
 win.config(bg='#94091F')
 win.resizable(0, 0)
 
@@ -107,7 +107,7 @@ start_date_title = Label(options_frame, text='Start Date', padx=5, pady=5, ancho
 start_date_title.grid(row=2, column=0)
 start_date_entry = Entry(options_frame)
 start_date_entry.grid(row=2, column=1)
-end_date_title = Label(options_frame, text='Start Date', padx=5, pady=5, anchor='center')
+end_date_title = Label(options_frame, text='End Date', padx=5, pady=5, anchor='center')
 end_date_title.grid(row=3, column=0)
 end_date_entry = Entry(options_frame)
 end_date_entry.grid(row=3, column=1)
@@ -210,6 +210,8 @@ prize_entry = Entry(options_frame)
 prize_entry.grid(row=17, column=1)
 
 # Input file drop down
+input_file_title = Label(options_frame, text='Input File', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+input_file_title.grid(row=18, column=0)
 variable = StringVar()
 input_file_dropdown = OptionMenu(
     options_frame,              # frame to put the dropdown in
@@ -217,7 +219,7 @@ input_file_dropdown = OptionMenu(
     *csvs,                      # list within the dropdown
     command=selected_file       # the action the dropdown will do
 )
-input_file_dropdown.grid(row=18, column=0, sticky='we')
+input_file_dropdown.grid(row=19, column=0, sticky='we')
 
 # ---
 
@@ -230,41 +232,88 @@ input_file_dropdown.grid(row=18, column=0, sticky='we')
 actions_frame = Frame(frame, bg='#FFFFFF', highlightbackground='#000000', highlightthickness=2)
 actions_frame.grid(row=1, column=1, sticky='ew')
 actions_title = Label(actions_frame, text='Actions', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-actions_title.grid(row=0, column=0)
+actions_title.grid(row=0, column=0, columnspan=2)
 p1 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p1.grid(row=1, column=0)
+p1.grid(row=1, column=0, columnspan=2)
 
 # filter
 # need a dropdown to select input file 
 # need an entry to name the output file (if no .csv, then add .csv)
 # maybe use some recursive thing if there's multiple checkboxes selected? --> don't do this at first
 filter_btn = Button(actions_frame, text='Filter Data', command=filter_button, background='#DBEE66', font=('Helvetica', 16))
-filter_btn.grid(row=2, column=0, sticky='ew')
+filter_btn.grid(row=2, column=0, columnspan=2, sticky='ew')
+filter_input_title = Label(actions_frame, text='Input File', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+filter_input_title.grid(row=3, column=0, columnspan=1)
+filter_variable = StringVar()
+filter_dropdown =  OptionMenu(
+    actions_frame,              # frame to put the dropdown in
+    filter_variable,                   # variable means the dropdown items can change
+    *csvs,                      # list within the dropdown
+    command=selected_file       # the action the dropdown will do
+)
+filter_dropdown.grid(row=3, column=1, sticky='ew')
+filter_output_title = Label(actions_frame, text='Output File Name (with ".csv" at the end)', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+filter_output_title.grid(row=4, column=0, columnspan=1)
+filter_output_entry = Entry(actions_frame)
+filter_output_entry.grid(row=4, column=1, columnspan=1)
 p2 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p2.grid(row=3, column=0)
+p2.grid(row=5, column=0, columnspan=2)
 
 
 # plot
 # support 2D (for now)
 # specify with a dropdown which checked box is X and which is Y
-plot_btn = Button(actions_frame, text='Plot Data', command=plot_button, background='#283FEB', font=('Helvetica', 16))
-plot_btn.grid(row=4, column=0, sticky='ew')
+plot_btn = Button(actions_frame, text='Plot Data (X, Y)', command=plot_button, background='#283FEB', font=('Helvetica', 16))
+plot_btn.grid(row=6, column=0, columnspan=2, sticky='ew')
+plot_x_title = Label(actions_frame, text='X Variable:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+plot_x_title.grid(row=7, column=0, columnspan=1)
+plot_x_variable = StringVar()
+plot_x_list = ['logic needed here']
+plot_x_dropdown =  OptionMenu(
+    actions_frame,              # frame to put the dropdown in
+    plot_x_variable,                   # variable means the dropdown items can change
+    *plot_x_list,                      # list within the dropdown
+    command=selected_file       # the action the dropdown will do
+)
+plot_x_dropdown.grid(row=7, column=1, sticky='ew')
+plot_y_title = Label(actions_frame, text='Y Variable:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+plot_y_title.grid(row=8, column=0, columnspan=1)
+plot_y_variable = StringVar()
+plot_y_list = ['logic needed here']
+plot_y_dropdown =  OptionMenu(
+    actions_frame,              # frame to put the dropdown in
+    plot_y_variable,                   # variable means the dropdown items can change
+    *plot_y_list,                      # list within the dropdown
+    command=selected_file       # the action the dropdown will do
+)
+plot_y_dropdown.grid(row=8, column=1, sticky='ew')
 p3 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p3.grid(row=5, column=0)
+p3.grid(row=9, column=0, columnspan=2)
 
 
 # calculate
 # specify with a dropdown what operation should be performed (mean, median, mode, max, min, total)
 stats_btn = Button(actions_frame, text='Calculate Stats', command=stats_button, background='#EB8628', font=('Helvetica', 16))
-stats_btn.grid(row=6, column=0, sticky='ew')
+stats_btn.grid(row=10, column=0, columnspan=2, sticky='ew')
+stats_title = Label(actions_frame, text='Stat to calculate:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+stats_title.grid(row=11, column=0, columnspan=1)
+stats_variable = StringVar()
+stats_list = ['mean', 'median', 'mode', 'max', 'min', 'total']
+stats_dropdown =  OptionMenu(
+    actions_frame,              # frame to put the dropdown in
+    stats_variable,                   # variable means the dropdown items can change
+    *stats_list,                      # list within the dropdown
+    command=selected_file       # the action the dropdown will do
+)
+stats_dropdown.grid(row=11, column=1, sticky='ew')
 p4 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p4.grid(row=7, column=0)
+p4.grid(row=12, column=0, columnspan=2)
 
 # report
 report_btn = Button(actions_frame, text='General Report', command=report_button, background='#0FF1E9', font=('Helvetica', 16))
-report_btn.grid(row=6, column=0, sticky='ew')
+report_btn.grid(row=13, column=0, columnspan=2, sticky='ew')
 p5 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p5.grid(row=7, column=0)
+p5.grid(row=14, column=0, columnspan=2)
 
 
 
