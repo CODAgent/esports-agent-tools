@@ -44,10 +44,13 @@ def define_action(action):
 
 
 #### MAIN FUNCTION ####
-def main(action=None):
-    main_path = 'all_data.csv'
-    backup_path = 'backup_all_data.csv'
-    filter_path = 'filtered_data.csv'
+def main(action=None, filter_input_1=None, filter_input_2=None, main_path='all_data.csv', filter_path='filtered_data.csv', backup_path='backup_all_data.csv'):
+    # FOR TEST
+    # main_path = 'all_data.csv'
+    # backup_path = 'backup_all_data.csv'
+    # filter_path = 'filtered_data.csv'
+    # filter_input_1 = 'date'
+    # filter_input_2 = ['September 22, 2022', 'September 22, 2022']
 
     if action == None:
         ######################################################
@@ -75,7 +78,7 @@ def main(action=None):
 
     if action == 'filter':
         # filter_write(column_title, ['filter values']) --> see readme for more instructions
-        filter_write('date', ['September 22, 2022', 'September 22, 2022'], path=main_path, output_path=filter_path)
+        filter_write(filter_input_1, filter_input_2, path=main_path, output_path=filter_path)
 
     if action == 'backup':
         create_backup(main_path, backup_path)
