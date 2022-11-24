@@ -185,13 +185,32 @@ def filter_button():
             no_input_file = 0
         else:
             no_input_file = 1
+            been_filtered = 0
+
+        if filter_output_string.get():
+            check_str = filter_output_string.get().split('.')
+            if len(check_str) < 2:
+                no_output_file = 1
+                been_filtered = 0
+            else:
+                if check_str[len(check_str)-1] != 'csv':
+                    no_output_file = 1
+                    been_filtered = 0
+                else:
+                    filter_output_file = filter_output_string.get()
+                    no_output_file = 0
+        else: 
+            no_output_file = 1
+            been_filtered = 0
 
         if been_filtered:
-            main.main(action='filter', filter_input_1=filter_input_1, filter_input_2=filter_input_2, main_path=main_file)
+            main.main(action='filter', filter_input_1=filter_input_1, filter_input_2=filter_input_2, main_path=main_file, filter_path=filter_output_file)
             tkinter.messagebox.showinfo(title=title, message='Data has been filtered')      
         else: 
             if no_input_file:
-                tkinter.messagebox.showinfo(title=title, message='Please select an input file for data to filter on at the bottom left (Ex: all_data.csv).')      
+                tkinter.messagebox.showinfo(title=title, message='Please select an input file for data to filter on at the bottom left (Ex: "all_data.csv").')      
+            elif no_output_file:
+                tkinter.messagebox.showinfo(title=title, message='Please specify a proper output file for the filtered data to be written to. (Type needs to be a CSV.  Ex: "filtered_data.csv").')      
             else:
                 tkinter.messagebox.showinfo(title=title, message='No data was selected to be filtered or there was an error.')      
 
@@ -417,37 +436,25 @@ p1.grid(row=1, column=0, columnspan=2)
 filter_btn = Button(actions_frame, text='Filter Data', command=filter_button, background='#DBEE66', font=('Helvetica', 16))
 filter_btn.grid(row=2, column=0, columnspan=2, sticky='ew')
 
-filter_input_title = Label(actions_frame, text='Input File', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
-filter_input_title.grid(row=3, column=0, columnspan=1)
-
-filter_variable = StringVar()
-filter_dropdown =  OptionMenu(
-    actions_frame,              # frame to put the dropdown in
-    filter_variable,                   # variable means the dropdown items can change
-    *csvs,                      # list within the dropdown
-    command=selected_file       # the action the dropdown will do
-)
-filter_dropdown.grid(row=3, column=1, sticky='ew')
-
 filter_output_title = Label(actions_frame, text='Output File Name (with ".csv" at the end)', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
-filter_output_title.grid(row=4, column=0, columnspan=1)
+filter_output_title.grid(row=3, column=0, columnspan=1)
 
 filter_output_string = StringVar()
 filter_output_entry = Entry(actions_frame, textvariable=filter_output_string)
-filter_output_entry.grid(row=4, column=1, columnspan=1)
+filter_output_entry.grid(row=3, column=1, columnspan=1)
 
 p2 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p2.grid(row=5, column=0, columnspan=2)
+p2.grid(row=4, column=0, columnspan=2)
 
 
 # plot
 # support 2D (for now)
 # specify with a dropdown which checked box is X and which is Y
 plot_btn = Button(actions_frame, text='Plot Data (X, Y)', command=plot_button, background='#283FEB', font=('Helvetica', 16))
-plot_btn.grid(row=6, column=0, columnspan=2, sticky='ew')
+plot_btn.grid(row=5, column=0, columnspan=2, sticky='ew')
 
 plot_x_title = Label(actions_frame, text='X Variable:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
-plot_x_title.grid(row=7, column=0, columnspan=1)
+plot_x_title.grid(row=6, column=0, columnspan=1)
 
 plot_x_variable = StringVar()
 plot_x_list = ['logic needed here']
@@ -457,10 +464,10 @@ plot_x_dropdown =  OptionMenu(
     *plot_x_list,                      # list within the dropdown
     command=selected_file       # the action the dropdown will do
 )
-plot_x_dropdown.grid(row=7, column=1, sticky='ew')
+plot_x_dropdown.grid(row=6, column=1, sticky='ew')
 
 plot_y_title = Label(actions_frame, text='Y Variable:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
-plot_y_title.grid(row=8, column=0, columnspan=1)
+plot_y_title.grid(row=7, column=0, columnspan=1)
 
 plot_y_variable = StringVar()
 plot_y_list = ['logic needed here']
@@ -470,19 +477,19 @@ plot_y_dropdown =  OptionMenu(
     *plot_y_list,                      # list within the dropdown
     command=selected_file       # the action the dropdown will do
 )
-plot_y_dropdown.grid(row=8, column=1, sticky='ew')
+plot_y_dropdown.grid(row=7, column=1, sticky='ew')
 
 p3 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p3.grid(row=9, column=0, columnspan=2)
+p3.grid(row=8, column=0, columnspan=2)
 
 
 # calculate
 # specify with a dropdown what operation should be performed (mean, median, mode, max, min, total)
 stats_btn = Button(actions_frame, text='Calculate Stats', command=stats_button, background='#EB8628', font=('Helvetica', 16))
-stats_btn.grid(row=10, column=0, columnspan=2, sticky='ew')
+stats_btn.grid(row=9, column=0, columnspan=2, sticky='ew')
 
 stats_title = Label(actions_frame, text='Stat to calculate:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
-stats_title.grid(row=11, column=0, columnspan=1)
+stats_title.grid(row=10, column=0, columnspan=1)
 
 stats_variable = StringVar()
 stats_list = ['mean', 'median', 'mode', 'max', 'min', 'total']
@@ -492,18 +499,18 @@ stats_dropdown =  OptionMenu(
     *stats_list,                      # list within the dropdown
     command=selected_file       # the action the dropdown will do
 )
-stats_dropdown.grid(row=11, column=1, sticky='ew')
+stats_dropdown.grid(row=10, column=1, sticky='ew')
 
 p4 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p4.grid(row=12, column=0, columnspan=2)
+p4.grid(row=11, column=0, columnspan=2)
 
 
 # report
 report_btn = Button(actions_frame, text='General Report', command=report_button, background='#0FF1E9', font=('Helvetica', 16))
-report_btn.grid(row=13, column=0, columnspan=2, sticky='ew')
+report_btn.grid(row=12, column=0, columnspan=2, sticky='ew')
 
 p5 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p5.grid(row=14, column=0, columnspan=2)
+p5.grid(row=13, column=0, columnspan=2)
 
 
 
