@@ -141,3 +141,4 @@
 - add filtering for gamemode
 - add filtering for different games
 - add support for plotting multiple lines on a plot
+- add sorting for all data and filtered data stuff

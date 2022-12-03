@@ -2,11 +2,13 @@
 
 # imports
 import os
+import csv
 import glob
 import tkinter.messagebox
 from tkinter import *
 import main
 from plotter import plotter
+from statistics import mode, mean, median
 
 curr_path = os.getcwd()
 
@@ -217,10 +219,117 @@ def filter_button():
 
 
 # stats button click
+# mode, median, mean, max, min
 def stats_button():
     do_stats = tkinter.messagebox.askyesno(title=title, message='Would you like to calculate statistics on the data you selected?')
     if (do_stats):
-        tkinter.messagebox.showinfo(title=title, message='Calculating stats')
+        stats_valids = {'Time': ['mode', 'min', 'max'], 'Buy In': ['mode', 'median', 'mean', 'min', 'max'], 'Platforms': ['mode'], 'Team Size': ['mode'], 'Elimination Type': ['mode'], 'Number of Teams Entered': ['mode', 'median', 'mean', 'min', 'max'], 'Series Type': ['mode'], 'Prize': ['mode', 'median', 'mean', 'min', 'max'], 'Profit': ['mode', 'median', 'mean', 'min', 'max']}
+        stats_calculated = 0
+        stats_error_msg = ''
+
+        if variable.get():
+            main_file = variable.get()
+            no_input_file = 0
+        else:
+            no_input_file = 1
+        
+        if no_input_file:
+            tkinter.messagebox.showinfo(title=title, message='Please select an input file for data to filter on at the bottom left (Ex: "all_data.csv").')      
+        else:
+            stat_param = stats_param_variable.get()
+            stat_selected = stats_variable.get()
+            
+            if stat_selected in stats_valids[stat_param]:
+                # get the data
+                stat_data_init = []
+                stat_data = []
+                with open(main_file, 'r') as fr:
+                    stat_data_init = []
+                    reader = csv.reader(fr)
+                    
+                    for line in reader:
+                        stat_data_init.append(line)
+                
+                stat_data_init = stat_data_init[1:len(stat_data_init)]
+                
+                # adjust the data if needed
+                if stat_param == 'Time':
+                    for item in stat_data_init:
+                        stat_data.append(item[1] + ' on ' + item[0])
+
+                if stat_param == 'Buy In':
+                    for item in stat_data_init:
+                        stat_data.append(float(item[3].split('$')[1]))
+
+                elif stat_param == 'Number of Teams Entered':
+                    for item in stat_data_init:
+                        stat_data.append(int(item[8]))
+
+                elif stat_param == 'Prize':
+                    for item in stat_data_init:
+                        stat_data.append(float(item[10].split('$')[1]))
+                
+                elif stat_param == 'Platforms':
+                    for item in stat_data_init:
+                        if (item[4].find('battle.net') == -1) and (item[4].find('steam') == -1):
+                            stat_data.append('console only')
+
+                        elif (item[4].find('xbox') == -1) and (item[4].find('playstation') == -1):
+                            stat_data.append('pc only')
+
+                        else:
+                            stat_data.append('all')
+
+                elif stat_param == 'Team Size':
+                    for item in stat_data_init:
+                        stat_data.append(int(item[5]))
+
+                elif stat_param == 'Elimination Type':
+                    for item in stat_data_init:
+                        stat_data.append(item[6])
+
+                elif stat_param == 'Series Type':
+                    for item in stat_data_init:
+                        stat_data.append(item[9])
+                
+                # TO BE IMPLEMENTED LATER
+                # elif stat_param == 'Profit':
+
+
+                # apply the stat function
+                if stat_selected == 'mode':
+                    print(mode(stat_data))
+                    stat_val = mode(stat_data)
+                    stats_calculated = 1
+
+                elif stat_selected == 'mean':
+                    print(mean(stat_data))
+                    stat_val = mean(stat_data)
+                    stats_calculated = 1
+
+                elif stat_selected == 'median':
+                    print(median(stat_data))
+                    stat_val = median(stat_data)
+                    stats_calculated = 1
+
+                elif stat_selected == 'max':
+                    print(max(stat_data))
+                    stat_val = max(stat_data)
+                    stats_calculated = 1
+
+                elif stat_selected == 'min':
+                    print(min(stat_data))
+                    stat_val = min(stat_data)
+                    stats_calculated = 1
+
+            else: 
+                stats_error_msg = 'Invalid statistic selected for the parameter selected.'
+
+            if stats_calculated:
+                # display the result in the message box
+                tkinter.messagebox.showinfo(title=title, message='The ' + stat_selected + ' of ' + stat_param + ' = ' + str(stat_val))
+            else:
+                tkinter.messagebox.showinfo(title=title, message=stats_error_msg)
 
 # plot button click
 def plot_button():
@@ -483,7 +592,7 @@ plot_x_dropdown =  OptionMenu(
     actions_frame,              # frame to put the dropdown in
     plot_x_variable,                   # variable means the dropdown items can change
     *plot_x_list,                      # list within the dropdown
-    command=selected_file       # the action the dropdown will do
+    command=dropdown_return       # the action the dropdown will do
 )
 plot_x_dropdown.grid(row=6, column=1, sticky='ew')
 
@@ -496,7 +605,7 @@ plot_y_dropdown =  OptionMenu(
     actions_frame,              # frame to put the dropdown in
     plot_y_variable,                   # variable means the dropdown items can change
     *plot_y_list,                      # list within the dropdown
-    command=selected_file       # the action the dropdown will do
+    command=dropdown_return       # the action the dropdown will do
 )
 plot_y_dropdown.grid(row=7, column=1, sticky='ew')
 
@@ -520,25 +629,38 @@ stats_title = Label(actions_frame, text='Stat to calculate:', foreground='#00000
 stats_title.grid(row=11, column=0, columnspan=1)
 
 stats_variable = StringVar()
-stats_list = ['mean', 'median', 'mode', 'max', 'min', 'total']
+stats_list = ['mean', 'median', 'mode', 'max', 'min']
 stats_dropdown =  OptionMenu(
     actions_frame,              # frame to put the dropdown in
     stats_variable,                   # variable means the dropdown items can change
     *stats_list,                      # list within the dropdown
-    command=selected_file       # the action the dropdown will do
+    command=dropdown_return      # the action the dropdown will do
 )
 stats_dropdown.grid(row=11, column=1, sticky='ew')
 
+stats_param_title = Label(actions_frame, text='Parameter to calculate stat on:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+stats_param_title.grid(row=12, column=0, columnspan=1)
+
+stats_param_variable = StringVar()
+stats_param_list = ['Time', 'Buy In', 'Platforms', 'Team Size', 'Elimination Type', 'Number of Teams Entered', 'Series Type', 'Prize', 'Profit']
+stats_param_dropdown =  OptionMenu(
+    actions_frame,              # frame to put the dropdown in
+    stats_param_variable,                   # variable means the dropdown items can change
+    *stats_param_list,                      # list within the dropdown
+    command=dropdown_return     # the action the dropdown will do
+)
+stats_param_dropdown.grid(row=12, column=1, sticky='ew')
+
 p4 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p4.grid(row=12, column=0, columnspan=2)
+p4.grid(row=13, column=0, columnspan=2)
 
 
 # report
 report_btn = Button(actions_frame, text='General Report', command=report_button, background='#0FF1E9', font=('Helvetica', 16))
-report_btn.grid(row=13, column=0, columnspan=2, sticky='ew')
+report_btn.grid(row=14, column=0, columnspan=2, sticky='ew')
 
 p5 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p5.grid(row=14, column=0, columnspan=2)
+p5.grid(row=15, column=0, columnspan=2)
 
 
 
