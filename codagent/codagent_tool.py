@@ -6,6 +6,7 @@ import glob
 import tkinter.messagebox
 from tkinter import *
 import main
+from plotter import plotter
 
 curr_path = os.getcwd()
 
@@ -13,7 +14,7 @@ curr_path = os.getcwd()
 title = 'CODAgent Analytics Tool'
 win = Tk()
 win.title('CODAgent Analytics Tool')
-win.geometry('2400x1600')
+win.geometry('3200x1800')
 win.config(bg='#94091F')
 win.resizable(0, 0)
 
@@ -223,9 +224,29 @@ def stats_button():
 
 # plot button click
 def plot_button():
+    plot_var_dict = {'Time': 'time', 'Buy In': 'buyin', 'Platforms': 'platform', 'Team Size': 'team_size', 'Elimination Type': 'elim', 'Number of Teams Entered': 'teams_entered', 'Series Type': 'series', 'Prize': 'prize', 'Profit': 'profit'}
     do_plot = tkinter.messagebox.askyesno(title=title, message='Would you like to plot the data you selected?')
     if (do_plot):
-        tkinter.messagebox.showinfo(title=title, message='Plotting data')
+        if variable.get():
+            main_file = variable.get()
+            no_input_file = 0
+        else:
+            no_input_file = 1
+        
+        if no_input_file:
+            tkinter.messagebox.showinfo(title=title, message='Please select an input file for data to filter on at the bottom left (Ex: "all_data.csv").')      
+        else:
+            # need saving plot logic here (have checkbox on GUI and a line for output file
+            no_plot_output_file = 1
+            if plot_output_string.get():
+                no_plot_output_file = 0
+                plot_output_file = plot_output_string.get()
+            # tkinter.messagebox.showinfo(title=title, message='Plotting data')
+            if no_plot_output_file:
+                plotter(plot_var_dict[plot_x_variable.get()], plot_var_dict[plot_y_variable.get()], input_file=main_file)
+            else: 
+                plotter(plot_var_dict[plot_x_variable.get()], plot_var_dict[plot_y_variable.get()], input_file=main_file, save_plot=True, output_file=plot_output_file)
+            tkinter.messagebox.showinfo(title=title, message='Data has been plotted.')
 
 # general report button click
 def report_button():
@@ -457,7 +478,7 @@ plot_x_title = Label(actions_frame, text='X Variable:', foreground='#000000', ba
 plot_x_title.grid(row=6, column=0, columnspan=1)
 
 plot_x_variable = StringVar()
-plot_x_list = ['logic needed here']
+plot_x_list = ['Time', 'Buy In', 'Platforms', 'Team Size', 'Elimination Type', 'Number of Teams Entered', 'Series Type', 'Prize', 'Profit']
 plot_x_dropdown =  OptionMenu(
     actions_frame,              # frame to put the dropdown in
     plot_x_variable,                   # variable means the dropdown items can change
@@ -470,7 +491,7 @@ plot_y_title = Label(actions_frame, text='Y Variable:', foreground='#000000', ba
 plot_y_title.grid(row=7, column=0, columnspan=1)
 
 plot_y_variable = StringVar()
-plot_y_list = ['logic needed here']
+plot_y_list = ['Time', 'Buy In', 'Platforms', 'Team Size', 'Elimination Type', 'Number of Teams Entered', 'Series Type', 'Prize', 'Profit']
 plot_y_dropdown =  OptionMenu(
     actions_frame,              # frame to put the dropdown in
     plot_y_variable,                   # variable means the dropdown items can change
@@ -479,17 +500,24 @@ plot_y_dropdown =  OptionMenu(
 )
 plot_y_dropdown.grid(row=7, column=1, sticky='ew')
 
+plot_output_title = Label(actions_frame, text='Output File Name (with either ".svg" or ".png" at the end)', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+plot_output_title.grid(row=8, column=0, columnspan=1)
+
+plot_output_string = StringVar()
+plot_output_entry = Entry(actions_frame, textvariable=plot_output_string)
+plot_output_entry.grid(row=8, column=1, columnspan=1)
+
 p3 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p3.grid(row=8, column=0, columnspan=2)
+p3.grid(row=9, column=0, columnspan=2)
 
 
 # calculate
 # specify with a dropdown what operation should be performed (mean, median, mode, max, min, total)
 stats_btn = Button(actions_frame, text='Calculate Stats', command=stats_button, background='#EB8628', font=('Helvetica', 16))
-stats_btn.grid(row=9, column=0, columnspan=2, sticky='ew')
+stats_btn.grid(row=10, column=0, columnspan=2, sticky='ew')
 
 stats_title = Label(actions_frame, text='Stat to calculate:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
-stats_title.grid(row=10, column=0, columnspan=1)
+stats_title.grid(row=11, column=0, columnspan=1)
 
 stats_variable = StringVar()
 stats_list = ['mean', 'median', 'mode', 'max', 'min', 'total']
@@ -499,18 +527,18 @@ stats_dropdown =  OptionMenu(
     *stats_list,                      # list within the dropdown
     command=selected_file       # the action the dropdown will do
 )
-stats_dropdown.grid(row=10, column=1, sticky='ew')
+stats_dropdown.grid(row=11, column=1, sticky='ew')
 
 p4 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p4.grid(row=11, column=0, columnspan=2)
+p4.grid(row=12, column=0, columnspan=2)
 
 
 # report
 report_btn = Button(actions_frame, text='General Report', command=report_button, background='#0FF1E9', font=('Helvetica', 16))
-report_btn.grid(row=12, column=0, columnspan=2, sticky='ew')
+report_btn.grid(row=13, column=0, columnspan=2, sticky='ew')
 
 p5 = Label(actions_frame, text='Place Holder', foreground='#FFFFFF', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 14), anchor='center')
-p5.grid(row=13, column=0, columnspan=2)
+p5.grid(row=14, column=0, columnspan=2)
 
 
 

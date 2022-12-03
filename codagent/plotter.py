@@ -129,7 +129,7 @@ def plotter(x_param, y_param, input_file='all_data.csv', save_plot=False, output
 
     # y_list
     fig = plt.figure(figsize=(16,9))
-    plt.plot(x_list, y_list)
+    plt.plot(x_list, y_list, '*-')
     plt.xlabel(label_dict[x_param], size=30)
     plt.ylabel(label_dict[y_param], size=30)
     plt.title(label_dict[y_param] + ' vs. ' + label_dict[x_param], size=35)
