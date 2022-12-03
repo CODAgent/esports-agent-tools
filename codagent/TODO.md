@@ -76,13 +76,13 @@
     - loops through tourney ids and retrives the tourney infos in a list  
     
 ### GUI
-- button to mine data 
-- button for generating filtered csv files 
+- button to mine data --> **DONE**
+- button for generating filtered csv files --> **DONE**
     - specify input file 
     - specify output file
-- plotting graphs w/ different filters and parameters
+- plotting graphs w/ different filters and parameters --> **DONE**
 - get averages of data with filters on 
-- currently creating GUI skeleton in codagent\_tool.py but will be editing main.py to house the GUI code
+- currently creating GUI skeleton in codagent\_tool.py but will be editing main.py to house the GUI code --> **DONE, except for the help buttons**
 - layout (button on top, three 'frames' below it)
     - top button --> mining button
     - left side --> options
@@ -136,7 +136,8 @@
 --- 
 ## For Version 2.0
 - automate 
-- sort all data by date to make filtering quicker 
+- sort all data by date to make filtering quicker --> **DONE**
 - fix issue on filtering where switcheroos appear as a $0 buy-in
 - add filtering for gamemode
 - add filtering for different games
+- add support for plotting multiple lines on a plot
