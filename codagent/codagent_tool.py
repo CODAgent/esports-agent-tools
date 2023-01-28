@@ -9,6 +9,7 @@ from tkinter import *
 import main
 from plotter import plotter
 from statistics import mode, mean, median
+import shutil
 
 curr_path = os.getcwd()
 
@@ -331,6 +332,144 @@ def stats_button():
             else:
                 tkinter.messagebox.showinfo(title=title, message=stats_error_msg)
 
+# filter function helper (used by plotter for now) 
+# returns the output file path 
+def filter_helper(input_1, file_to_filter='all_data.csv', output_file='plotted_data.csv'):
+    # do_filter is useless for now
+    do_filter = 1
+    been_filtered = 0
+    if (do_filter):
+        # default filter
+        filter_input_1 = 'date'
+        filter_input_2 = ['September 22, 2022', 'September 22, 2022']
+
+        ## 
+        # format the data from the checked boxes here
+        if input_1 == 'time':
+            print('date')
+            filter_input_1 = 'date'
+            filter_input_2 = [start_date_string.get(), end_date_string.get()]
+            been_filtered = 1
+
+        if input_1 == 'buyin':
+            print('buy')
+            filter_input_1 = 'money'
+            if buyin_variable.get() == 'Free Entry':
+                filter_input_2 = ['free entry']
+                been_filtered = 1
+
+            elif buyin_variable.get() == 'Free Entry No Prize':
+                filter_input_2 = ['free entry no prize']
+                been_filtered = 1
+
+            else:
+                filter_input_2 = [buyin_variable.get() + ',' + buyin_string.get()]
+                if filter_input_2[0] != ',':
+                    been_filtered = 1
+                # else:
+                #     been_filtered = 1
+
+        if input_1 == 'platform':
+            print('plat')
+            filter_input_1 = 'platforms'
+            if platform_variable.get() == 'Console Only':
+                filter_input_2 = ['console only']
+                been_filtered = 1
+
+            elif platform_variable.get() == 'PC Only':
+                filter_input_2 = ['pc only']
+                been_filtered = 1
+
+            elif platform_variable.get() == 'All':
+                filter_input_2 = ['all']
+                been_filtered = 1
+
+        if input_1 == 'team_size':
+            print('team')
+            filter_input_1 = 'team size'
+            if team_size_variable.get() == '1v1':
+                filter_input_2 = ['1v1']
+                been_filtered = 1
+
+            elif team_size_variable.get() == '2v2':
+                filter_input_2 = ['2v2']
+                been_filtered = 1
+
+            elif team_size_variable.get() == '3v3':
+                filter_input_2 = ['3v3']
+                been_filtered = 1
+
+            elif team_size_variable.get() == '4v4':
+                filter_input_2 = ['4v4']
+                been_filtered = 1
+
+            elif team_size_variable.get() == '5v5':
+                filter_input_2 = ['5v5']
+                been_filtered = 1
+
+            elif team_size_variable.get() == '6v6':
+                filter_input_2 = ['6v6']
+                been_filtered = 1
+
+        if input_1 == 'elim':
+            print('elim')
+            filter_input_1 = 'elimination type'
+            if elim_variable.get() == 'Single Elimination':
+                filter_input_2 = ['single']
+                been_filtered = 1
+            elif elim_variable.get() == 'Double Elimination':
+                filter_input_2 = ['double']
+                been_filtered = 1
+
+        if input_1 == 'teams_entered':
+            print('entered')
+            filter_input_1 = 'number of teams'
+            filter_input_2 = [teams_entered_variable.get() + ',' + teams_entered_string.get()]
+            if filter_input_2[0] != ',':
+                been_filtered = 1
+
+        if input_1 == 'series':
+            print('series')
+            filter_input_1 = 'series type'
+            if series_variable.get() == 'Best of 1':
+                filter_input_2 = ['bo1']
+                been_filtered = 1
+
+            elif series_variable.get() == 'Best of 3':
+                filter_input_2 = ['bo3']
+                been_filtered = 1
+
+            elif series_variable.get() == 'Best of 5':
+                filter_input_2 = ['bo5']
+                been_filtered = 1
+
+        if input_1 == 'prize':
+            print('prize')
+            filter_input_1 = 'prize'
+            filter_input_2 = [prize_variable.get() + ',' + prize_string.get()]
+            if filter_input_2[0] != ',':
+                been_filtered = 1
+
+        ##
+
+        no_input_file = 0
+        no_output_file = 0
+
+        if been_filtered:
+            main.main(action='filter', filter_input_1=filter_input_1, filter_input_2=filter_input_2, main_path=file_to_filter, filter_path=output_file)
+        else: 
+            if no_input_file:
+                tkinter.messagebox.showinfo(title=title, message='Please select an input file for data to filter on at the bottom left (Ex: "all_data.csv").')      
+            elif no_output_file:
+                tkinter.messagebox.showinfo(title=title, message='Please specify a proper output file for the filtered data to be written to. (Type needs to be a CSV.  Ex: "filtered_data.csv").')      
+            # else:
+            #     tkinter.messagebox.showinfo(title=title, message='No data was selected to be filtered or there was an error.')      
+
+        if been_filtered:
+            return output_file
+        else:
+            return file_to_filter
+
 # plot button click
 def plot_button():
     plot_var_dict = {'Time': 'time', 'Buy In': 'buyin', 'Platforms': 'platform', 'Team Size': 'team_size', 'Elimination Type': 'elim', 'Number of Teams Entered': 'teams_entered', 'Series Type': 'series', 'Prize': 'prize', 'Profit': 'profit'}
@@ -351,10 +490,70 @@ def plot_button():
                 no_plot_output_file = 0
                 plot_output_file = plot_output_string.get()
             # tkinter.messagebox.showinfo(title=title, message='Plotting data')
+            # TODO: add functionality for multiple boxes checked (input for plotter is now a list)
+            # TODO 2: add functionality for generating a plotted_data.csv file
+            #   For this we can use our filter file function and then feed this into the input file of the plotter function    
+            to_be_filtered = []
+
+            # only plotting time for now
+            to_plot_x = ['time']
+            if date_checked.get():
+                to_be_filtered.append(plot_var_dict['Time'])
+
+            # add fields checked for y
+            to_plot_y = []
+            if buyin_checked.get():
+                to_plot_y.append(plot_var_dict['Buy In'])
+                to_be_filtered.append(plot_var_dict['Buy In'])
+            if platform_checked.get():
+                to_plot_y.append(plot_var_dict['Platforms'])
+                to_be_filtered.append(plot_var_dict['Platforms'])
+            if team_size_checked.get():
+                to_plot_y.append(plot_var_dict['Team Size'])
+                to_be_filtered.append(plot_var_dict['Team Size'])
+            if elim_checked.get():
+                to_plot_y.append(plot_var_dict['Elimination Type'])
+                to_be_filtered.append(plot_var_dict['Elimination Type'])
+            if teams_entered_checked.get():
+                to_plot_y.append(plot_var_dict['Number of Teams Entered'])
+                to_be_filtered.append(plot_var_dict['Number of Teams Entered'])
+            if series_checked.get():
+                to_plot_y.append(plot_var_dict['Series Type'])
+                to_be_filtered.append(plot_var_dict['Series Type'])
+            if prize_checked.get():
+                to_plot_y.append(plot_var_dict['Prize'])
+                to_be_filtered.append(plot_var_dict['Prize'])
+
+
             if no_plot_output_file:
-                plotter(plot_var_dict[plot_x_variable.get()], plot_var_dict[plot_y_variable.get()], input_file=main_file)
+                tmp_filter_file = main_file
+                tmp_filter_output_file = 'plotted_data.csv'
+                for jj in range(len(to_be_filtered)):
+                    tmp_filter_output_file = filter_helper(to_be_filtered[jj], file_to_filter=tmp_filter_file, output_file=tmp_filter_output_file)
+                    tmp_filter_file = tmp_filter_output_file
+                    tmp_filter_output_file = '_' + tmp_filter_output_file
+                new_input_file = tmp_filter_file
+                        
+
+                plotter(to_plot_x, to_plot_y, input_file=new_input_file)
             else: 
-                plotter(plot_var_dict[plot_x_variable.get()], plot_var_dict[plot_y_variable.get()], input_file=main_file, save_plot=True, output_file=plot_output_file)
+                tmp_filter_file = main_file
+                tmp_filter_output_file = 'plotted_data.csv'
+                for jj in range(len(to_be_filtered)):
+                    if jj + 1 == len(to_be_filtered):
+                        plot_data_output_file = plot_output_file[0:len(plot_output_file) - 4] + '.csv'
+                        filter_helper_output = filter_helper(to_be_filtered[jj], file_to_filter=tmp_filter_file, output_file=plot_data_output_file)
+                        
+                        if filter_helper_output == tmp_filter_file:
+                            shutil.copyfile(filter_helper_output, plot_data_output_file)
+
+                    else:
+                        tmp_filter_output_file = filter_helper(to_be_filtered[jj], file_to_filter=tmp_filter_file, output_file=tmp_filter_output_file)
+                        tmp_filter_file = tmp_filter_output_file
+                        tmp_filter_output_file = '_' + tmp_filter_output_file
+                new_input_file = tmp_filter_file
+
+                plotter(to_plot_x, to_plot_y, input_file=new_input_file, save_plot=True, output_file=plot_output_file)
             tkinter.messagebox.showinfo(title=title, message='Data has been plotted.')
 
 # general report button click
@@ -583,31 +782,31 @@ p2.grid(row=4, column=0, columnspan=2)
 plot_btn = Button(actions_frame, text='Plot Data (X, Y)', command=plot_button, background='#283FEB', font=('Helvetica', 16))
 plot_btn.grid(row=5, column=0, columnspan=2, sticky='ew')
 
-plot_x_title = Label(actions_frame, text='X Variable:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
-plot_x_title.grid(row=6, column=0, columnspan=1)
+plot_x_title = Label(actions_frame, text='Select fields on the left to plot.  Select the date and', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+plot_x_title.grid(row=6, column=0, columnspan=2)
 
-plot_x_variable = StringVar()
-plot_x_list = ['Time', 'Buy In', 'Platforms', 'Team Size', 'Elimination Type', 'Number of Teams Entered', 'Series Type', 'Prize', 'Profit']
-plot_x_dropdown =  OptionMenu(
-    actions_frame,              # frame to put the dropdown in
-    plot_x_variable,                   # variable means the dropdown items can change
-    *plot_x_list,                      # list within the dropdown
-    command=dropdown_return       # the action the dropdown will do
-)
-plot_x_dropdown.grid(row=6, column=1, sticky='ew')
+# plot_x_variable = StringVar()
+# plot_x_list = ['Time', 'Buy In', 'Platforms', 'Team Size', 'Elimination Type', 'Number of Teams Entered', 'Series Type', 'Prize', 'Profit']
+# plot_x_dropdown =  OptionMenu(
+#     actions_frame,              # frame to put the dropdown in
+#     plot_x_variable,                   # variable means the dropdown items can change
+#     *plot_x_list,                      # list within the dropdown
+#     command=dropdown_return       # the action the dropdown will do
+# )
+# plot_x_dropdown.grid(row=6, column=1, sticky='ew')
 
-plot_y_title = Label(actions_frame, text='Y Variable:', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
-plot_y_title.grid(row=7, column=0, columnspan=1)
+plot_y_title = Label(actions_frame, text='specify a timeframe to plot a specific time range.', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
+plot_y_title.grid(row=7, column=0, columnspan=2)
 
-plot_y_variable = StringVar()
-plot_y_list = ['Time', 'Buy In', 'Platforms', 'Team Size', 'Elimination Type', 'Number of Teams Entered', 'Series Type', 'Prize', 'Profit']
-plot_y_dropdown =  OptionMenu(
-    actions_frame,              # frame to put the dropdown in
-    plot_y_variable,                   # variable means the dropdown items can change
-    *plot_y_list,                      # list within the dropdown
-    command=dropdown_return       # the action the dropdown will do
-)
-plot_y_dropdown.grid(row=7, column=1, sticky='ew')
+# plot_y_variable = StringVar()
+# plot_y_list = ['Time', 'Buy In', 'Platforms', 'Team Size', 'Elimination Type', 'Number of Teams Entered', 'Series Type', 'Prize', 'Profit']
+# plot_y_dropdown =  OptionMenu(
+#     actions_frame,              # frame to put the dropdown in
+#     plot_y_variable,                   # variable means the dropdown items can change
+#     *plot_y_list,                      # list within the dropdown
+#     command=dropdown_return       # the action the dropdown will do
+# )
+# plot_y_dropdown.grid(row=7, column=1, sticky='ew')
 
 plot_output_title = Label(actions_frame, text='Output File Name (with either ".svg" or ".png" at the end)', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
 plot_output_title.grid(row=8, column=0, columnspan=1)

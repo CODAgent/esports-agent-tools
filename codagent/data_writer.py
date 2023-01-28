@@ -182,7 +182,10 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
                     row_day = int(row_date[1][0:len(row_date[1])-1])
                     if int(row_date[2]) >= start_year_num and int(row_date[2]) <= end_year_num:
                         if month_map[row_date[0]] >= start_month_num and month_map[row_date[0]] <= end_month_num:
-                            if row_day >= start_day_num and row_day <= end_day_num:
+                            if row_day >= start_day_num and month_map[row_date[0]] >= start_month_num:
+                                if row_day <= end_day_num and month_map[row_date[0]] <= end_month_num:
+                                    data.append(row)
+                            elif row_day <= end_day_num and month_map[row_date[0]] <= end_month_num and month_map[row_date[0]] >= start_month_num:
                                 data.append(row)
             with open(output_path, 'w', newline='') as fw:
                 writer = csv.DictWriter(fw, fieldnames=header)

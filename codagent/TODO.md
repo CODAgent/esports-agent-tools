@@ -104,6 +104,8 @@
             - returns covariance matrix that compares option 1 and option 2
     - very right side --> help
         - help button for each action button that describes in a message box, how to use the button with the options
+- change plotting so that everything has an x-axis of time and if you select multiple non-time selections, they get overlayed on the same plot --> **DONE**
+- for plotting, make it so that you filter your all\_data file and turn it into a plotted\_data.csv file --> **DONE**
 
 ## Mining 
 - need to add infrastructure to mine data every 1 or 2 days 
@@ -135,10 +137,15 @@
 
 --- 
 ## For Version 2.0
-- automate 
+- automate (maybe for V3.0 or later in V2.0)
 - sort all data by date to make filtering quicker --> **DONE**
-- fix issue on filtering where switcheroos appear as a $0 buy-in
-- add filtering for gamemode
-- add filtering for different games
-- add support for plotting multiple lines on a plot
-- add sorting for all data and filtered data stuff
+- fix issue on filtering where switcheroos appear as a $0 buy-in (later in V2.0)
+- add filtering for gamemode (later in V2.0)
+- add filtering for different games (later in V2.0)
+- add support for plotting multiple lines on a plot --> **DONE**
+- add sorting for all data and filtered data stuff 
+    - by date --> **DONE**
+- add "Make The Report" feature
+- BUG FOUND: filtering by date does not work --> **FIXED**
+    - the filtering will only grab from the specified start date and the specified end date
+    - instead, this should grab from the specified start date all the way thru until the specified end date

@@ -4,3 +4,4 @@ codagent_tools_env
 *_env
 *~
 filtered_*
+*.swp
