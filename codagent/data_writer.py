@@ -133,7 +133,7 @@ def write_all(data, path="all_data.csv"):
 # Returns: a dict that maps as such --> {<filter category>: <array of acceptable filter criterion>, ....}
 # Prints the return as well
 def get_valid_filter_terms():
-    valids = {'date': ['month day, year', 'month year', 'year'], 'money': ['free entry', 'paid entry', 'free entry no prize'], 'platforms': ['console only', 'pc only', 'all'], 'team size': ['1v1', '2v2', '3v3', '4v4', '5v5', '6v6'], 'elimination type': ['single', 'double'], 'number of teams': ['threshold value'], 'series type': ['bo1', 'bo3', 'bo5'], 'prize': ['threshold value'] }
+    valids = {'date': ['month day, year', 'month year', 'year'], 'money': ['free entry', 'paid entry', 'free entry no prize'], 'platforms': ['console only', 'pc only', 'all'], 'team size': ['1v1', '2v2', '3v3', '4v4', '5v5', '6v6'], 'elimination type': ['single', 'double'], 'number of teams': ['threshold value'], 'series type': ['bo1', 'bo3', 'bo5'], 'prize': ['threshold value'], 'prize': ['threshold value']}
     print("The following mapping are the valid categories and their respective criterion to be used for filtering: ")
     print(valids)
     return valids
@@ -149,7 +149,7 @@ def get_valid_filter_terms():
     # "Invalid filter criterion.  No filtered file created."
 def filter_write(filter_category, filter_criterion, path='all_data.csv', output_path='filtered_data.csv'):
     # header info
-    header = ['Date', 'Time', 'Title', 'Buy-in Per Player', 'Platforms', 'Team Size', 'Tournament Type (Ex: Single Elimination)', 'Players in Match', 'Number of Teams Registered', 'Series Type (Ex: Best of 3)', 'Prize Pool']
+    header = ['Date', 'Time', 'Title', 'Buy-in Per Player', 'Platforms', 'Team Size', 'Tournament Type (Ex: Single Elimination)', 'Players in Match', 'Number of Teams Registered', 'Series Type (Ex: Best of 3)', 'Prize Pool', 'Profit']
 
     # date looks for either:
     # (1) a start day-month-year and an end day-month-year
@@ -533,8 +533,107 @@ def filter_write(filter_category, filter_criterion, path='all_data.csv', output_
 
             print("Filtered by prize pool file created.")
 
+    # profit looks for:
+    # (1) a threshold amount --> Ex: '>,5' or '<,5' format: '<greater than or less than>,<value>'
+    # expected input for 'filter_criterion' is a list
+    if filter_category == "profit":
+        if len(filter_criterion[0].split(' ')) == 1:
+            ineq = filter_criterion[0].split(',')[0]
+            value = float(filter_criterion[0].split(',')[1])
+            data = []
+            with open(path, 'r') as f:
+                reader = csv.DictReader(f)
+                if ineq == '>':
+                    for row in reader:
+                        row_profit = row['Profit']
+                        row_profit_int = float(row_profit)
+                        
+                        if row_profit_int > value:
+                            data.append(row)
+
+                if ineq == '<':
+                    for row in reader:
+                        row_profit = row['Profit']
+                        row_profit_int = float(row_profit)
+                        
+                        if row_profit_int < value:
+                                data.append(row)
+
+            with open(output_path, 'w', newline='') as fw:
+                writer = csv.DictWriter(fw, fieldnames=header)
+                writer.writeheader()
+                for d in data: 
+                    writer.writerow(d)
+
+            print("Filtered by profit file created.")
+
 
     return None
 
+# adding profit to the data
+# takes an input file path and adds the profit column to the data that is located at that file path
+def add_profit(input_file):
+    # read all the data from the file
+    with open(input_file, 'r') as fr:
+        read_data = []
+        reader = csv.reader(fr)
+
+        # check to see if we need to write the profit to this file or if it is already there 
+        write_profit = 0
+        for rd in reader:
+            if rd[len(rd) - 1] == 'Profit':
+                write_profit = 0
+            else:
+                write_profit = 1
+
+            break
+
+        for line in reader:
+            if line[4] != 'Platforms':
+                line[4] = eval(line[4])
+            read_data.append(line)
+
+        # get rid of header info because it is not needed
+        read_data = read_data[1:len(read_data)]
+
+
+    if write_profit:
+        # calculate the profit and add it to the end of all the rows
+        new_data = []
+        for data in read_data:
+            entry_price = float(data[3][1:len(data[3])])
+            team_size = float(data[5])
+            number_of_teams = float(data[8])
+            prize = float(data[10][1:len(data[10])])
+
+
+            new_profit = (entry_price * team_size * number_of_teams) - prize
+
+            new_row = data
+            new_row.append(new_profit)
+            new_data.append(new_row)
+
+        # write the data back to the file path
+        header = ['Date', 'Time', 'Title', 'Buy-in Per Player', 'Platforms', 'Team Size', 'Tournament Type (Ex: Single Elimination)', 'Players in Match', 'Number of Teams Registered', 'Series Type (Ex: Best of 3)', 'Prize Pool', 'Profit']
+        with open(input_file, 'w', newline='') as fw:
+            writer = csv.writer(fw)
+            writer.writerow(header)
+            for nd in new_data:
+                writer.writerow(nd)
+            print("Done.  Profit data written.")
+            return None
+    else: 
+        print("Profit already there.")
+        return None
+
+
+
 # FOR TEST
 # filter_write('series type', ['bo5'], output_path='filtered_by_series_type.csv')
+# filter_write('profit', ['<,0'], output_path='filtered_by_profit.csv')
+# add_profit('testing.csv')
+# add profit to the all_data csv
+# add_profit('all_data.csv')
+
+
+

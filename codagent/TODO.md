@@ -140,11 +140,20 @@
 - automate (maybe for V3.0 or later in V2.0)
 - sort all data by date to make filtering quicker --> **DONE**
 - fix issue on filtering where switcheroos appear as a $0 buy-in (later in V2.0)
+    - I think the way to handle this is to look and see if there are spaces in the titles (I think there are not if it is a switcheroo)
 - add filtering for gamemode (later in V2.0)
 - add filtering for different games (later in V2.0)
 - add support for plotting multiple lines on a plot --> **DONE**
-- add sorting for all data and filtered data stuff 
+- add sorting for all data and filtered data stuff --> **DONE**
     - by date --> **DONE**
+- add profit --> **DONE**
+    - profit = (entry price \* team size \* number of teams) \- prize
+    - add profit to data mining --> **DONE**
+    - add profit to filtering --> **DONE**
+        - functionality --> **DONE**
+        - GUI --> **DONE**
+    - add profit to stats --> **DONE**
+    - add profit to plotting --> **DONE**
 - add "Make The Report" feature
 - BUG FOUND: filtering by date does not work --> **FIXED**
     - the filtering will only grab from the specified start date and the specified end date

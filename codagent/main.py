@@ -9,7 +9,7 @@ import requests
 import re
 
 from web_scrapper import get_tournament_info, get_tournament_ids   
-from data_writer import write_all, create_backup, filter_write, get_valid_filter_terms
+from data_writer import write_all, create_backup, filter_write, get_valid_filter_terms, add_profit
 
 
 # FOR TEST
@@ -72,6 +72,7 @@ def main(action=None, filter_input_1=None, filter_input_2=None, main_path='all_d
         all_info = get_all_info(tourney_ids, driver, URL_all_info)
 
         write_all(all_info, path=main_path)
+        add_profit(main_path)
         
     if action == 'how to filter':
         get_valid_filter_terms()

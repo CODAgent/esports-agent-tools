@@ -182,6 +182,12 @@ def filter_button():
             filter_input_2 = [prize_variable.get() + ',' + prize_string.get()]
             been_filtered = 1
 
+        if profit_checked.get():
+            print('profit')
+            filter_input_1 = 'profit'
+            filter_input_2 = [profit_variable.get() + ',' + profit_string.get()]
+            been_filtered = 1
+
         ##
 
         if variable.get():
@@ -293,8 +299,9 @@ def stats_button():
                     for item in stat_data_init:
                         stat_data.append(item[9])
                 
-                # TO BE IMPLEMENTED LATER
-                # elif stat_param == 'Profit':
+                elif stat_param == 'Profit':
+                    for item in stat_data_init:
+                        stat_data.append(float(item[11]))
 
 
                 # apply the stat function
@@ -523,6 +530,9 @@ def plot_button():
             if prize_checked.get():
                 to_plot_y.append(plot_var_dict['Prize'])
                 to_be_filtered.append(plot_var_dict['Prize'])
+            if profit_checked.get():
+                to_plot_y.append(plot_var_dict['Profit'])
+                to_be_filtered.append(plot_var_dict['Profit'])
 
 
             if no_plot_output_file:
@@ -727,10 +737,29 @@ prize_string = StringVar()
 prize_entry = Entry(options_frame, textvariable=prize_string)
 prize_entry.grid(row=17, column=1)
 
+# Profit
+profit_checked = IntVar()
+profit_checkbox = Checkbutton(options_frame, text='Profit', variable=profit_checked)
+profit_checkbox.grid(row=18, column=0, sticky='w')
+
+profit_options = ['>', '<']
+profit_variable = StringVar()
+profit_dropdown = OptionMenu(
+    options_frame,              # frame to put the dropdown in
+    profit_variable,             # variable means the dropdown items can change
+    *profit_options,              # list within the dropdown
+    command=dropdown_return     # the action the dropdown will do
+)
+profit_dropdown.grid(row=19, column=0)
+
+profit_string = StringVar()
+profit_entry = Entry(options_frame, textvariable=profit_string)
+profit_entry.grid(row=19, column=1)
+
 
 # Input file drop down
 input_file_title = Label(options_frame, text='Input File', foreground='#000000', background='#FFFFFF', padx=5, pady=5, font=('Helvetica', 12), anchor='center')
-input_file_title.grid(row=18, column=0)
+input_file_title.grid(row=20, column=0)
 variable = StringVar()
 input_file_dropdown = OptionMenu(
     options_frame,              # frame to put the dropdown in
@@ -738,7 +767,7 @@ input_file_dropdown = OptionMenu(
     *csvs,                      # list within the dropdown
     command=selected_file       # the action the dropdown will do
 )
-input_file_dropdown.grid(row=19, column=0, sticky='we')
+input_file_dropdown.grid(row=21, column=0, sticky='we')
 
 # ---
 
