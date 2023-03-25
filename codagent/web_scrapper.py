@@ -42,10 +42,15 @@ def get_tournament_info(driver, URL):
     time = date_time_list[3] + " " + date_time_list[4]
     
     # Tourney title
-    title_res = soup.find_all('span', {'class': 'font-semibold text-2xl lg:text-3xl text-white'})
+    title_res = soup.find_all('span', {'class': 'font-semibold text-2xl lg:text-3xl max-w-[420px] break-words text-white'})
     if len(title_res) < 1:
-        title_res = soup.find_all('span', {'class': 'font-semibold text-2xl lg:text-3xl text-gold'})
-    title = title_res[0].text.strip()
+        title_res = soup.find_all('span', {'class': 'font-semibold text-2xl lg:text-3xl max-w-[420px] break-words text-gold'})
+        if len(title_res) < 1:
+            title = 'title error'
+        else: 
+            title = title_res[0].text.strip()
+    else:
+        title = title_res[0].text.strip()
     
     # Per person
     per_person_res = soup.find_all('span', {'class': 'font-semibold text-white'})
