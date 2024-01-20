@@ -4,6 +4,7 @@
 # Imports
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 import requests
 import re
@@ -63,7 +64,14 @@ def main(action=None, filter_input_1=None, filter_input_2=None, main_path='all_d
         ######################################################
 
     if action == 'mine':
-        driver = webdriver.Chrome(ChromeDriverManager().install())
+        # Chrome (not working right now)
+        # driver = webdriver.Chrome(ChromeDriverManager().install())
+        
+        # Firefox (works with my linux machine)
+        firefox_options = Options()
+        firefox_options.set_preference('permissions.default.image', 2)
+        firefox_options.set_preference('dom.ipc.plugins.enabled.libflashplayer.so', 'false')
+        driver = webdriver.Firefox(options=firefox_options)
 
         URL_begin = "https://esportsagent.gg/tournament" 
         URL_all_info = "https://esportsagent.gg"
@@ -85,5 +93,5 @@ def main(action=None, filter_input_1=None, filter_input_2=None, main_path='all_d
         create_backup(main_path, backup_path)
 
 
-# main()
+main()
 

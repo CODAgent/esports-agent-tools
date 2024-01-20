@@ -301,7 +301,10 @@ def stats_button():
                 
                 elif stat_param == 'Profit':
                     for item in stat_data_init:
-                        stat_data.append(float(item[11]))
+                        if item[11] == '':
+                            stat_data.append(0.0)
+                        else: 
+                            stat_data.append(float(item[11]))
 
 
                 # apply the stat function

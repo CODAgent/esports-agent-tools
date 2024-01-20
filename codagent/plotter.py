@@ -132,7 +132,11 @@ def plotter(x_params, y_params, input_file='all_data.csv', save_plot=False, outp
 
         elif y_param == 'profit':
             for item in new_data:
-                y_list.append(float(item[11]))
+                print(item)
+                if item[11] == '':
+                    y_list.append(0.0)
+                else: 
+                    y_list.append(float(item[11]))
 
         else:
             print('Invalid y_param.')

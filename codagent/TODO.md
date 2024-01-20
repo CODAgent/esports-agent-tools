@@ -138,9 +138,11 @@
 --- 
 ## For Version 2.0
 - automate (maybe for V3.0 or later in V2.0)
+    - This is pretty important 
 - sort all data by date to make filtering quicker --> **DONE**
 - fix issue on filtering where switcheroos appear as a $0 buy-in (later in V2.0)
     - I think the way to handle this is to look and see if there are spaces in the titles (I think there are not if it is a switcheroo)
+    - Need to have more checks 
 - add filtering for gamemode (later in V2.0)
 - add filtering for different games (later in V2.0)
 - add support for plotting multiple lines on a plot --> **DONE**
@@ -158,3 +160,32 @@
 - BUG FOUND: filtering by date does not work --> **FIXED**
     - the filtering will only grab from the specified start date and the specified end date
     - instead, this should grab from the specified start date all the way thru until the specified end date
+
+--- 
+
+## BUGS
+
+- Platform bug
+    - When mining for data, the platform column does not have the proper logic implemented
+    - Instead all three playforms are just added to a list for the data
+
+### Finished Bugs
+
+## FEATURES
+
+- PDF report on the last weeks results
+- Add functionality that displays the tournament title when you mouse over a spot in a plot 
+- Handle mining for switcheroos
+- Add help buttons
+- Filtering for gamemode
+- Filtering for different games 
+- Make mining occur twice per day (beginning of day and end of day) and make it automatic
+- Make executables 
+- Update readme to reflect version two
+- Update virtual environment
+
+### Finished Features 
+
+
+
+

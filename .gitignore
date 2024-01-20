@@ -5,3 +5,4 @@ codagent_tools_env
 *~
 filtered_*
 *.swp
+gecko*.log

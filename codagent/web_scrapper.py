@@ -117,8 +117,15 @@ def get_tournament_info(driver, URL):
 def get_tournament_ids(driver, URL_begin):
     id_list = []
     driver.get(URL_begin)
-    soup = BeautifulSoup(driver.page_source, 'html.parser') 
-    past_tournaments = soup.find_all('div', {'class': 'mt-4 md:mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4'})
+
+    past_tournaments = None
+    while(not(past_tournaments)):
+        print("Waiting for site to load")
+        soup = BeautifulSoup(driver.page_source, 'html.parser') 
+        past_tournaments = soup.find_all('div', {'class': 'mt-4 md:mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-4'})
+
+    print("Site has loaded")
+    
     for c in past_tournaments[0].children:
         a = c.find('a')
         id_list.append(a.get('href'))
