@@ -1,0 +1,498 @@
+Gtk-Message: 11:16:43.011: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[27880, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:27880): Gtk-WARNING **: 11:16:43.091: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:16:43.091: Failed to load module "canberra-gtk-module"
+[27880, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:27880): Gtk-WARNING **: 11:16:43.092: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:16:43.092: Failed to load module "canberra-gtk-module"
+Gtk-Message: 11:19:42.278: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[28476, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:28476): Gtk-WARNING **: 11:19:42.354: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:19:42.354: Failed to load module "canberra-gtk-module"
+[28476, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:28476): Gtk-WARNING **: 11:19:42.356: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:19:42.356: Failed to load module "canberra-gtk-module"
+Gtk-Message: 11:20:42.689: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[28812, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:28812): Gtk-WARNING **: 11:20:42.764: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:20:42.764: Failed to load module "canberra-gtk-module"
+[28812, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:28812): Gtk-WARNING **: 11:20:42.765: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:20:42.765: Failed to load module "canberra-gtk-module"
+Gtk-Message: 11:22:29.879: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[29258, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:29258): Gtk-WARNING **: 11:22:29.957: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:22:29.957: Failed to load module "canberra-gtk-module"
+[29258, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:29258): Gtk-WARNING **: 11:22:29.958: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:22:29.958: Failed to load module "canberra-gtk-module"
+1705775023777	geckodriver	INFO	Listening on 127.0.0.1:46095
+1705775024060	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... ss" "--remote-debugging-port" "48601" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileUDKU4K"
+*** You are running in headless mode.
+Gtk-Message: 11:23:44.089: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1705775024654	Marionette	INFO	Marionette enabled
+1705775024811	Marionette	INFO	Listening on port 42667
+WebDriver BiDi listening on ws://127.0.0.1:48601
+Read port: 42667
+1705775025762	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:48601/devtools/browser/1fef37f5-e99a-4510-a53b-f6b258cb6b0f
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1705775057718	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1705775086860	geckodriver	INFO	Listening on 127.0.0.1:46039
+1705775087220	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... ss" "--remote-debugging-port" "58751" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile0TcRpM"
+*** You are running in headless mode.
+Gtk-Message: 11:24:47.252: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1705775087612	Marionette	INFO	Marionette enabled
+1705775087679	Marionette	INFO	Listening on port 41689
+WebDriver BiDi listening on ws://127.0.0.1:58751
+Read port: 41689
+1705775088660	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58751/devtools/browser/d0050aef-7662-4451-9e66-e381d408c248
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1705775117441	geckodriver	INFO	Listening on 127.0.0.1:46417
+1705775117635	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... ss" "--remote-debugging-port" "60977" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileJak3OV"
+*** You are running in headless mode.
+Gtk-Message: 11:25:17.664: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1705775117999	Marionette	INFO	Marionette enabled
+1705775118065	Marionette	INFO	Listening on port 44785
+WebDriver BiDi listening on ws://127.0.0.1:60977
+Read port: 44785
+1705775118922	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:60977/devtools/browser/5649cf5d-a83a-4997-bafc-a8ee056ae01b
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1705775145645	geckodriver	INFO	Listening on 127.0.0.1:32989
+1705775145965	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... te" "--remote-debugging-port" "48697" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileAXhT62"
+Gtk-Message: 11:25:45.993: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[31174, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:31174): Gtk-WARNING **: 11:25:46.067: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:25:46.067: Failed to load module "canberra-gtk-module"
+[31174, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:31174): Gtk-WARNING **: 11:25:46.068: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:25:46.068: Failed to load module "canberra-gtk-module"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705775146793	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705775146902	Marionette	INFO	Listening on port 35733
+Read port: 35733
+WebDriver BiDi listening on ws://127.0.0.1:48697
+1705775147339	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:48697/devtools/browser/fef615b0-fdd5-4516-9f13-26004cf44bb3
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1705775176837	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://hb.vntsm.com/v3/live/ad-manager.min.js, line 2: unreachable code after return statement
+console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
+console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
+libva info: VA-API version 1.20.0
+libva info: Trying to open /snap/firefox/3600/gnome-platform/usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so
+libva info: Found init function __vaDriverInit_1_20
+libva info: va_openDriver() returns 0
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705775210422	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 792 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 7110 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1705775231509	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775235868	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775238065	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775238376	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://s0.2mdn.net/879366/Enabler_01_250.js, line 110: Script terminated by timeout at:
+hg@https://s0.2mdn.net/879366/Enabler_01_250.js:110:137
+xg@https://s0.2mdn.net/879366/Enabler_01_250.js:113:478
+vg@https://s0.2mdn.net/879366/Enabler_01_250.js:114:359
+b@https://s0.2mdn.net/879366/Enabler_01_250.js:112:292
+
+JavaScript warning: https://www.youtube.com/s/player/787e9b63/www-embed-player.vflset/www-embed-player.js, line 894: Script terminated by timeout at:
+R@https://www.youtube.com/s/player/787e9b63/www-embed-player.vflset/www-embed-player.js:894:131
+@https://www.youtube.com/s/player/787e9b63/www-embed-player.vflset/www-embed-player.js:1896:52
+kl/<@https://www.youtube.com/s/player/787e9b63/www-embed-player.vflset/www-embed-player.js:878:63
+
+1705775240393	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775243283	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 2774 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 3520 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 4841 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/omdpepsidcm167625936439/moatad.js#moatClientLevel1=31279313&moatClientLevel2=5296888&moatClientLevel3=385600046&moatClientLevel4=208907514&zMoatG=ct=US&st=CO&city=16857&dma=171&zp=81620&bw=4&zMoatADV=8013526, line 336: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1705775285937	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/AQAQeYtzTrql21gmUfHv2Md-TtOjltGIaj9_D2yS7lg.js line 2 > eval line 783 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 874 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 186 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 6889 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 7545 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/AQAQeYtzTrql21gmUfHv2Md-TtOjltGIaj9_D2yS7lg.js line 2 > eval line 2377 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 323 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 4313 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.adsafeprotected.com/main.19.8.473.js, line 1: Script terminated by timeout at:
+isWindow@https://static.adsafeprotected.com/main.19.8.473.js:1:74232
+e@https://static.adsafeprotected.com/main.19.8.473.js:1:37990
+e@https://static.adsafeprotected.com/main.19.8.473.js:1:38011
+t@https://static.adsafeprotected.com/main.19.8.473.js:1:38052
+getFrames@https://static.adsafeprotected.com/main.19.8.473.js:1:38138
+__IASScope.__IntegralASExec["19.8.473"].initialize/z/send/n<@https://static.adsafeprotected.com/main.19.8.473.js:1:39269
+send@https://static.adsafeprotected.com/main.19.8.473.js:1:39282
+sendToKnownFrames@https://static.adsafeprotected.com/main.19.8.473.js:1:109136
+start@https://static.adsafeprotected.com/main.19.8.473.js:1:103578
+f@https://static.adsafeprotected.com/main.19.8.473.js:1:12195
+__IASScope.__IntegralASExec["19.8.473"].initialize/d/t<@https://static.adsafeprotected.com/main.19.8.473.js:1:5898
+d@https://static.adsafeprotected.com/main.19.8.473.js:1:6170
+E@https://static.adsafeprotected.com/main.19.8.473.js:1:12924
+start@https://static.adsafeprotected.com/main.19.8.473.js:1:121494
+__IASScope.__IntegralASExec["19.8.473"].initialize/<@https://static.adsafeprotected.com/main.19.8.473.js:1:219267
+__IASScope.__IntegralASExec["19.8.473"].initialize@https://static.adsafeprotected.com/main.19.8.473.js:1:219293
+timedLoad@https://pixel.adsafeprotected.com/jload?anId=6571&advId=6589136&campId=31109580&pubId=5443361&chanId=205424990&placementId=382051600&planId=572851487&adsafe_par&impId=0:1248:19
+cU/this.Ha/<@https://cadmus.script.ac/d1oykxszdrgjgl/script.js:1:47534
+eB@https://cadmus.script.ac/d1oykxszdrgjgl/script.js line 1 > eval:1:85375
+
+1705775366276	Marionette	INFO	Stopped listening on port 35733
+1705775618386	geckodriver	INFO	Listening on 127.0.0.1:49761
+1705775618664	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... te" "--remote-debugging-port" "51607" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2g5OTb"
+Gtk-Message: 11:33:38.693: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[34688, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:34688): Gtk-WARNING **: 11:33:38.772: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:33:38.772: Failed to load module "canberra-gtk-module"
+[34688, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:34688): Gtk-WARNING **: 11:33:38.773: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:33:38.773: Failed to load module "canberra-gtk-module"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705775619426	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705775619830	Marionette	INFO	Listening on port 44535
+WebDriver BiDi listening on ws://127.0.0.1:51607
+Read port: 44535
+1705775620022	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51607/devtools/browser/60209058-caac-4da9-bf75-2ba2eb47d25f
+console.error: ({})
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1705775649841	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://hb.vntsm.com/v3/live/ad-manager.min.js, line 2: unreachable code after return statement
+console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
+console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
+libva info: VA-API version 1.20.0
+libva info: Trying to open /snap/firefox/3600/gnome-platform/usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so
+libva info: Found init function __vaDriverInit_1_20
+libva info: va_openDriver() returns 0
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 7691 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1705775696174	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775699457	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 2211 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 4946 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1705775704620	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775709238	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775711445	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1705775793573	geckodriver	INFO	Listening on 127.0.0.1:39601
+1705775793851	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... te" "--remote-debugging-port" "53765" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilenP2ftH"
+Gtk-Message: 11:36:33.880: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[36693, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:36693): Gtk-WARNING **: 11:36:33.959: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:36:33.959: Failed to load module "canberra-gtk-module"
+[36693, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:36693): Gtk-WARNING **: 11:36:33.961: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:36:33.961: Failed to load module "canberra-gtk-module"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705775794623	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705775794959	Marionette	INFO	Listening on port 39195
+WebDriver BiDi listening on ws://127.0.0.1:53765
+Read port: 39195
+1705775795181	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53765/devtools/browser/0be11c38-ace1-4e68-8de8-0f47c50d0c14
+console.error: ({})
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1705775824670	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://hb.vntsm.com/v3/live/ad-manager.min.js, line 2: unreachable code after return statement
+console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
+console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
+libva info: VA-API version 1.20.0
+libva info: Trying to open /snap/firefox/3600/gnome-platform/usr/lib/x86_64-linux-gnu/dri/iHD_drv_video.so
+libva info: Found init function __vaDriverInit_1_20
+libva info: va_openDriver() returns 0
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705775854768	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IHSjRKKj3q_1Pt3c2sGWHmUCy_Bw5n5yhKh9CWyZSw4.js line 2 > eval line 1282 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1705775859410	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1705775866177	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775870630	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775874883	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775877593	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775881748	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1705775881781	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1705775883363	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775884065	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775894245	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775911104	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1705775911133	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1705775942810	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1705775942845	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+1705775951286	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1705775951385	Marionette	INFO	Stopped listening on port 39195
+JavaScript warning: https://cadmus.script.ac/d1oykxszdrgjgl/script.js, line 1: Script terminated by timeout at:
+eB@https://cadmus.script.ac/d1oykxszdrgjgl/script.js:1:85345
+
+JavaScript warning: chrome://global/content/certviewer/vendor/pkijs.js, line 841: Script terminated by timeout at:
+HexBlock@chrome://global/content/certviewer/vendor/pkijs.js:841:1
+@chrome://global/content/certviewer/vendor/pkijs.js:881:40
+
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1705776425803	geckodriver	INFO	Listening on 127.0.0.1:39595
+1705776426118	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... te" "--remote-debugging-port" "55669" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileaJtYiB"
+Gtk-Message: 11:47:06.146: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[39950, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:39950): Gtk-WARNING **: 11:47:06.227: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:47:06.227: Failed to load module "canberra-gtk-module"
+[39950, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:39950): Gtk-WARNING **: 11:47:06.228: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:47:06.228: Failed to load module "canberra-gtk-module"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705776426898	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705776427003	Marionette	INFO	Listening on port 42473
+Read port: 42473
+WebDriver BiDi listening on ws://127.0.0.1:55669
+1705776427614	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:55669/devtools/browser/b441e090-7546-4093-b6cd-68eeba3eed9c
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 743))
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1705776457043	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
+console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
+JavaScript warning: https://esportsagent.gg/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js, line 1: Script terminated by timeout at:
+c@https://esportsagent.gg/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js:1:9349
+
+1705776483505	Marionette	INFO	Stopped listening on port 42473
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:107:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:911:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+
+console.warn: services.settings: main/doh-config sync interrupted by shutdown
+console.warn: services.settings: main/devtools-devices sync interrupted by shutdown
+console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+console.warn: services.settings: main/addons-manager-settings sync interrupted by shutdown
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+console.warn: services.settings: main/search-telemetry-v2 sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/devtools-compatibility-browsers getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1705776570522	geckodriver	INFO	Listening on 127.0.0.1:56131
+1705776570822	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... te" "--remote-debugging-port" "50643" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileS5VQUG"
+Gtk-Message: 11:49:30.853: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[40878, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:40878): Gtk-WARNING **: 11:49:30.926: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:49:30.926: Failed to load module "canberra-gtk-module"
+[40878, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:40878): Gtk-WARNING **: 11:49:30.928: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:49:30.928: Failed to load module "canberra-gtk-module"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705776571572	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705776571676	Marionette	INFO	Listening on port 43895
+Read port: 43895
+WebDriver BiDi listening on ws://127.0.0.1:50643
+1705776572318	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:50643/devtools/browser/6aaa2912-181b-433a-8f02-98a854d475a9
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 743))
+console.error: ({})
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1705776601656	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
+console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
+JavaScript warning: https://esportsagent.gg/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js, line 1: Script terminated by timeout at:
+c@https://esportsagent.gg/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js:1:9349
+
+1705776811593	Marionette	INFO	Stopped listening on port 43895
+1705776852322	geckodriver	INFO	Listening on 127.0.0.1:48057
+1705776852694	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/sna ... te" "--remote-debugging-port" "49485" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFiUaM0"
+Gtk-Message: 11:54:12.732: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[42056, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:42056): Gtk-WARNING **: 11:54:12.810: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:54:12.810: Failed to load module "canberra-gtk-module"
+[42056, Main Thread] WARNING: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:187
+
+(firefox:42056): Gtk-WARNING **: 11:54:12.812: GTK+ module /snap/firefox/3600/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 11:54:12.812: Failed to load module "canberra-gtk-module"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705776853483	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1705776853810	Marionette	INFO	Listening on port 45399
+WebDriver BiDi listening on ws://127.0.0.1:49485
+Read port: 45399
+1705776854338	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:49485/devtools/browser/4f2533a9-27a6-456f-b63b-d11b74a08aad
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 743))
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: ({})
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1705776885293	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
+console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
+JavaScript warning: https://esportsagent.gg/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js, line 1: Script terminated by timeout at:
+c@https://esportsagent.gg/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js:1:9349
+
+1705778477240	Marionette	INFO	Stopped listening on port 45399
