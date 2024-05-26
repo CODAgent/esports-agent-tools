@@ -2,6 +2,10 @@ chrome_driver
 __pycache__
 codagent_tools_env
 *_env
+*_venv
 *~
 filtered_*
 *.sw*
+
+# CXP Discord bot
+bot_token.txt
