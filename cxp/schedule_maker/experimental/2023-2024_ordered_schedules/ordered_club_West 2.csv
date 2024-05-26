@@ -1,0 +1,39 @@
+,away_team,home_team
+week0,University of Oregon,San Jose State (gold)
+week0,University of Arizona,CSULA Black
+week0,CSULB Black,CSUSB Acad 
+week0,University of Oregon,San Jose State (gold)
+week0,University of Arizona,CSULA Black
+week0,CSULB Black,CSUSB Acad 
+week1,CSULA Black,San Jose State (gold)
+week1,University of Arizona,University of Oregon
+week1,CSUSB Acad ,CSULB Black
+week1,CSULA Black,San Jose State (gold)
+week1,University of Arizona,University of Oregon
+week1,CSUSB Acad ,CSULB Black
+week2,University of Arizona,San Jose State (gold)
+week2,CSULA Black,University of Oregon
+week2,CSULB Black,CSUSB Acad 
+week2,University of Arizona,San Jose State (gold)
+week2,CSULA Black,University of Oregon
+week2,CSULB Black,CSUSB Acad 
+week3,CSUSB Acad ,San Jose State (gold)
+week3,CSULB Black,University of Oregon
+week3,CSULA Black,University of Arizona
+week3,CSUSB Acad ,San Jose State (gold)
+week3,CSULB Black,University of Oregon
+week3,CSULA Black,University of Arizona
+week4,CSULB Black,San Jose State (gold)
+week4,CSUSB Acad ,University of Oregon
+week4,CSULA Black,San Jose State (gold)
+week4,University of Arizona,San Jose State (gold)
+week4,CSULB Black,San Jose State (gold)
+week4,San Jose State (gold),University of Oregon
+week4,San Jose State (gold),CSULA Black
+week4,San Jose State (gold),University of Arizona
+week4,San Jose State (gold),CSUSB Acad 
+week5,San Jose State (gold),University of Oregon
+week5,CSUSB Acad ,CSULA Black
+week5,CSULB Black,University of Arizona
+week5,CSUSB Acad ,University of Oregon
+week5,CSULB Black,CSULA Black

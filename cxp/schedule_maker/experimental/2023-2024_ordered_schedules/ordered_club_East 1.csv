@@ -1,0 +1,31 @@
+,away_team,home_team
+week0,Carleton University,University of Windsor
+week0,York University ,OTSU Esports 
+week0,Brock University,University of Windsor
+week0,OTSU Esports ,Carleton University
+week0,Brock University,York University 
+week1,OTSU Esports ,University of Windsor
+week1,York University ,Carleton University
+week1,Brock University,Carleton University
+week1,OTSU Esports ,University of Windsor
+week1,York University ,Brock University
+week2,York University ,University of Windsor
+week2,OTSU Esports ,Carleton University
+week2,Brock University,OTSU Esports 
+week2,Carleton University,University of Windsor
+week2,Brock University,York University 
+week3,Brock University,University of Windsor
+week3,Carleton University,OTSU Esports 
+week3,York University ,University of Windsor
+week3,York University ,Carleton University
+week3,Brock University,OTSU Esports 
+week4,University of Windsor,Carleton University
+week4,Brock University,OTSU Esports 
+week4,York University ,Carleton University
+week4,York University ,University of Windsor
+week4,OTSU Esports ,Brock University
+week5,Brock University,Carleton University
+week5,University of Windsor,OTSU Esports 
+week5,York University ,OTSU Esports 
+week5,Brock University,University of Windsor
+week5,Carleton University,York University 

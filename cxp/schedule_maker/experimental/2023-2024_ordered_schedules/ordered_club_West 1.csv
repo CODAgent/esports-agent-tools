@@ -1,0 +1,39 @@
+,away_team,home_team
+week0,CSU Fullerton Orange,San Jose State (Blue)
+week0,"University of California, San Diego",CSULB Gold
+week0,San Diego State,California State University of Northridge Academy
+week0,CSU Fullerton Orange,San Jose State (Blue)
+week0,"University of California, San Diego",CSULB Gold
+week0,San Diego State,California State University of Northridge Academy
+week1,CSULB Gold,San Jose State (Blue)
+week1,"University of California, San Diego",CSU Fullerton Orange
+week1,California State University of Northridge Academy,San Diego State
+week1,CSULB Gold,San Jose State (Blue)
+week1,"University of California, San Diego",CSU Fullerton Orange
+week1,California State University of Northridge Academy,San Diego State
+week2,"University of California, San Diego",San Jose State (Blue)
+week2,CSULB Gold,CSU Fullerton Orange
+week2,San Diego State,California State University of Northridge Academy
+week2,"University of California, San Diego",San Jose State (Blue)
+week2,CSULB Gold,CSU Fullerton Orange
+week2,San Diego State,California State University of Northridge Academy
+week3,California State University of Northridge Academy,San Jose State (Blue)
+week3,San Diego State,CSU Fullerton Orange
+week3,CSULB Gold,"University of California, San Diego"
+week3,California State University of Northridge Academy,San Jose State (Blue)
+week3,San Diego State,CSU Fullerton Orange
+week3,CSULB Gold,"University of California, San Diego"
+week4,San Diego State,San Jose State (Blue)
+week4,California State University of Northridge Academy,CSU Fullerton Orange
+week4,CSULB Gold,San Jose State (Blue)
+week4,"University of California, San Diego",San Jose State (Blue)
+week4,San Diego State,San Jose State (Blue)
+week4,San Jose State (Blue),CSU Fullerton Orange
+week4,San Jose State (Blue),CSULB Gold
+week4,San Jose State (Blue),"University of California, San Diego"
+week4,San Jose State (Blue),California State University of Northridge Academy
+week5,San Jose State (Blue),CSU Fullerton Orange
+week5,California State University of Northridge Academy,CSULB Gold
+week5,San Diego State,"University of California, San Diego"
+week5,California State University of Northridge Academy,CSU Fullerton Orange
+week5,San Diego State,CSULB Gold

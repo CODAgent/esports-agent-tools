@@ -1,0 +1,27 @@
+School,Location,Division,,,,East 1 Schedule,Week 1,
+Oklahoma Christian University,"Oklahoma, USA",South/West,,Overall Prizing,,,AWAY,HOME
+Mars Hill University,"NC, USA",East 2,,"$4,000.00",,,Utica University,Conestoga College
+Utica University,"NY, USA",East 1,,Playoffs,,,Rochester Institute of Technology (RIT Black),University of New Haven
+UNCW,"NC, USA",East 2,,"$3,400.00",,,Farmingdale State College,St. Clair College
+Newberry College,"SC, USA",East 2,,Opens,,,,
+CSU Fullerton Blue,"CA, USA",South/West,,$600.00,,,Conestoga College,Rochester Institute of Technology (RIT Black)
+Conestoga College,"ON, CA",East 1,,,,,University of New Haven,Farmingdale State College
+Rochester Institute of Technology (RIT Black),"NY, USA",East 1,,,,,St. Clair College,Utica University
+Cumberland University,"TN, USA",South/West,,,,,,
+University of New Haven,"CT, USA",East 1,,,,,,
+Farmingdale State College,"NY, USA",East 1,,,,East 2 Schedule,Mars Hill University,UNCW
+St. Edward's University ,"TX, USA",South/West,,,,,Newberry College,High Point University
+Ole Miss,"MS, USA",South/West,,,,,,
+Independence Community College,"KS, USA",South/West,,,,,Florida Gulf Coast University,Mars Hill University
+Midway University,"KY, USA",South/West,,,,,UNCW,Newberry College
+High Point University,"NC, USA",East 2,,,,,,
+Florida Gulf Coast University,"FL, USA",East 2,,,,,,
+St. Clair College,"ON, CA",East 1,,,,South/West,Oklahoma Christian University,CSU Fullerton Blue
+Utah Valley Esports,"UT, USA",South/West,,,,,Cumberland University,St. Edward's University 
+,,,,,,,Ole Miss,Independence Community College
+,,,,,,,Midway University,Utah Valley Esports
+,,,,,,,,
+,,,,,,,CSU Fullerton Blue,Cumberland University
+,,,,,,,St. Edward's University ,Ole Miss
+,,,,,,,Independence Community College,Midway University
+,,,,,,,Utah Valley Esports,Oklahoma Christian University

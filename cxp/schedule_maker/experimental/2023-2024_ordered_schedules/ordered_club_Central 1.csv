@@ -1,0 +1,39 @@
+,away_team,home_team
+week0,Texas A&M University,Arkansas State University
+week0,University of Northern Iowa ,Texas State University
+week0,University of Iowa,"University of Tennessee, Knoxville"
+week0,Texas A&M University,Arkansas State University
+week0,University of Northern Iowa ,Texas State University
+week0,University of Iowa,"University of Tennessee, Knoxville"
+week1,Texas State University,Arkansas State University
+week1,University of Northern Iowa ,Texas A&M University
+week1,"University of Tennessee, Knoxville",University of Iowa
+week1,Texas State University,Arkansas State University
+week1,University of Northern Iowa ,Texas A&M University
+week1,"University of Tennessee, Knoxville",University of Iowa
+week2,University of Northern Iowa ,Arkansas State University
+week2,Texas State University,Texas A&M University
+week2,University of Iowa,"University of Tennessee, Knoxville"
+week2,University of Northern Iowa ,Arkansas State University
+week2,Texas State University,Texas A&M University
+week2,University of Iowa,"University of Tennessee, Knoxville"
+week3,"University of Tennessee, Knoxville",Arkansas State University
+week3,University of Iowa,Texas A&M University
+week3,Texas State University,University of Northern Iowa 
+week3,"University of Tennessee, Knoxville",Arkansas State University
+week3,University of Iowa,Texas A&M University
+week3,Texas State University,University of Northern Iowa 
+week4,University of Iowa,Arkansas State University
+week4,"University of Tennessee, Knoxville",Texas A&M University
+week4,Texas State University,Arkansas State University
+week4,University of Northern Iowa ,Arkansas State University
+week4,University of Iowa,Arkansas State University
+week4,Arkansas State University,Texas A&M University
+week4,Arkansas State University,Texas State University
+week4,Arkansas State University,University of Northern Iowa 
+week4,Arkansas State University,"University of Tennessee, Knoxville"
+week5,Arkansas State University,Texas A&M University
+week5,"University of Tennessee, Knoxville",Texas State University
+week5,University of Iowa,University of Northern Iowa 
+week5,"University of Tennessee, Knoxville",Texas A&M University
+week5,University of Iowa,Texas State University

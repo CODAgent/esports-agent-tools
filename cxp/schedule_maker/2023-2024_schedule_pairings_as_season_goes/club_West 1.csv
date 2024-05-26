@@ -1,0 +1,31 @@
+,away_team,home_team
+0,CSU Fullerton Orange,San Jose State (Blue)
+1,CSULB Gold,San Jose State (Blue)
+2,California State University of Northridge Academy,San Jose State (Blue)
+3,San Diego State,San Jose State (Blue)
+4,San Jose State (Blue),CSU Fullerton Orange
+5,CSULB Gold,CSU Fullerton Orange
+6,California State University of Northridge Academy,CSU Fullerton Orange
+7,San Diego State,CSU Fullerton Orange
+8,San Jose State (Blue),CSULB Gold
+9,CSU Fullerton Orange,CSULB Gold
+10,California State University of Northridge Academy,CSULB Gold
+11,San Diego State,CSULB Gold
+12,San Jose State (Blue),California State University of Northridge Academy
+13,CSU Fullerton Orange,California State University of Northridge Academy
+14,CSULB Gold,California State University of Northridge Academy
+15,San Diego State,California State University of Northridge Academy
+16,San Jose State (Blue),San Diego State
+17,CSU Fullerton Orange,San Diego State
+18,CSULB Gold,San Diego State
+19,California State University of Northridge Academy,San Diego State
+20,CSU Fullerton Orange,San Jose State (Blue)
+21,CSULB Gold,San Jose State (Blue)
+22,California State University of Northridge Academy,San Jose State (Blue)
+23,San Diego State,San Jose State (Blue)
+24,CSULB Gold,CSU Fullerton Orange
+25,California State University of Northridge Academy,CSU Fullerton Orange
+26,San Diego State,CSU Fullerton Orange
+27,California State University of Northridge Academy,CSULB Gold
+28,San Diego State,CSULB Gold
+29,San Diego State,California State University of Northridge Academy

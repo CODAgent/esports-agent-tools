@@ -1,0 +1,31 @@
+,away_team,home_team
+week0,Liberty University,Illinois State University 
+week0,Adrian College,Ferris State University
+week0,Southern Illinois University Edwardsville,Illinois State University 
+week0,Ferris State University,Liberty University
+week0,Southern Illinois University Edwardsville,Adrian College
+week1,Ferris State University,Illinois State University 
+week1,Adrian College,Liberty University
+week1,Southern Illinois University Edwardsville,Liberty University
+week1,Ferris State University,Illinois State University 
+week1,Adrian College,Southern Illinois University Edwardsville
+week2,Adrian College,Illinois State University 
+week2,Ferris State University,Liberty University
+week2,Southern Illinois University Edwardsville,Ferris State University
+week2,Liberty University,Illinois State University 
+week2,Southern Illinois University Edwardsville,Adrian College
+week3,Southern Illinois University Edwardsville,Illinois State University 
+week3,Liberty University,Ferris State University
+week3,Adrian College,Illinois State University 
+week3,Adrian College,Liberty University
+week3,Southern Illinois University Edwardsville,Ferris State University
+week4,Illinois State University ,Liberty University
+week4,Southern Illinois University Edwardsville,Ferris State University
+week4,Adrian College,Liberty University
+week4,Adrian College,Illinois State University 
+week4,Ferris State University,Southern Illinois University Edwardsville
+week5,Southern Illinois University Edwardsville,Liberty University
+week5,Illinois State University ,Ferris State University
+week5,Adrian College,Ferris State University
+week5,Southern Illinois University Edwardsville,Illinois State University 
+week5,Liberty University,Adrian College

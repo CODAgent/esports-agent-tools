@@ -1,0 +1,42 @@
+,away_team,home_team
+week0,The University of Tennessee at Chattanooga,University of Nebraska-Lincoln
+week0,Dakota State University,University of North Texas Dallas
+week0,California State University San Bernardino ,Roosevelt University
+week0,Keyano College,University of Nebraska-Lincoln
+week0,University of North Texas Dallas,The University of Tennessee at Chattanooga
+week0,Roosevelt University,Dakota State University
+week0,Keyano College,California State University San Bernardino 
+week1,University of North Texas Dallas,University of Nebraska-Lincoln
+week1,Dakota State University,The University of Tennessee at Chattanooga
+week1,Keyano College,Roosevelt University
+week1,California State University San Bernardino ,University of Nebraska-Lincoln
+week1,Dakota State University,The University of Tennessee at Chattanooga
+week1,Roosevelt University,University of North Texas Dallas
+week1,California State University San Bernardino ,Keyano College
+week2,Dakota State University,University of Nebraska-Lincoln
+week2,University of North Texas Dallas,The University of Tennessee at Chattanooga
+week2,Roosevelt University,California State University San Bernardino 
+week2,Keyano College,The University of Tennessee at Chattanooga
+week2,University of North Texas Dallas,University of Nebraska-Lincoln
+week2,California State University San Bernardino ,Dakota State University
+week2,Keyano College,Roosevelt University
+week3,Roosevelt University,University of Nebraska-Lincoln
+week3,California State University San Bernardino ,The University of Tennessee at Chattanooga
+week3,Keyano College,University of North Texas Dallas
+week3,Dakota State University,University of Nebraska-Lincoln
+week3,Roosevelt University,The University of Tennessee at Chattanooga
+week3,Dakota State University,University of North Texas Dallas
+week4,California State University San Bernardino ,University of Nebraska-Lincoln
+week4,Roosevelt University,The University of Tennessee at Chattanooga
+week4,University of North Texas Dallas,Dakota State University
+week4,Keyano College,University of North Texas Dallas
+week4,The University of Tennessee at Chattanooga,University of Nebraska-Lincoln
+week4,Keyano College,Dakota State University
+week4,California State University San Bernardino ,Roosevelt University
+week5,Keyano College,University of Nebraska-Lincoln
+week5,The University of Tennessee at Chattanooga,University of North Texas Dallas
+week5,Roosevelt University,Dakota State University
+week5,California State University San Bernardino ,The University of Tennessee at Chattanooga
+week5,Dakota State University,University of Nebraska-Lincoln
+week5,California State University San Bernardino ,University of North Texas Dallas
+week5,Roosevelt University,Keyano College

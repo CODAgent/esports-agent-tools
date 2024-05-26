@@ -1,0 +1,31 @@
+,away_team,home_team
+0,UNCW,Mars Hill University
+1,Newberry College,Mars Hill University
+2,High Point University,Mars Hill University
+3,Florida Gulf Coast University,Mars Hill University
+4,Mars Hill University,UNCW
+5,Newberry College,UNCW
+6,High Point University,UNCW
+7,Florida Gulf Coast University,UNCW
+8,Mars Hill University,Newberry College
+9,UNCW,Newberry College
+10,High Point University,Newberry College
+11,Florida Gulf Coast University,Newberry College
+12,Mars Hill University,High Point University
+13,UNCW,High Point University
+14,Newberry College,High Point University
+15,Florida Gulf Coast University,High Point University
+16,Mars Hill University,Florida Gulf Coast University
+17,UNCW,Florida Gulf Coast University
+18,Newberry College,Florida Gulf Coast University
+19,High Point University,Florida Gulf Coast University
+20,UNCW,Mars Hill University
+21,Newberry College,Mars Hill University
+22,High Point University,Mars Hill University
+23,Florida Gulf Coast University,Mars Hill University
+24,Newberry College,UNCW
+25,High Point University,UNCW
+26,Florida Gulf Coast University,UNCW
+27,High Point University,Newberry College
+28,Florida Gulf Coast University,Newberry College
+29,Florida Gulf Coast University,High Point University

@@ -1,27 +1,26 @@
-School,Location,Division,,,,East 1 Schedule,Week 1,
-Oklahoma Christian University,"Oklahoma, USA",South/West,,Overall Prizing,,,AWAY,HOME
-Mars Hill University,"NC, USA",East 2,,"$4,000.00",,,Utica University,Conestoga College
-Utica University,"NY, USA",East 1,,Playoffs,,,Rochester Institute of Technology (RIT Black),University of New Haven
-UNCW,"NC, USA",East 2,,"$3,400.00",,,Farmingdale State College,St. Clair College
-Newberry College,"SC, USA",East 2,,Opens,,,,
-CSU Fullerton Blue,"CA, USA",South/West,,$600.00,,,Conestoga College,Rochester Institute of Technology (RIT Black)
-Conestoga College,"ON, CA",East 1,,,,,University of New Haven,Farmingdale State College
-Rochester Institute of Technology (RIT Black),"NY, USA",East 1,,,,,St. Clair College,Utica University
-Cumberland University,"TN, USA",South/West,,,,,,
-University of New Haven,"CT, USA",East 1,,,,,,
-Farmingdale State College,"NY, USA",East 1,,,,East 2 Schedule,Mars Hill University,UNCW
-St. Edward's University ,"TX, USA",South/West,,,,,Newberry College,High Point University
-Ole Miss,"MS, USA",South/West,,,,,,
-Independence Community College,"KS, USA",South/West,,,,,Florida Gulf Coast University,Mars Hill University
-Midway University,"KY, USA",South/West,,,,,UNCW,Newberry College
-High Point University,"NC, USA",East 2,,,,,,
-Florida Gulf Coast University,"FL, USA",East 2,,,,,,
-St. Clair College,"ON, CA",East 1,,,,South/West,Oklahoma Christian University,CSU Fullerton Blue
-Utah Valley Esports,"UT, USA",South/West,,,,,Cumberland University,St. Edward's University 
-,,,,,,,Ole Miss,Independence Community College
-,,,,,,,Midway University,Utah Valley Esports
-,,,,,,,,
-,,,,,,,CSU Fullerton Blue,Cumberland University
-,,,,,,,St. Edward's University ,Ole Miss
-,,,,,,,Independence Community College,Midway University
-,,,,,,,Utah Valley Esports,Oklahoma Christian University
+School,Location,Division,,,,East 1 Schedule,Week 1 - Jan 29 to Feb 4,,
+Oklahoma Christian University,"Oklahoma, USA",South/West,,Overall Prizing,,,AWAY (TEAM B),HOME (TEAM A),Result
+Mars Hill University,"NC, USA",East 2,,"$4,000.00",,,Utica University,Conestoga College,0-3
+Utica University,"NY, USA",East 1,,Playoffs,,,Rochester Institute of Technology (RIT Black),University of New Haven,3-0
+UNCW,"NC, USA",East 2,,"$3,400.00",,,Farmingdale State College,St. Clair College,
+Newberry College,"SC, USA",East 2,,Opens,,,,,
+CSU Fullerton Blue,"CA, USA",South/West,,$600.00,,,Conestoga College,Rochester Institute of Technology (RIT Black),1-3
+Conestoga College,"ON, CA",East 1,,,,,University of New Haven,Farmingdale State College,0-3
+Rochester Institute of Technology (RIT Black),"NY, USA",East 1,,,,,St. Clair College,Utica University,3-0
+Cumberland University,"TN, USA",South/West,,,,,,,
+University of New Haven,"CT, USA",East 1,,,,,,,
+Farmingdale State College,"NY, USA",East 1,,,,East 2 Schedule,Mars Hill University,UNCW,
+St. Edward's University ,"TX, USA",South/West,,,,,Newberry College,Midway University,3-0
+Ole Miss,"MS, USA",South/West,,,,,High Point University,Florida Gulf Coast University,
+Independence Community College,"KS, USA",South/West,,,,,,,
+Midway University,"KY, USA",East 2,,,,,UNCW,Newberry College,
+High Point University,"NC, USA",East 2,,,,,Midway University,High Point University,3-0
+Florida Gulf Coast University,"FL, USA",East 2,,,,,Florida Gulf Coast University,Mars Hill University,
+St. Clair College,"ON, CA",East 1,,,,,,,
+,,,,,,South/West,Oklahoma Christian University,CSU Fullerton Blue,
+,,,,,,,Cumberland University,St. Edward's University ,2-3
+,,,,,,,Ole Miss,Independence Community College,3-0
+,,,,,,,,,
+,,,,,,,CSU Fullerton Blue,Cumberland University,3-1
+,,,,,,,St. Edward's University ,Ole Miss,3-0
+,,,,,,,Independence Community College,Oklahoma Christian University,0-3

@@ -1,0 +1,31 @@
+,away_team,home_team
+week0,UNCW,Mars Hill University
+week0,High Point University,Newberry College
+week0,Florida Gulf Coast University,Mars Hill University
+week0,Newberry College,UNCW
+week0,Florida Gulf Coast University,High Point University
+week1,Newberry College,Mars Hill University
+week1,High Point University,UNCW
+week1,Florida Gulf Coast University,UNCW
+week1,Newberry College,Mars Hill University
+week1,High Point University,Florida Gulf Coast University
+week2,High Point University,Mars Hill University
+week2,Newberry College,UNCW
+week2,Florida Gulf Coast University,Newberry College
+week2,UNCW,Mars Hill University
+week2,Florida Gulf Coast University,High Point University
+week3,Florida Gulf Coast University,Mars Hill University
+week3,UNCW,Newberry College
+week3,High Point University,Mars Hill University
+week3,High Point University,UNCW
+week3,Florida Gulf Coast University,Newberry College
+week4,Mars Hill University,UNCW
+week4,Florida Gulf Coast University,Newberry College
+week4,High Point University,UNCW
+week4,High Point University,Mars Hill University
+week4,Newberry College,Florida Gulf Coast University
+week5,Florida Gulf Coast University,UNCW
+week5,Mars Hill University,Newberry College
+week5,High Point University,Newberry College
+week5,Florida Gulf Coast University,Mars Hill University
+week5,UNCW,High Point University

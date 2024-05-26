@@ -1,29 +1,32 @@
-School,Location,Division,,,,East 1 ,Week 1,
-University of Nebraska-Lincoln,"NB, USA",Central/West,,Division Prizing,,,AWAY,HOME
-Eastern Michigan University ,"MI, USA",East 1,,"$2,000.00",,,Eastern Michigan University ,McMaster Marauders
-The University of Tennessee at Chattanooga,"TN, USA",Central/West,,Playoffs,,,Fanshawe College,Cumberland University
-Shenandoah University,"VA, USA",East 1,,"$1,640.00",,,Rutgers ,The University of Tennessee at Chattanooga
-University of North Texas Dallas,"TX, USA",Central/West,,Opens,,,,
-Purdue University Northwest,"IN, USA",East 2,,$360.00,,,McMaster Marauders,Fanshawe College
-Dakota State University,"SD, USA",Central/West,,,,,Cumberland University,Rutgers 
-Cumberland University,"TN, USA",East 1,,,,,The University of Tennessee at Chattanooga,Eastern Michigan University 
-James Madison University,"VA, USA",East 2,,,,,Shenandoah University,University of Akron
-Full Sail University (Team Name: Full Sail Armada),"FL, USA",East 2,,,,,,
-McMaster Marauders,"ON, CA",East 1,,,,,,
-Fanshawe College,"ON, CA",East 1,,,,,,
-Concord University ,"WV, USA",East 2,,,,East 2,Purdue University Northwest,James Madison University
-Roosevelt University,"IL, USA",Central/West,,,,,Full Sail University (Team Name: Full Sail Armada),Concord University 
-UCF Knights,"FL, USA",East 2,,,,,UCF Knights,Newberry College JV
-California State University San Bernardino ,"CA, USA",Central/West,,,,,,
-Rutgers ,"NJ, USA",East 1,,,,,Thunderbirds Blue (FGCU),Purdue University Northwest
-Keyano College,"ON, CA",Central/West,,,,,James Madison University,Full Sail University (Team Name: Full Sail Armada)
-University of Akron,"OH, USA",East 1,,,,,Concord University ,UCF Knights
-Newberry College JV,"SC, USA",East 2,,,,,,
-Thunderbirds Blue (FGCU),"FL, USA",East 2,,,,,,
-,,,,,,Central/West,University of Nebraska-Lincoln,Keyano College
-,,,,,,,University of North Texas Dallas,Dakota State University
-,,,,,,,Roosevelt University,California State University San Bernardino 
-,,,,,,,,
-,,,,,,,Keyano College,University of North Texas Dallas
-,,,,,,,Dakota State University,Roosevelt University
-,,,,,,,California State University San Bernardino ,University of Nebraska-Lincoln
+School,Location,Division,,,,East 1 ,Week 1 - Jan 29 to Feb 4,,
+University of Nebraska-Lincoln,"NB, USA",Central/West,,Division Prizing,,,AWAY (TEAM B),HOME (TEAM A),Result
+Eastern Michigan University ,"MI, USA",East 1,,"$2,000.00",,,Eastern Michigan University ,McMaster Marauders,3-0
+The University of Tennessee at Chattanooga,"TN, USA",Central/West,,Playoffs,,,Fanshawe College,Cumberland University,3-0
+Shenandoah University,"VA, USA",East 1,,"$1,640.00",,,Rutgers ,Shenandoah University,
+University of North Texas Dallas,"TX, USA",Central/West,,Opens,,,,,
+Purdue University Northwest,"IN, USA",East 2,,$360.00,,,McMaster Marauders,Fanshawe College,
+Dakota State University,"SD, USA",Central/West,,,,,Cumberland University,Rutgers ,0-3
+Cumberland University Academy,"TN, USA",East 1,,,,,University of Akron,Eastern Michigan University ,3-1
+James Madison University,"VA, USA",East 2,,,,,Shenandoah University,University of Akron,
+Full Sail University (Team Name: Full Sail Armada),"FL, USA",East 2,,,,,,,
+McMaster Marauders,"ON, CA",East 1,,,,,,,
+Fanshawe College,"ON, CA",East 1,,,,,,,
+Concord University ,"WV, USA",East 2,,,,East 2,Purdue University Northwest,James Madison University,3-0
+Roosevelt University,"IL, USA",Central/West,,,,,Full Sail University (Team Name: Full Sail Armada),Concord University ,3-1
+UCF Knights,"FL, USA",East 2,,,,,UCF Knights,Newberry College JV,3-0
+California State University San Bernardino ,"CA, USA",Central/West,,,,,,,
+Rutgers ,"NJ, USA",East 1,,,,,Thunderbirds Blue (FGCU),Purdue University Northwest,0-3
+Keyano College,"ON, CA",Central/West,,,,,James Madison University,Full Sail University (Team Name: Full Sail Armada),3-1
+University of Akron,"OH, USA",East 1,,,,,Concord University ,UCF Knights,0-3
+Newberry College JV,"SC, USA",East 2,,,,,Newberry College JV,Thunderbirds Blue (FGCU),
+Thunderbirds Blue (FGCU),"FL, USA",East 2,,,,,,,
+Utah Valley Esports,"UT, USA",Central/West,,,,,,,
+,,,,,,Central/West,University of Nebraska-Lincoln,The University of Tennessee at Chattanooga,
+,,,,,,,University of North Texas Dallas,Dakota State University,2-3
+,,,,,,,Roosevelt University,California State University San Bernardino ,0-3
+,,,,,,,Keyano College,Utah Valley Esports,3-0
+,,,,,,,,,
+,,,,,,,The University of Tennessee at Chattanooga,University of North Texas Dallas,3-1
+,,,,,,,Dakota State University,Roosevelt University,3-0
+,,,,,,,California State University San Bernardino ,Keyano College,3-0
+,,,,,,,Utah Valley Esports,University of Nebraska-Lincoln,3-2

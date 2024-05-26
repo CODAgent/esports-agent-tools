@@ -1,0 +1,39 @@
+,away_team,home_team
+week0,Miami University of Ohio,Ohio University
+week0,UC RED (Cincinnati),American Public University 
+week0,Marshall University,UC BLACK (Cincinnati)
+week0,Miami University of Ohio,Ohio University
+week0,UC RED (Cincinnati),American Public University 
+week0,Marshall University,UC BLACK (Cincinnati)
+week1,American Public University ,Ohio University
+week1,UC RED (Cincinnati),Miami University of Ohio
+week1,UC BLACK (Cincinnati),Marshall University
+week1,American Public University ,Ohio University
+week1,UC RED (Cincinnati),Miami University of Ohio
+week1,UC BLACK (Cincinnati),Marshall University
+week2,UC RED (Cincinnati),Ohio University
+week2,American Public University ,Miami University of Ohio
+week2,Marshall University,UC BLACK (Cincinnati)
+week2,UC RED (Cincinnati),Ohio University
+week2,American Public University ,Miami University of Ohio
+week2,Marshall University,UC BLACK (Cincinnati)
+week3,UC BLACK (Cincinnati),Ohio University
+week3,Marshall University,Miami University of Ohio
+week3,American Public University ,UC RED (Cincinnati)
+week3,UC BLACK (Cincinnati),Ohio University
+week3,Marshall University,Miami University of Ohio
+week3,American Public University ,UC RED (Cincinnati)
+week4,Marshall University,Ohio University
+week4,UC BLACK (Cincinnati),Miami University of Ohio
+week4,American Public University ,Ohio University
+week4,UC RED (Cincinnati),Ohio University
+week4,Marshall University,Ohio University
+week4,Ohio University,Miami University of Ohio
+week4,Ohio University,American Public University 
+week4,Ohio University,UC RED (Cincinnati)
+week4,Ohio University,UC BLACK (Cincinnati)
+week5,Ohio University,Miami University of Ohio
+week5,UC BLACK (Cincinnati),American Public University 
+week5,Marshall University,UC RED (Cincinnati)
+week5,UC BLACK (Cincinnati),Miami University of Ohio
+week5,Marshall University,American Public University 

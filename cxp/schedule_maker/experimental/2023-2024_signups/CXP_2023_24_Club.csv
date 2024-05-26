@@ -1,0 +1,79 @@
+School,Location,Division,,,East 1 ,Week 1,
+Ohio University,"OH, USA",East 4,Division Prizing,,,AWAY,HOME
+Illinois State University ,"IL, USA",East 3,"$1,500.00",,,York University ,University of Windsor
+Arkansas State University,"AK, USA",Central 1,Playoffs,,,University of Windsor,Carleton University
+Oklahoma State University,"OK, USA",Central 2,"$1,200.00",,,OTSU Esports ,Brock University
+San Jose State (Blue),"CA, USA",West 1,Opens,,,,
+San Jose State (gold),"CA, USA",West 2,$300.00,,,Carleton University,OTSU Esports 
+University of Windsor,"ON, CA",East 1,,,,Brock University,York University 
+CSU Fullerton Orange,"CA, USA",West 1,,,,,
+Carleton University,"ON, CA",East 1,,,,,
+Kennesaw State University,"GA, USA",East 5,,,East 2,Rochester Institute of Technology (RIT Orange),Indiana University of Pennsylvania
+University of Oregon,"OR, USA",West 2,,,,University of Ottawa,Conestoga College (Academy White)
+CSULB Gold,"CA, USA",West 1,,,,Western University Main,Western University ACAD
+Texas A&M University,"TX, USA",Central 1,,,,,
+OTSU Esports ,"ON, CA",East 1,,,,Indiana University of Pennsylvania,University of Ottawa
+Night Owls(FAU),"FL, USA",East 5,,,,Conestoga College (Academy White),Western University Main
+York University ,"ON, CA",East 1,,,,Western University ACAD,Rochester Institute of Technology (RIT Orange)
+Liberty University,"VI, USA",East 3,,,,,
+University of Texas at Arlington 1,"TX, USA",Central 2,,,,,
+Ferris State University,"MI, USA",East 3,,,East 3,Illinois State University ,Liberty University
+Brock University,"ON, CA",East 1,,,,Ferris State University,Adrian College
+CSULA Black,"CA, USA",West 2,,,,,
+Indiana University of Pennsylvania,"PA, USA",East 2,,,,Liberty University,Ferris State University
+Adrian College,"MI, USA",East 3,,,,Adrian College,Southern Illinois University Edwardsville
+Florida Polytechnic University,"FL, USA",East 5,,,,,
+University of Ottawa,"ON, CA",East 2,,,,,
+"University of California, San Diego","CA, USA",West 1,,,East 4,Miami University of Ohio,American Public University 
+Miami University of Ohio,"OH, USA",East 4,,,,UC RED (Cincinnati),UC BLACK (Cincinnati)
+University of Arizona,"AZ, USA",West 2,,,,Marshall University,Ohio University
+American Public University ,"WV, USA",East 4,,,,,
+UC RED (Cincinnati),"OH, USA",East 4,,,,,
+UC BLACK (Cincinnati),"OH, USA",East 4,,,,American Public University ,UC RED (Cincinnati)
+California State University of Northridge Academy,"CA, USA",West 1,,,,UC BLACK (Cincinnati),Marshall University
+Texas State University,"TX, USA",Central 1,,,,Ohio University,Miami University of Ohio
+Southern Illinois University Edwardsville,"IL, USA",East 3,,,,,
+University of Texas at Arlington 2,"TX, USA",Central 2,,,,,
+Conestoga College (Academy White),"ON, CA",East 2,,,East 5,Kennesaw State University,Night Owls(FAU)
+University of Northern Iowa ,"IOWA, USA",Central 1,,,,Florida Polytechnic University,UCF Knights Gray
+Marshall University,"WV, USA",East 4,,,,University of Alabama,UCF Knights Academy
+University of Texas at San Antonio (UTSA),"TX, USA",Central 2,,,,,
+"University of Tennessee, Knoxville","TN, USA",Central 1,,,,Night Owls(FAU),Florida Polytechnic University
+Minnesota State University Moorhead,"MN, USA",Central 2,,,,UCF Knights Gray,University of Alabama
+University of Iowa,"IOWA, USA",Central 1,,,,UCF Knights Academy,Kennesaw State University
+Western University Main,"ON, CA",East 2,,,,,
+Western University ACAD,"ON, CA",East 2,,,,,
+UCF Knights Gray,"FL, USA",East 5,,,Central 1,Arkansas State University,Texas A&M University
+CSUSB Acad ,"CA, USA",West 2,,,,Texas State University,University of Northern Iowa 
+San Diego State,"CA, USA",West 1,,,,"University of Tennessee, Knoxville",University of Iowa
+Texas A&M White,"TX, USA",Central 2,,,,,
+CSULB Black,"CA, USA",West 2,,,,Texas A&M University,Texas State University
+University of Alabama,"AL, USA",East 5,,,,University of Northern Iowa ,"University of Tennessee, Knoxville"
+UCF Knights Academy,"FL, USA",East 5,,,,University of Iowa,Arkansas State University
+Rochester Institute of Technology (RIT Orange),"NY, USA",East 2,,,,,
+,,,,,,,
+,,,,,Central 2,Oklahoma State University,University of Texas at Arlington 1
+,,,,,,University of Texas at Arlington 2,University of Texas at San Antonio (UTSA)
+,,,,,,Minnesota State University Moorhead,Texas A&M White
+,,,,,,,
+,,,,,,University of Texas at Arlington 1,University of Texas at Arlington 2
+,,,,,,University of Texas at San Antonio (UTSA),Minnesota State University Moorhead
+,,,,,,Texas A&M White,Oklahoma State University
+,,,,,,,
+,,,,,,,
+,,,,,West 1,San Jose State (Blue),CSU Fullerton Orange
+,,,,,,CSULB Gold,"University of California, San Diego"
+,,,,,,California State University of Northridge Academy,San Diego State
+,,,,,,,
+,,,,,,CSU Fullerton Orange,CSULB Gold
+,,,,,,"University of California, San Diego",California State University of Northridge Academy
+,,,,,,San Diego State,San Jose State (Blue)
+,,,,,,,
+,,,,,,,
+,,,,,West 2,San Jose State (gold),University of Oregon
+,,,,,,CSULA Black,University of Arizona
+,,,,,,CSUSB Acad ,CSULB Black
+,,,,,,,
+,,,,,,University of Oregon,CSULA Black
+,,,,,,University of Arizona,CSUSB Acad 
+,,,,,,CSULB Black,San Jose State (gold)

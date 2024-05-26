@@ -1,0 +1,39 @@
+,away_team,home_team
+week0,Conestoga College,Utica University
+week0,University of New Haven,Rochester Institute of Technology (RIT Black)
+week0,St. Clair College,Farmingdale State College
+week0,Conestoga College,Utica University
+week0,University of New Haven,Rochester Institute of Technology (RIT Black)
+week0,St. Clair College,Farmingdale State College
+week1,Rochester Institute of Technology (RIT Black),Utica University
+week1,University of New Haven,Conestoga College
+week1,Farmingdale State College,St. Clair College
+week1,Rochester Institute of Technology (RIT Black),Utica University
+week1,University of New Haven,Conestoga College
+week1,Farmingdale State College,St. Clair College
+week2,University of New Haven,Utica University
+week2,Rochester Institute of Technology (RIT Black),Conestoga College
+week2,St. Clair College,Farmingdale State College
+week2,University of New Haven,Utica University
+week2,Rochester Institute of Technology (RIT Black),Conestoga College
+week2,St. Clair College,Farmingdale State College
+week3,Farmingdale State College,Utica University
+week3,St. Clair College,Conestoga College
+week3,Rochester Institute of Technology (RIT Black),University of New Haven
+week3,Farmingdale State College,Utica University
+week3,St. Clair College,Conestoga College
+week3,Rochester Institute of Technology (RIT Black),University of New Haven
+week4,St. Clair College,Utica University
+week4,Farmingdale State College,Conestoga College
+week4,Rochester Institute of Technology (RIT Black),Utica University
+week4,University of New Haven,Utica University
+week4,St. Clair College,Utica University
+week4,Utica University,Conestoga College
+week4,Utica University,Rochester Institute of Technology (RIT Black)
+week4,Utica University,University of New Haven
+week4,Utica University,Farmingdale State College
+week5,Utica University,Conestoga College
+week5,Farmingdale State College,Rochester Institute of Technology (RIT Black)
+week5,St. Clair College,University of New Haven
+week5,Farmingdale State College,Conestoga College
+week5,St. Clair College,Rochester Institute of Technology (RIT Black)
