@@ -10,7 +10,7 @@
 
 ## Supported commands 
 
-- [Delete Category Channels](### Delete Category Channels): ```delete_category_channels```
+- [Delete Category Channels](#-Delete-Category-Channels): ```delete_category_channels```
 
 ### Delete Category Channels
 
