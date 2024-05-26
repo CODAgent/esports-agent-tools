@@ -4,7 +4,8 @@ import re
 
 from general_helper_functions import get_bot_token
 
-SERVER = "LonelyDock3's server"
+# SERVER = "LonelyDock3's server"
+SERVER = "College XP CoD"
 
 list_of_admins = ['lonelydock3']
 
