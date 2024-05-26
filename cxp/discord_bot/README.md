@@ -6,7 +6,7 @@
     cxp/<command> <arguments>
     ```
 
-**NOTE:** The discord bot must be able to manage channels in the server and the ```SERVER``` variable within ```main.py``` must **EXACTLY** match the server name.
+**NOTE:** The discord bot must be able to manage channels and messages in the server and the ```SERVER``` variable within ```main.py``` must **EXACTLY** match the server name.
 
 ## Supported commands 
 
