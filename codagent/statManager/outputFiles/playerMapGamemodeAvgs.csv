@@ -1,0 +1,267 @@
+player,map,gameMode,kills,deaths,damage,objMainStat
+Abuzah,Invasion,Control,15.0,20.0,3555.0,7.0
+Abuzah,Invasion,SND,4.0,7.0,2270.0,2.0
+Abuzah,Karachi,Hardpoint,17.5,20.0,4016.5,139.5
+Abuzah,Rio,Hardpoint,18.0,18.0,3781.0,85.0
+Abuzah,Terminal,SND,5.0,4.0,1726.0,1.0
+Accuracy,Highrise,SND,7.0,9.0,1224.0,3.0
+Accuracy,Karachi,Control,16.0,24.0,4096.0,4.0
+Accuracy,Rio,Hardpoint,23.0,24.0,4211.0,70.0
+Afro,Highrise,Control,26.0,18.0,5149.0,3.0
+Afro,Highrise,SND,8.0,5.0,1553.0,2.0
+Afro,Invasion,Hardpoint,24.0,21.0,3896.0,98.0
+Afro,Karachi,Control,12.0,18.0,2045.0,3.0
+Afro,Rio,Hardpoint,17.0,27.0,3813.0,57.0
+Afro,Sub Base,Hardpoint,11.5,16.0,2217.0,29.0
+Afro,Terminal,SND,4.0,7.0,566.0,2.0
+Arcitys,Invasion,Control,15.5,19.0,3223.5,0.5
+Arcitys,Invasion,SND,8.0,6.0,2110.0,0.0
+Arcitys,Karachi,Hardpoint,18.0,17.0,3875.5,13.0
+Arcitys,Rio,Hardpoint,14.0,17.0,2494.0,61.0
+Arcitys,Terminal,SND,3.0,8.0,1103.0,0.0
+Asim,Invasion,Control,16.5,18.0,3539.5,1.5
+Asim,Karachi,Hardpoint,19.0,26.0,3783.0,54.0
+Asim,Skidrow,Hardpoint,28.0,16.0,3902.0,61.0
+Asim,Sub Base,Hardpoint,17.0,23.0,3325.0,48.0
+Asim,Terminal,SND,8.0,6.0,1818.0,1.0
+Assault,Highrise,Control,17.5,25.0,3715.5,3.5
+Assault,Highrise,SND,4.0,7.0,1363.0,3.0
+Assault,Invasion,Hardpoint,19.5,22.5,4047.0,27.0
+Assault,Invasion,SND,3.0,5.0,1127.0,0.0
+Assault,Sub Base,Hardpoint,14.0,14.5,3000.0,69.0
+Assault,Terminal,SND,11.0,2.0,2191.0,2.0
+Attach,Highrise,SND,6.0,3.0,1400.0,1.0
+Attach,Invasion,Control,24.0,25.0,5245.5,0.5
+Attach,Invasion,Hardpoint,24.0,23.0,5238.0,46.0
+Attach,Invasion,SND,7.0,8.0,2158.0,1.0
+Attach,Karachi,Control,23.0,15.0,5025.0,8.0
+Attach,Karachi,Hardpoint,25.0,17.0,4289.0,115.0
+Attach,Rio,Hardpoint,22.5,22.5,4669.0,58.0
+Breszy,Invasion,Control,21.0,22.0,4199.0,2.5
+Breszy,Invasion,SND,9.0,8.0,1921.0,1.0
+Breszy,Karachi,Hardpoint,17.5,23.5,3646.5,21.0
+Breszy,Rio,Hardpoint,22.0,23.0,4107.0,35.0
+Breszy,Terminal,SND,7.0,6.0,1883.0,1.0
+Cellium,Highrise,Control,27.0,21.0,6420.0,1.0
+Cellium,Highrise,SND,8.0,7.0,1563.0,2.0
+Cellium,Invasion,Hardpoint,16.0,24.0,4385.0,93.0
+Cellium,Invasion,SND,9.0,7.0,2086.0,0.0
+Cellium,Sub Base,Hardpoint,19.0,19.0,3827.0,37.0
+Clayster,Highrise,SND,0.0,5.0,691.0,0.0
+Clayster,Invasion,Hardpoint,16.0,26.0,3956.0,60.0
+Clayster,Karachi,Control,13.0,27.0,2602.0,4.0
+CleanX,Highrise,SND,8.0,7.0,1628.0,3.0
+CleanX,Invasion,Control,24.0,19.0,5700.0,1.0
+CleanX,Invasion,SND,10.0,7.0,2112.0,4.0
+CleanX,Karachi,Control,18.0,11.0,3084.0,6.0
+CleanX,Rio,Hardpoint,25.0,24.0,4679.5,61.5
+CleanX,Sub Base,Hardpoint,19.0,12.0,4184.0,25.0
+Dashy,Invasion,Hardpoint,26.0,22.0,5587.0,69.0
+Dashy,Karachi,Control,18.0,11.5,3536.0,7.0
+Dashy,Karachi,SND,10.0,8.0,2400.0,3.0
+Dashy,Rio,Hardpoint,26.0,30.0,5292.0,86.0
+Dashy,Rio,SND,10.0,6.0,1962.0,0.0
+Dashy,Sub Base,Hardpoint,23.0,24.0,4519.0,20.0
+Dashy,Terminal,SND,3.0,9.0,1710.0,1.0
+Diamondcon,Highrise,Control,20.5,26.5,4565.5,2.0
+Diamondcon,Highrise,SND,6.0,6.0,1407.0,1.0
+Diamondcon,Invasion,Hardpoint,19.5,27.5,4190.0,52.0
+Diamondcon,Invasion,SND,13.0,5.0,2387.0,3.0
+Diamondcon,Sub Base,Hardpoint,17.0,15.5,3242.5,34.5
+Diamondcon,Terminal,SND,4.0,4.0,1049.0,1.0
+Drazah,Highrise,Control,32.0,26.0,6086.0,5.0
+Drazah,Highrise,SND,4.0,7.0,1018.0,0.0
+Drazah,Invasion,Hardpoint,35.0,15.0,6328.0,28.0
+Drazah,Invasion,SND,5.0,7.0,1641.0,1.0
+Drazah,Sub Base,Hardpoint,13.0,25.0,3404.0,48.0
+Envoy,Highrise,SND,9.0,8.0,2133.0,0.0
+Envoy,Invasion,Control,31.0,25.0,4780.0,6.0
+Envoy,Invasion,SND,8.0,8.0,1575.0,0.0
+Envoy,Karachi,Control,20.0,12.0,3337.0,1.0
+Envoy,Rio,Hardpoint,27.0,25.5,4715.5,106.5
+Envoy,Sub Base,Hardpoint,13.0,12.0,2655.0,52.0
+EriKBooM,Highrise,SND,3.0,9.0,741.0,1.0
+EriKBooM,Invasion,Hardpoint,26.0,27.0,5146.0,56.0
+EriKBooM,Karachi,Control,15.5,18.5,3304.0,2.5
+EriKBooM,Rio,Hardpoint,23.0,25.0,4103.0,19.0
+EriKBooM,Rio,SND,8.0,7.0,1390.0,3.0
+Estreal,Highrise,Control,24.0,27.0,4842.0,1.0
+Estreal,Highrise,SND,11.0,3.0,1684.0,2.0
+Estreal,Invasion,Hardpoint,25.5,25.5,5738.5,23.5
+Estreal,Invasion,SND,7.0,7.0,1581.0,0.0
+Estreal,Sub Base,Hardpoint,21.5,19.0,3817.5,44.0
+Estreal,Terminal,SND,5.0,4.0,867.0,0.0
+Fame,Highrise,Control,26.5,29.0,5124.5,4.0
+Fame,Highrise,SND,6.0,6.0,1254.0,1.0
+Fame,Invasion,Hardpoint,22.5,24.0,4282.5,72.5
+Fame,Invasion,SND,7.0,7.0,1205.0,1.0
+Fame,Sub Base,Hardpoint,18.0,20.0,3976.5,35.5
+Fame,Terminal,SND,6.0,3.0,1043.0,1.0
+FelonY,Highrise,SND,5.0,5.0,1262.0,0.0
+FelonY,Invasion,Hardpoint,21.0,21.0,4018.0,54.0
+FelonY,Karachi,Control,23.0,21.0,4811.0,5.0
+Ghosty,Highrise,Control,29.0,19.0,5141.0,4.0
+Ghosty,Highrise,SND,10.0,5.0,2252.0,1.0
+Ghosty,Invasion,Hardpoint,22.0,21.0,5215.0,62.0
+Ghosty,Karachi,Control,20.0,13.0,4253.0,1.0
+Ghosty,Rio,Hardpoint,19.0,25.0,3679.0,86.0
+Ghosty,Sub Base,Hardpoint,16.0,15.0,3490.0,67.0
+Ghosty,Terminal,SND,3.0,6.0,788.0,0.0
+Gio,Highrise,SND,6.0,3.0,993.0,2.0
+Gio,Invasion,Control,29.0,25.0,5439.5,5.5
+Gio,Invasion,Hardpoint,27.0,18.0,4731.0,34.0
+Gio,Invasion,SND,6.0,8.5,1934.5,0.5
+Gio,Karachi,Control,29.0,16.0,5141.0,5.0
+Gio,Karachi,Hardpoint,16.0,21.0,3498.0,45.0
+Gio,Rio,Hardpoint,29.0,22.0,5085.5,63.0
+Gwinn,Highrise,SND,5.0,6.0,1037.0,1.0
+Gwinn,Invasion,Hardpoint,21.0,25.0,4242.0,35.0
+Gwinn,Karachi,Control,23.0,19.0,4802.0,4.0
+Huke,Invasion,Control,18.5,21.5,4395.0,1.0
+Huke,Invasion,SND,11.0,7.0,2108.0,4.0
+Huke,Karachi,Hardpoint,25.5,22.5,4485.5,7.5
+Huke,Rio,Hardpoint,17.0,28.0,3923.0,28.0
+Huke,Terminal,SND,5.0,8.0,898.0,1.0
+HyDra,Invasion,Control,24.0,9.0,4037.0,2.0
+HyDra,Skidrow,Hardpoint,23.0,22.0,4351.0,6.0
+HyDra,Sub Base,Hardpoint,25.0,20.0,4929.0,17.0
+HyDra,Terminal,SND,5.0,9.0,1101.0,0.0
+Hydra,Karachi,Control,8.0,18.0,1884.0,2.0
+Hydra,Karachi,SND,9.0,6.0,1956.0,0.0
+Hydra,Rio,Hardpoint,37.0,34.0,6725.0,41.0
+Hydra,Sub Base,Hardpoint,21.0,21.0,4876.0,46.0
+Hydra,Terminal,SND,9.0,5.0,1674.0,1.0
+Insight,Highrise,SND,5.0,7.0,1712.0,0.0
+Insight,Invasion,Control,18.0,20.0,4013.0,2.0
+Insight,Invasion,SND,9.0,5.0,1971.0,1.0
+Insight,Karachi,Control,12.0,11.0,2311.0,2.0
+Insight,Rio,Hardpoint,24.5,21.5,4921.0,78.0
+Insight,Sub Base,Hardpoint,20.0,16.0,3995.0,41.0
+Kenny,Invasion,Hardpoint,29.0,22.0,5344.0,43.0
+Kenny,Karachi,Control,16.5,12.5,3164.0,9.0
+Kenny,Karachi,SND,3.0,6.0,1638.0,0.0
+Kenny,Rio,Hardpoint,25.0,27.0,4853.0,81.0
+Kenny,Rio,SND,6.0,6.0,1505.0,2.0
+Kenny,Sub Base,Hardpoint,19.0,18.0,3479.0,130.0
+Kenny,Terminal,SND,8.0,7.0,1886.0,2.0
+KiSMET,Invasion,Control,16.0,15.0,3147.0,1.0
+KiSMET,Karachi,Control,15.0,17.0,2852.0,3.0
+KiSMET,Karachi,SND,9.0,7.0,1306.0,0.0
+KiSMET,Rio,Hardpoint,23.0,26.0,3860.0,105.0
+KiSMET,Skidrow,Hardpoint,12.0,23.0,2502.0,39.0
+KiSMET,Sub Base,Hardpoint,25.5,23.5,4675.0,68.0
+KiSMET,Terminal,SND,8.5,5.0,1543.5,0.5
+Kremp,Highrise,Control,15.0,24.0,3292.0,2.0
+Kremp,Highrise,SND,5.0,8.0,2013.0,1.0
+Kremp,Invasion,Hardpoint,23.0,22.0,4507.0,57.0
+Kremp,Karachi,Control,6.0,17.0,1548.0,2.0
+Kremp,Rio,Hardpoint,32.0,26.0,5332.0,42.0
+Kremp,Sub Base,Hardpoint,11.5,15.0,2613.0,75.0
+Kremp,Terminal,SND,3.0,6.0,929.0,1.0
+Lucky,Highrise,SND,15.0,4.0,2187.0,1.0
+Lucky,Invasion,Hardpoint,27.0,22.0,4080.0,59.0
+Lucky,Karachi,Control,16.5,18.5,3311.5,5.0
+Lucky,Rio,Hardpoint,24.0,22.0,4634.0,105.0
+Lucky,Rio,SND,6.0,8.0,1378.0,0.0
+Lyynnz,Highrise,SND,7.0,9.0,1606.0,0.0
+Lyynnz,Karachi,Control,24.0,22.0,3962.0,1.0
+Lyynnz,Rio,Hardpoint,24.0,26.0,4012.0,7.0
+MettalZ,Highrise,SND,9.0,7.0,2301.0,3.0
+MettalZ,Invasion,Hardpoint,16.0,33.0,4029.0,0.0
+MettalZ,Karachi,Control,17.5,21.0,3638.5,3.0
+MettalZ,Rio,Hardpoint,28.0,21.0,5016.0,91.0
+MettalZ,Rio,SND,3.0,10.0,1111.0,3.0
+Nastie,Highrise,Control,17.0,20.0,3684.0,6.0
+Nastie,Highrise,SND,6.0,8.0,1453.0,1.0
+Nastie,Invasion,Hardpoint,25.0,19.0,4217.0,44.0
+Nastie,Karachi,Control,7.0,17.0,2093.0,1.0
+Nastie,Rio,Hardpoint,22.0,27.0,5245.0,56.0
+Nastie,Sub Base,Hardpoint,20.5,17.5,3696.0,34.0
+Nastie,Terminal,SND,3.0,7.0,806.0,0.0
+Nero,Highrise,SND,7.0,4.0,931.0,1.0
+Nero,Invasion,Control,21.5,24.5,4570.0,5.5
+Nero,Invasion,Hardpoint,26.0,23.0,5019.0,88.0
+Nero,Invasion,SND,8.5,7.5,1711.5,1.5
+Nero,Karachi,Control,17.0,24.0,3478.0,11.0
+Nero,Karachi,Hardpoint,17.0,16.0,3651.0,127.0
+Nero,Rio,Hardpoint,21.0,20.0,3699.5,100.5
+Owakening,Highrise,SND,5.0,7.0,1561.0,0.0
+Owakening,Karachi,Control,18.0,21.0,5043.0,5.0
+Owakening,Rio,Hardpoint,16.0,25.0,4046.0,57.0
+Pred,Invasion,Hardpoint,29.0,20.0,4743.0,40.0
+Pred,Karachi,Control,17.5,14.0,3216.5,2.5
+Pred,Karachi,SND,8.0,9.0,2019.0,2.0
+Pred,Rio,Hardpoint,21.0,27.0,3960.0,28.0
+Pred,Rio,SND,4.0,6.0,1221.0,1.0
+Pred,Sub Base,Hardpoint,27.0,19.0,5164.0,31.0
+Pred,Terminal,SND,5.0,7.0,834.0,1.0
+Priestahh,Invasion,Control,15.5,14.0,3008.5,2.5
+Priestahh,Karachi,Hardpoint,19.0,23.0,3565.0,27.0
+Priestahh,Skidrow,Hardpoint,17.0,15.0,3341.0,89.0
+Priestahh,Sub Base,Hardpoint,20.0,23.0,4120.0,12.0
+Priestahh,Terminal,SND,5.5,6.0,1517.0,1.5
+Purj,Highrise,SND,4.0,6.0,1333.0,1.0
+Purj,Invasion,Control,24.5,22.0,5312.5,3.0
+Purj,Invasion,Hardpoint,22.0,20.0,4749.0,93.0
+Purj,Invasion,SND,6.5,9.5,1481.5,1.0
+Purj,Karachi,Control,25.0,19.0,4034.0,3.0
+Purj,Karachi,Hardpoint,22.0,19.0,3373.0,24.0
+Purj,Rio,Hardpoint,20.0,22.5,3667.5,51.0
+Scrap,Highrise,SND,4.0,7.0,1218.0,2.0
+Scrap,Invasion,Control,28.0,25.0,6736.0,0.0
+Scrap,Invasion,SND,8.0,8.0,3027.0,2.0
+Scrap,Karachi,Control,15.0,11.0,3147.0,2.0
+Scrap,Rio,Hardpoint,27.5,23.5,5253.5,78.5
+Scrap,Sub Base,Hardpoint,22.0,10.0,3518.0,135.0
+Shotzzy,Invasion,Hardpoint,21.0,25.0,4257.0,107.0
+Shotzzy,Karachi,Control,15.5,13.5,2772.0,5.5
+Shotzzy,Karachi,SND,12.0,6.0,1775.0,4.0
+Shotzzy,Rio,Hardpoint,34.0,34.0,5944.0,79.0
+Shotzzy,Rio,SND,12.0,3.0,1972.0,1.0
+Shotzzy,Sub Base,Hardpoint,20.0,22.0,3510.0,91.0
+Shotzzy,Terminal,SND,3.0,8.0,916.0,0.0
+Sib,Invasion,Control,13.0,15.0,3338.0,1.0
+Sib,Karachi,Control,21.0,16.0,4560.0,1.0
+Sib,Karachi,SND,7.0,9.0,1935.0,2.0
+Sib,Rio,Hardpoint,33.0,24.0,6057.0,84.0
+Sib,Skidrow,Hardpoint,13.0,18.0,2103.0,28.0
+Sib,Sub Base,Hardpoint,24.5,19.5,4395.5,72.5
+Sib,Terminal,SND,5.0,6.5,1423.5,1.5
+Simp,Highrise,Control,38.0,26.0,6587.0,4.0
+Simp,Highrise,SND,7.0,7.0,1757.0,0.0
+Simp,Invasion,Hardpoint,31.0,25.0,5461.0,46.0
+Simp,Invasion,SND,7.0,8.0,1725.0,2.0
+Simp,Sub Base,Hardpoint,24.0,21.0,3975.0,18.0
+Skyz,Invasion,Control,15.0,14.0,3371.0,0.0
+Skyz,Karachi,Control,14.0,14.0,3161.0,0.0
+Skyz,Karachi,SND,4.0,11.0,1186.0,0.0
+Skyz,Rio,Hardpoint,25.0,23.0,5773.0,58.0
+Skyz,Skidrow,Hardpoint,14.0,17.0,3142.0,61.0
+Skyz,Sub Base,Hardpoint,16.0,20.0,3230.5,67.0
+Skyz,Terminal,SND,8.5,5.5,1751.0,2.5
+SlasheR,Invasion,Control,8.5,11.0,1955.5,2.0
+SlasheR,Karachi,Hardpoint,27.0,17.0,5063.0,58.0
+SlasheR,Skidrow,Hardpoint,15.0,17.0,3503.0,41.0
+SlasheR,Sub Base,Hardpoint,19.0,23.0,4034.0,38.0
+SlasheR,Terminal,SND,8.5,5.5,1986.5,3.0
+Snoopy,Invasion,Control,14.0,15.5,2720.0,2.5
+Snoopy,Karachi,Hardpoint,21.0,18.0,4039.0,117.0
+Snoopy,Skidrow,Hardpoint,20.0,14.0,3073.0,100.0
+Snoopy,Sub Base,Hardpoint,22.0,26.0,4228.0,62.0
+Snoopy,Terminal,SND,5.0,6.0,1259.5,0.0
+TJHaly,Highrise,SND,6.0,7.0,1440.0,1.0
+TJHaly,Invasion,Hardpoint,26.0,27.0,4800.0,11.0
+TJHaly,Karachi,Control,15.0,27.0,3136.0,2.0
+Vikul,Highrise,SND,6.0,7.0,1514.0,1.0
+Vikul,Invasion,Hardpoint,20.0,23.0,4258.0,51.0
+Vikul,Karachi,Control,19.0,17.5,3309.5,4.5
+Vikul,Rio,Hardpoint,28.0,21.0,4997.0,102.0
+Vikul,Rio,SND,4.0,7.0,1037.0,0.0
+Vivid,Highrise,SND,8.0,8.0,2151.0,1.0
+Vivid,Karachi,Control,23.0,25.0,4477.0,2.0
+Vivid,Rio,Hardpoint,26.0,28.0,4931.0,36.0
+aBeZy,Highrise,Control,31.0,25.0,5391.0,3.0
+aBeZy,Highrise,SND,3.0,7.0,714.0,0.0
+aBeZy,Invasion,Hardpoint,22.0,27.0,4204.0,85.0
+aBeZy,Invasion,SND,3.0,8.0,1101.0,2.0
+aBeZy,Sub Base,Hardpoint,13.0,23.0,2916.0,37.0
