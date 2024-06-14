@@ -11,6 +11,7 @@
 ## Supported commands 
 
 - [Delete Category Channels](#-Delete-Category-Channels): ```delete_category_channels```
+- [Create Category Match Channels](#-Create-Category-Matches): ```create_category_matches```
 
 ### Delete Category Channels
 
@@ -21,3 +22,16 @@
 - The terminal should log out which channels were deleted.  If any errors occur, the terminal will say what went wrong 
 - NOTE: This only deletes text channels 
 - NOTE: This does not delete the category you specify
+
+### Create Category Matches 
+
+#### Notes 
+
+- Want the CSV to contain the following columns 
+    - away team 
+    - home team 
+    - away team captain discord username 
+    - home team captain discord username 
+
+
+

@@ -3,21 +3,24 @@ import os
 import re
 
 from general_helper_functions import get_bot_token
+from general_helper_functions import read_create_matches_csv
 
-# SERVER = "LonelyDock3's server"
-SERVER = "College XP CoD"
+SERVER = "LonelyDock3's server"
+# SERVER = "College XP CoD"
 
 list_of_admins = ['lonelydock3']
 
 # list of commands and the number of arguments they require
-command_map = {'delete_category_matches': 1}
+command_map = {'delete_category_matches': 1, 'create_category_matches': 1}
 list_of_commands = list(command_map.keys())
 
 bot_token = get_bot_token('bot_token.txt')
 
 async def execute_command(Client, guild, command, args_list):
     success = 0
-    if command == list_of_commands[0]:      # delete_category_matches
+
+    # delete_category_matches 
+    if command == list_of_commands[0]:
         # for this command, we can only input one category
         category_given = ' '.join(args_list)
         
@@ -39,6 +42,34 @@ async def execute_command(Client, guild, command, args_list):
                 
 
         success = 1
+
+    # create_category_matches 
+    elif command == list_of_commands[1]:
+        # get category name
+        category_given = ' '.join(args_list)
+
+        # create the category 
+        await guild.create_category(category_given)
+
+        for categoryIdx, category in enumerate(guild.categories):
+            if category.name == category_given:
+                category_obj = category
+
+        # going to use ```create_text_channel(name, category=category_obj)``` on the guild 
+        # might need to pass it a dictionary to provide the roles/members who have access to the channel 
+        # await guild.create_text_channel('test', category=category_obj)
+
+        # read in the csv file 
+        # matches_dict = read_create_matches_csv('create_matches_input/input_file.csv')
+        matches_dict = read_create_matches_csv('create_matches_input/test_input.csv')
+
+        # create names for the text channels, get each member from the team captain lists, get the role(s) needed to add to the channels 
+
+
+        # create the text channels with the proper members and role(s) added to them 
+
+        success = 1
+
 
     return success
 
