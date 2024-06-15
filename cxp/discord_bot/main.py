@@ -64,6 +64,45 @@ async def execute_command(Client, guild, command, args_list):
         matches_dict = read_create_matches_csv('create_matches_input/test_input.csv')
 
         # create names for the text channels, get each member from the team captain lists, get the role(s) needed to add to the channels 
+        # match_names = []
+        # away_captains = [] 
+        # home_captains = [] 
+        dict_keys = list(matches_dict.keys())
+
+        # access members by doing this --> guild.get_member_named('discordUserName')
+        # if the member is not found, None will be returned 
+        admin_role = guild.self_role
+
+        for rowIdx, row in enumerate(matches_dict[dict_keys[0]]):
+            away_team = matches_dict['away_team'][rowIdx]
+            home_team = matches_dict['home_team'][rowIdx]
+            away_team_captain = matches_dict['away_team_discord_captain'][rowIdx]
+            home_team_captain = matches_dict['home_team_discord_captain'][rowIdx]
+
+            # format the match name properly 
+            match_name_preprocess = away_team + ' vs ' + home_team
+            match_name = match_name_preprocess.replace(' ', '-').lower()
+
+            # fetch the discord users of away team and home team 
+            away_team_member = guild.get_member_named(away_team_captain)
+            home_team_member = guild.get_member_named(home_team_captain)
+
+            if away_team_member and home_team_member:
+                overwriter = {
+                    guild.default_role: discord.PermissionOverwrite(read_messages=False),
+                    admin_role: discord.PermissionOverwrite(manage_channels=True),
+                    away_team_member: discord.PermissionOverwrite(send_messages=True),
+                    home_team_member: discord.PermissionOverwrite(send_messages=True)
+                }
+            else: 
+                overwriter = {
+                    guild.default_role: discord.PermissionOverwrite(read_messages=False),
+                    admin_role: discord.PermissionOverwrite(manage_channels=True),
+                }
+
+            await guild.create_text_channel(match_name, category=category_obj, overwrites=overwriter)
+
+            
 
 
         # create the text channels with the proper members and role(s) added to them 
@@ -130,6 +169,7 @@ class MyClient(discord.Client):
 
 intents = discord.Intents.default()
 intents.message_content = True
+intents.members = True
 
 client = MyClient(intents=intents)
 client.run(bot_token)

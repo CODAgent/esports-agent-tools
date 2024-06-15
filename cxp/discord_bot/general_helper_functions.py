@@ -59,9 +59,3 @@ def create_match_names(createMatchesDict):
         match_names.append(match_name)
     return match_names 
 
-        
-
-
-# test = read_create_matches_csv('create_matches_input/test_input.csv')
-# print(create_match_names(test))
-
