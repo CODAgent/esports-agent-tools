@@ -6,6 +6,8 @@ codagent_tools_env
 *~
 filtered_*
 *.sw*
+*Venv
+*venv
 
 # CXP Discord bot
 bot_token.txt
