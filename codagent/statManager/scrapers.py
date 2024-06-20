@@ -7,7 +7,7 @@ import re
 
 
 # doing breakingpoint for now
-class breakingPointScraper:
+class webScraper:
 
     def __init__(self, driver, baseLink):
         self.driver = driver
@@ -44,6 +44,6 @@ class breakingPointScraper:
 options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 driver = webdriver.Chrome(options=options)
-bpScraper = breakingPointScraper(driver, 'https://www.breakingpoint.gg')
+bpScraper = webScraper(driver, 'https://www.breakingpoint.gg')
 
 bpScraper.getStatsFromMatch('https://www.breakingpoint.gg/match/27350/Los-Angeles-Guerrillas-vs-Las-Vegas-Legion-at-CDL-Major-4-Qualifier-2024')
