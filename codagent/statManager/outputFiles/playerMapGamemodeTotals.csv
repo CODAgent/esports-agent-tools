@@ -1,0 +1,267 @@
+player,map,gameMode,kills,deaths,damage,objMainStat,kdRatio
+Abuzah,Invasion,Control,30,40,7110,14,0.75
+Abuzah,Invasion,SND,4,7,2270,2,0.5714285714285714
+Abuzah,Karachi,Hardpoint,35,40,8033,279,0.875
+Abuzah,Rio,Hardpoint,18,18,3781,85,1.0
+Abuzah,Terminal,SND,5,4,1726,1,1.25
+Accuracy,Highrise,SND,7,9,1224,3,0.7777777777777778
+Accuracy,Karachi,Control,16,24,4096,4,0.6666666666666666
+Accuracy,Rio,Hardpoint,23,24,4211,70,0.9583333333333334
+Afro,Highrise,Control,26,18,5149,3,1.4444444444444444
+Afro,Highrise,SND,8,5,1553,2,1.6
+Afro,Invasion,Hardpoint,24,21,3896,98,1.1428571428571428
+Afro,Karachi,Control,12,18,2045,3,0.6666666666666666
+Afro,Rio,Hardpoint,17,27,3813,57,0.6296296296296297
+Afro,Sub Base,Hardpoint,23,32,4434,58,0.71875
+Afro,Terminal,SND,4,7,566,2,0.5714285714285714
+Arcitys,Invasion,Control,31,38,6447,1,0.8157894736842105
+Arcitys,Invasion,SND,8,6,2110,0,1.3333333333333333
+Arcitys,Karachi,Hardpoint,36,34,7751,26,1.0588235294117647
+Arcitys,Rio,Hardpoint,14,17,2494,61,0.8235294117647058
+Arcitys,Terminal,SND,3,8,1103,0,0.375
+Asim,Invasion,Control,33,36,7079,3,0.9166666666666666
+Asim,Karachi,Hardpoint,19,26,3783,54,0.7307692307692307
+Asim,Skidrow,Hardpoint,28,16,3902,61,1.75
+Asim,Sub Base,Hardpoint,17,23,3325,48,0.7391304347826086
+Asim,Terminal,SND,16,12,3636,2,1.3333333333333333
+Assault,Highrise,Control,35,50,7431,7,0.7
+Assault,Highrise,SND,4,7,1363,3,0.5714285714285714
+Assault,Invasion,Hardpoint,39,45,8094,54,0.8666666666666667
+Assault,Invasion,SND,3,5,1127,0,0.6
+Assault,Sub Base,Hardpoint,28,29,6000,138,0.9655172413793104
+Assault,Terminal,SND,11,2,2191,2,5.5
+Attach,Highrise,SND,6,3,1400,1,2.0
+Attach,Invasion,Control,48,50,10491,1,0.96
+Attach,Invasion,Hardpoint,24,23,5238,46,1.0434782608695652
+Attach,Invasion,SND,14,16,4316,2,0.875
+Attach,Karachi,Control,23,15,5025,8,1.5333333333333334
+Attach,Karachi,Hardpoint,25,17,4289,115,1.4705882352941178
+Attach,Rio,Hardpoint,45,45,9338,116,1.0
+Breszy,Invasion,Control,42,44,8398,5,0.9545454545454546
+Breszy,Invasion,SND,9,8,1921,1,1.125
+Breszy,Karachi,Hardpoint,35,47,7293,42,0.7446808510638298
+Breszy,Rio,Hardpoint,22,23,4107,35,0.9565217391304348
+Breszy,Terminal,SND,7,6,1883,1,1.1666666666666667
+Cellium,Highrise,Control,27,21,6420,1,1.2857142857142858
+Cellium,Highrise,SND,8,7,1563,2,1.1428571428571428
+Cellium,Invasion,Hardpoint,16,24,4385,93,0.6666666666666666
+Cellium,Invasion,SND,9,7,2086,0,1.2857142857142858
+Cellium,Sub Base,Hardpoint,19,19,3827,37,1.0
+Clayster,Highrise,SND,0,5,691,0,0.0
+Clayster,Invasion,Hardpoint,16,26,3956,60,0.6153846153846154
+Clayster,Karachi,Control,13,27,2602,4,0.48148148148148145
+CleanX,Highrise,SND,8,7,1628,3,1.1428571428571428
+CleanX,Invasion,Control,24,19,5700,1,1.263157894736842
+CleanX,Invasion,SND,10,7,2112,4,1.4285714285714286
+CleanX,Karachi,Control,18,11,3084,6,1.6363636363636365
+CleanX,Rio,Hardpoint,50,48,9359,123,1.0416666666666667
+CleanX,Sub Base,Hardpoint,19,12,4184,25,1.5833333333333333
+Dashy,Invasion,Hardpoint,26,22,5587,69,1.1818181818181819
+Dashy,Karachi,Control,36,23,7072,14,1.565217391304348
+Dashy,Karachi,SND,10,8,2400,3,1.25
+Dashy,Rio,Hardpoint,26,30,5292,86,0.8666666666666667
+Dashy,Rio,SND,10,6,1962,0,1.6666666666666667
+Dashy,Sub Base,Hardpoint,23,24,4519,20,0.9583333333333334
+Dashy,Terminal,SND,3,9,1710,1,0.3333333333333333
+Diamondcon,Highrise,Control,41,53,9131,4,0.7735849056603774
+Diamondcon,Highrise,SND,6,6,1407,1,1.0
+Diamondcon,Invasion,Hardpoint,39,55,8380,104,0.7090909090909091
+Diamondcon,Invasion,SND,13,5,2387,3,2.6
+Diamondcon,Sub Base,Hardpoint,34,31,6485,69,1.096774193548387
+Diamondcon,Terminal,SND,4,4,1049,1,1.0
+Drazah,Highrise,Control,32,26,6086,5,1.2307692307692308
+Drazah,Highrise,SND,4,7,1018,0,0.5714285714285714
+Drazah,Invasion,Hardpoint,35,15,6328,28,2.3333333333333335
+Drazah,Invasion,SND,5,7,1641,1,0.7142857142857143
+Drazah,Sub Base,Hardpoint,13,25,3404,48,0.52
+Envoy,Highrise,SND,9,8,2133,0,1.125
+Envoy,Invasion,Control,31,25,4780,6,1.24
+Envoy,Invasion,SND,8,8,1575,0,1.0
+Envoy,Karachi,Control,20,12,3337,1,1.6666666666666667
+Envoy,Rio,Hardpoint,54,51,9431,213,1.0588235294117647
+Envoy,Sub Base,Hardpoint,13,12,2655,52,1.0833333333333333
+EriKBooM,Highrise,SND,3,9,741,1,0.3333333333333333
+EriKBooM,Invasion,Hardpoint,26,27,5146,56,0.9629629629629629
+EriKBooM,Karachi,Control,31,37,6608,5,0.8378378378378378
+EriKBooM,Rio,Hardpoint,23,25,4103,19,0.92
+EriKBooM,Rio,SND,8,7,1390,3,1.1428571428571428
+Estreal,Highrise,Control,48,54,9684,2,0.8888888888888888
+Estreal,Highrise,SND,11,3,1684,2,3.6666666666666665
+Estreal,Invasion,Hardpoint,51,51,11477,47,1.0
+Estreal,Invasion,SND,7,7,1581,0,1.0
+Estreal,Sub Base,Hardpoint,43,38,7635,88,1.131578947368421
+Estreal,Terminal,SND,5,4,867,0,1.25
+Fame,Highrise,Control,53,58,10249,8,0.9137931034482759
+Fame,Highrise,SND,6,6,1254,1,1.0
+Fame,Invasion,Hardpoint,45,48,8565,145,0.9375
+Fame,Invasion,SND,7,7,1205,1,1.0
+Fame,Sub Base,Hardpoint,36,40,7953,71,0.9
+Fame,Terminal,SND,6,3,1043,1,2.0
+FelonY,Highrise,SND,5,5,1262,0,1.0
+FelonY,Invasion,Hardpoint,21,21,4018,54,1.0
+FelonY,Karachi,Control,23,21,4811,5,1.0952380952380953
+Ghosty,Highrise,Control,29,19,5141,4,1.5263157894736843
+Ghosty,Highrise,SND,10,5,2252,1,2.0
+Ghosty,Invasion,Hardpoint,22,21,5215,62,1.0476190476190477
+Ghosty,Karachi,Control,20,13,4253,1,1.5384615384615385
+Ghosty,Rio,Hardpoint,19,25,3679,86,0.76
+Ghosty,Sub Base,Hardpoint,32,30,6980,134,1.0666666666666667
+Ghosty,Terminal,SND,3,6,788,0,0.5
+Gio,Highrise,SND,6,3,993,2,2.0
+Gio,Invasion,Control,58,50,10879,11,1.16
+Gio,Invasion,Hardpoint,27,18,4731,34,1.5
+Gio,Invasion,SND,12,17,3869,1,0.7058823529411765
+Gio,Karachi,Control,29,16,5141,5,1.8125
+Gio,Karachi,Hardpoint,16,21,3498,45,0.7619047619047619
+Gio,Rio,Hardpoint,58,44,10171,126,1.3181818181818181
+Gwinn,Highrise,SND,5,6,1037,1,0.8333333333333334
+Gwinn,Invasion,Hardpoint,21,25,4242,35,0.84
+Gwinn,Karachi,Control,23,19,4802,4,1.2105263157894737
+Huke,Invasion,Control,37,43,8790,2,0.8604651162790697
+Huke,Invasion,SND,11,7,2108,4,1.5714285714285714
+Huke,Karachi,Hardpoint,51,45,8971,15,1.1333333333333333
+Huke,Rio,Hardpoint,17,28,3923,28,0.6071428571428571
+Huke,Terminal,SND,5,8,898,1,0.625
+HyDra,Invasion,Control,24,9,4037,2,2.6666666666666665
+HyDra,Skidrow,Hardpoint,23,22,4351,6,1.0454545454545454
+HyDra,Sub Base,Hardpoint,25,20,4929,17,1.25
+HyDra,Terminal,SND,5,9,1101,0,0.5555555555555556
+Hydra,Karachi,Control,8,18,1884,2,0.4444444444444444
+Hydra,Karachi,SND,9,6,1956,0,1.5
+Hydra,Rio,Hardpoint,37,34,6725,41,1.088235294117647
+Hydra,Sub Base,Hardpoint,21,21,4876,46,1.0
+Hydra,Terminal,SND,9,5,1674,1,1.8
+Insight,Highrise,SND,5,7,1712,0,0.7142857142857143
+Insight,Invasion,Control,18,20,4013,2,0.9
+Insight,Invasion,SND,9,5,1971,1,1.8
+Insight,Karachi,Control,12,11,2311,2,1.0909090909090908
+Insight,Rio,Hardpoint,49,43,9842,156,1.1395348837209303
+Insight,Sub Base,Hardpoint,20,16,3995,41,1.25
+Kenny,Invasion,Hardpoint,29,22,5344,43,1.3181818181818181
+Kenny,Karachi,Control,33,25,6328,18,1.32
+Kenny,Karachi,SND,3,6,1638,0,0.5
+Kenny,Rio,Hardpoint,25,27,4853,81,0.9259259259259259
+Kenny,Rio,SND,6,6,1505,2,1.0
+Kenny,Sub Base,Hardpoint,19,18,3479,130,1.0555555555555556
+Kenny,Terminal,SND,8,7,1886,2,1.1428571428571428
+KiSMET,Invasion,Control,16,15,3147,1,1.0666666666666667
+KiSMET,Karachi,Control,15,17,2852,3,0.8823529411764706
+KiSMET,Karachi,SND,9,7,1306,0,1.2857142857142858
+KiSMET,Rio,Hardpoint,23,26,3860,105,0.8846153846153846
+KiSMET,Skidrow,Hardpoint,12,23,2502,39,0.5217391304347826
+KiSMET,Sub Base,Hardpoint,51,47,9350,136,1.0851063829787233
+KiSMET,Terminal,SND,17,10,3087,1,1.7
+Kremp,Highrise,Control,15,24,3292,2,0.625
+Kremp,Highrise,SND,5,8,2013,1,0.625
+Kremp,Invasion,Hardpoint,23,22,4507,57,1.0454545454545454
+Kremp,Karachi,Control,6,17,1548,2,0.35294117647058826
+Kremp,Rio,Hardpoint,32,26,5332,42,1.2307692307692308
+Kremp,Sub Base,Hardpoint,23,30,5226,150,0.7666666666666667
+Kremp,Terminal,SND,3,6,929,1,0.5
+Lucky,Highrise,SND,15,4,2187,1,3.75
+Lucky,Invasion,Hardpoint,27,22,4080,59,1.2272727272727273
+Lucky,Karachi,Control,33,37,6623,10,0.8918918918918919
+Lucky,Rio,Hardpoint,24,22,4634,105,1.0909090909090908
+Lucky,Rio,SND,6,8,1378,0,0.75
+Lyynnz,Highrise,SND,7,9,1606,0,0.7777777777777778
+Lyynnz,Karachi,Control,24,22,3962,1,1.0909090909090908
+Lyynnz,Rio,Hardpoint,24,26,4012,7,0.9230769230769231
+MettalZ,Highrise,SND,9,7,2301,3,1.2857142857142858
+MettalZ,Invasion,Hardpoint,16,33,4029,0,0.48484848484848486
+MettalZ,Karachi,Control,35,42,7277,6,0.8333333333333334
+MettalZ,Rio,Hardpoint,28,21,5016,91,1.3333333333333333
+MettalZ,Rio,SND,3,10,1111,3,0.3
+Nastie,Highrise,Control,17,20,3684,6,0.85
+Nastie,Highrise,SND,6,8,1453,1,0.75
+Nastie,Invasion,Hardpoint,25,19,4217,44,1.3157894736842106
+Nastie,Karachi,Control,7,17,2093,1,0.4117647058823529
+Nastie,Rio,Hardpoint,22,27,5245,56,0.8148148148148148
+Nastie,Sub Base,Hardpoint,41,35,7392,68,1.1714285714285715
+Nastie,Terminal,SND,3,7,806,0,0.42857142857142855
+Nero,Highrise,SND,7,4,931,1,1.75
+Nero,Invasion,Control,43,49,9140,11,0.8775510204081632
+Nero,Invasion,Hardpoint,26,23,5019,88,1.1304347826086956
+Nero,Invasion,SND,17,15,3423,3,1.1333333333333333
+Nero,Karachi,Control,17,24,3478,11,0.7083333333333334
+Nero,Karachi,Hardpoint,17,16,3651,127,1.0625
+Nero,Rio,Hardpoint,42,40,7399,201,1.05
+Owakening,Highrise,SND,5,7,1561,0,0.7142857142857143
+Owakening,Karachi,Control,18,21,5043,5,0.8571428571428571
+Owakening,Rio,Hardpoint,16,25,4046,57,0.64
+Pred,Invasion,Hardpoint,29,20,4743,40,1.45
+Pred,Karachi,Control,35,28,6433,5,1.25
+Pred,Karachi,SND,8,9,2019,2,0.8888888888888888
+Pred,Rio,Hardpoint,21,27,3960,28,0.7777777777777778
+Pred,Rio,SND,4,6,1221,1,0.6666666666666666
+Pred,Sub Base,Hardpoint,27,19,5164,31,1.4210526315789473
+Pred,Terminal,SND,5,7,834,1,0.7142857142857143
+Priestahh,Invasion,Control,31,28,6017,5,1.1071428571428572
+Priestahh,Karachi,Hardpoint,19,23,3565,27,0.8260869565217391
+Priestahh,Skidrow,Hardpoint,17,15,3341,89,1.1333333333333333
+Priestahh,Sub Base,Hardpoint,20,23,4120,12,0.8695652173913043
+Priestahh,Terminal,SND,11,12,3034,3,0.9166666666666666
+Purj,Highrise,SND,4,6,1333,1,0.6666666666666666
+Purj,Invasion,Control,49,44,10625,6,1.1136363636363635
+Purj,Invasion,Hardpoint,22,20,4749,93,1.1
+Purj,Invasion,SND,13,19,2963,2,0.6842105263157895
+Purj,Karachi,Control,25,19,4034,3,1.3157894736842106
+Purj,Karachi,Hardpoint,22,19,3373,24,1.1578947368421053
+Purj,Rio,Hardpoint,40,45,7335,102,0.8888888888888888
+Scrap,Highrise,SND,4,7,1218,2,0.5714285714285714
+Scrap,Invasion,Control,28,25,6736,0,1.12
+Scrap,Invasion,SND,8,8,3027,2,1.0
+Scrap,Karachi,Control,15,11,3147,2,1.3636363636363635
+Scrap,Rio,Hardpoint,55,47,10507,157,1.1702127659574468
+Scrap,Sub Base,Hardpoint,22,10,3518,135,2.2
+Shotzzy,Invasion,Hardpoint,21,25,4257,107,0.84
+Shotzzy,Karachi,Control,31,27,5544,11,1.1481481481481481
+Shotzzy,Karachi,SND,12,6,1775,4,2.0
+Shotzzy,Rio,Hardpoint,34,34,5944,79,1.0
+Shotzzy,Rio,SND,12,3,1972,1,4.0
+Shotzzy,Sub Base,Hardpoint,20,22,3510,91,0.9090909090909091
+Shotzzy,Terminal,SND,3,8,916,0,0.375
+Sib,Invasion,Control,13,15,3338,1,0.8666666666666667
+Sib,Karachi,Control,21,16,4560,1,1.3125
+Sib,Karachi,SND,7,9,1935,2,0.7777777777777778
+Sib,Rio,Hardpoint,33,24,6057,84,1.375
+Sib,Skidrow,Hardpoint,13,18,2103,28,0.7222222222222222
+Sib,Sub Base,Hardpoint,49,39,8791,145,1.2564102564102564
+Sib,Terminal,SND,10,13,2847,3,0.7692307692307693
+Simp,Highrise,Control,38,26,6587,4,1.4615384615384615
+Simp,Highrise,SND,7,7,1757,0,1.0
+Simp,Invasion,Hardpoint,31,25,5461,46,1.24
+Simp,Invasion,SND,7,8,1725,2,0.875
+Simp,Sub Base,Hardpoint,24,21,3975,18,1.1428571428571428
+Skyz,Invasion,Control,15,14,3371,0,1.0714285714285714
+Skyz,Karachi,Control,14,14,3161,0,1.0
+Skyz,Karachi,SND,4,11,1186,0,0.36363636363636365
+Skyz,Rio,Hardpoint,25,23,5773,58,1.0869565217391304
+Skyz,Skidrow,Hardpoint,14,17,3142,61,0.8235294117647058
+Skyz,Sub Base,Hardpoint,32,40,6461,134,0.8
+Skyz,Terminal,SND,17,11,3502,5,1.5454545454545454
+SlasheR,Invasion,Control,17,22,3911,4,0.7727272727272727
+SlasheR,Karachi,Hardpoint,27,17,5063,58,1.588235294117647
+SlasheR,Skidrow,Hardpoint,15,17,3503,41,0.8823529411764706
+SlasheR,Sub Base,Hardpoint,19,23,4034,38,0.8260869565217391
+SlasheR,Terminal,SND,17,11,3973,6,1.5454545454545454
+Snoopy,Invasion,Control,28,31,5440,5,0.9032258064516129
+Snoopy,Karachi,Hardpoint,21,18,4039,117,1.1666666666666667
+Snoopy,Skidrow,Hardpoint,20,14,3073,100,1.4285714285714286
+Snoopy,Sub Base,Hardpoint,22,26,4228,62,0.8461538461538461
+Snoopy,Terminal,SND,10,12,2519,0,0.8333333333333334
+TJHaly,Highrise,SND,6,7,1440,1,0.8571428571428571
+TJHaly,Invasion,Hardpoint,26,27,4800,11,0.9629629629629629
+TJHaly,Karachi,Control,15,27,3136,2,0.5555555555555556
+Vikul,Highrise,SND,6,7,1514,1,0.8571428571428571
+Vikul,Invasion,Hardpoint,20,23,4258,51,0.8695652173913043
+Vikul,Karachi,Control,38,35,6619,9,1.0857142857142856
+Vikul,Rio,Hardpoint,28,21,4997,102,1.3333333333333333
+Vikul,Rio,SND,4,7,1037,0,0.5714285714285714
+Vivid,Highrise,SND,8,8,2151,1,1.0
+Vivid,Karachi,Control,23,25,4477,2,0.92
+Vivid,Rio,Hardpoint,26,28,4931,36,0.9285714285714286
+aBeZy,Highrise,Control,31,25,5391,3,1.24
+aBeZy,Highrise,SND,3,7,714,0,0.42857142857142855
+aBeZy,Invasion,Hardpoint,22,27,4204,85,0.8148148148148148
+aBeZy,Invasion,SND,3,8,1101,2,0.375
+aBeZy,Sub Base,Hardpoint,13,23,2916,37,0.5652173913043478
