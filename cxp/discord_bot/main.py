@@ -8,7 +8,7 @@ from general_helper_functions import read_create_matches_csv
 # SERVER = "LonelyDock3's server"   # TESTING
 SERVER = "College XP CoD"   # DEPLOYMENT
 
-list_of_admins = ['lonelydock3']
+list_of_admins = ['lonelydock3', 'shanethor']
 
 # list of commands and the number of arguments they require
 command_map = {'delete_category_matches': 1, 'create_category_matches': 1}
