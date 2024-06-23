@@ -3,21 +3,24 @@ import os
 import re
 
 from general_helper_functions import get_bot_token
+from general_helper_functions import read_create_matches_csv
 
-# SERVER = "LonelyDock3's server"
-SERVER = "College XP CoD"
+# SERVER = "LonelyDock3's server"   # TESTING
+SERVER = "College XP CoD"   # DEPLOYMENT
 
-list_of_admins = ['lonelydock3']
+list_of_admins = ['lonelydock3', 'shanethor']
 
 # list of commands and the number of arguments they require
-command_map = {'delete_category_matches': 1}
+command_map = {'delete_category_matches': 1, 'create_category_matches': 1}
 list_of_commands = list(command_map.keys())
 
 bot_token = get_bot_token('bot_token.txt')
 
 async def execute_command(Client, guild, command, args_list):
     success = 0
-    if command == list_of_commands[0]:      # delete_category_matches
+
+    # delete_category_matches 
+    if command == list_of_commands[0]:
         # for this command, we can only input one category
         category_given = ' '.join(args_list)
         
@@ -39,6 +42,106 @@ async def execute_command(Client, guild, command, args_list):
                 
 
         success = 1
+
+    # create_category_matches 
+    elif command == list_of_commands[1]:
+        # get category name
+        category_given = ' '.join(args_list)
+
+        # create the category 
+        await guild.create_category(category_given)
+
+        for categoryIdx, category in enumerate(guild.categories):
+            if category.name == category_given:
+                category_obj = category
+
+        # read in the csv file 
+        # matches_dict = read_create_matches_csv('create_matches_input/test_input.csv')     # TESTING 
+        matches_dict = read_create_matches_csv('create_matches_input/input_file.csv')     # DEPLOYMENT
+
+        # create names for the text channels, get each member from the team captain lists, get the role(s) needed to add to the channels 
+        dict_keys = list(matches_dict.keys())
+
+        # if the member is not found, None will be returned 
+        cxp_manager_role = guild.self_role
+
+        guild_roles = guild.roles
+        admin_role = None
+        # get the admin role (if there is one)
+        for roleIdx, role in enumerate(guild_roles):
+            if role.name == 'Admin':
+                admin_role = role
+
+        created_channels = {'away_members': [], 'home_members': [], 'text_channels': []}
+
+        # create the channels and get the info we need
+        for rowIdx, row in enumerate(matches_dict[dict_keys[0]]):
+            away_team = matches_dict['away_team'][rowIdx]
+            home_team = matches_dict['home_team'][rowIdx]
+            away_team_captain = matches_dict['away_team_discord_captain'][rowIdx]
+            home_team_captain = matches_dict['home_team_discord_captain'][rowIdx]
+
+            # format the match name properly 
+            match_name_preprocess = away_team + ' vs ' + home_team
+            match_name = match_name_preprocess.replace(' ', '-').lower()
+
+            # fetch the discord users of away team and home team 
+            away_team_member = guild.get_member_named(away_team_captain)
+            home_team_member = guild.get_member_named(home_team_captain)
+
+            created_channels['away_members'].append(away_team_member)
+            created_channels['home_members'].append(home_team_member)
+
+            admin_permissions = discord.PermissionOverwrite()
+            admin_permissions.read_messages = True
+            admin_permissions.manage_channels = True
+
+            cxp_manager_permissions = discord.PermissionOverwrite()
+            cxp_manager_permissions.read_messages = True
+            cxp_manager_permissions.manage_channels = True
+
+            overwriter = {
+                guild.default_role: discord.PermissionOverwrite(read_messages=False),
+                admin_role: admin_permissions,
+                cxp_manager_role: cxp_manager_permissions
+            }
+
+            created_channels['text_channels'].append(await guild.create_text_channel(match_name, category=category_obj, overwrites=overwriter))
+            print('Created channel named: ' + match_name)
+        
+        # add the permissions onto the channels just created 
+        for channelIdx, channel in enumerate(created_channels['text_channels']):
+            created_channel = channel
+            away_team_member = created_channels['away_members'][channelIdx]
+            home_team_member = created_channels['home_members'][channelIdx]
+
+            away_overwrite = discord.PermissionOverwrite()
+            away_overwrite.read_messages = True
+            away_overwrite.send_messages = True
+
+            home_overwrite = discord.PermissionOverwrite()
+            home_overwrite.read_messages = True
+            home_overwrite.send_messages = True
+
+            admin_overwrite = discord.PermissionOverwrite()
+            admin_overwrite.read_messages = True
+            admin_overwrite.send_messages = True
+            admin_overwrite.manage_channels = True
+            admin_overwrite.manage_messages = True
+
+            if away_team_member:
+                await created_channel.set_permissions(away_team_member, overwrite=away_overwrite)
+            if home_team_member:
+                await created_channel.set_permissions(home_team_member, overwrite=home_overwrite)
+            if cxp_manager_role:
+                await created_channel.set_permissions(cxp_manager_role, overwrite=admin_overwrite)
+            if admin_role:
+                await created_channel.set_permissions(admin_role, overwrite=admin_overwrite)
+
+            print('Added permissions to recently created channel.')
+
+        success = 1
+
 
     return success
 
@@ -99,6 +202,7 @@ class MyClient(discord.Client):
 
 intents = discord.Intents.default()
 intents.message_content = True
+intents.members = True
 
 client = MyClient(intents=intents)
 client.run(bot_token)
