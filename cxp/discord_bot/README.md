@@ -17,7 +17,7 @@
 
 - How to run the command: 
     ```
-    cxp/delete_category_channels <category_name>
+    cxp/delete_category_matches <category_name>
     ```
 - The terminal should log out which channels were deleted.  If any errors occur, the terminal will say what went wrong 
 - NOTE: This only deletes text channels 
@@ -25,13 +25,16 @@
 
 ### Create Category Matches 
 
+- Need to setup an input CSV file at the following location: ```create_matches_input/input_file.csv```
+    - The input file has the following columns: ```away_team```, ```away_team_discord_captain```, ```home_team```, ```home_team_discord_captain```
+    - **NOTE:** The discord team captains must have their correct discord usernames in them
+- Run the command:
+    ```
+    cxp/create_category_matches <category_name>
+    ```
+
 #### Notes 
 
-- Want the CSV to contain the following columns 
-    - away team 
-    - home team 
-    - away team captain discord username 
-    - home team captain discord username 
-
+- Might want to send a welcome message when the channels are created
 
 
