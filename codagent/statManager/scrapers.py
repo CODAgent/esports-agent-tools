@@ -33,9 +33,25 @@ class webScraper:
         driver = self.driver
         driver.get(matchLink)
 
-        tdTags = driver.find_elements(By.XPATH, '//td')
-        for tdTagIdx, tdTag in enumerate(tdTags):
-            print(tdTag)
+        # tdTags = driver.find_elements(By.XPATH, '//td')
+        # for tdTagIdx, tdTag in enumerate(tdTags):
+        #     print(tdTag)
+
+        # THIS IS THE TAB LIST 
+        tabList = driver.find_elements(By.XPATH, '//button[@role="tab"]')
+        # THESE ARE THE DIVS OF THE TAB TABLES (Overview, Map 1, etc.)
+        tabDivs = driver.find_elements(By.XPATH, '//div[@role="tabpanel"]')
+        # THIS IS THE TABLE 
+        # testDiv = driver.find_elements(By.XPATH, '//table[@class="mantine-Table-root mantine-1c7s4d6"]')
+        # print(testDiv)
+
+        testing = tabDivs[1].find_elements(By.TAG_NAME, 'td')
+        print(testing)
+        # for tabIdx, tab in enumerate(tabList):
+        #     # driver.implicitly_wait(10)
+        #     tabDiv = tabDivs[tabIdx]
+        #     # print(tabDiv)
+        #     print(tabDiv.text)
 
 
 
