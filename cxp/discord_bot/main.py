@@ -75,6 +75,7 @@ async def execute_command(Client, guild, command, args_list):
         created_channels = {'away_members': [], 'home_members': [], 'text_channels': []}
 
         # create the channels and get the info we need
+        numChannelsCreated = 0
         for rowIdx, row in enumerate(matches_dict[dict_keys[0]]):
             away_team = matches_dict['away_team'][rowIdx]
             home_team = matches_dict['home_team'][rowIdx]
@@ -108,37 +109,63 @@ async def execute_command(Client, guild, command, args_list):
 
             created_channels['text_channels'].append(await guild.create_text_channel(match_name, category=category_obj, overwrites=overwriter))
             print('Created channel named: ' + match_name)
+            numChannelsCreated += 1
         
         # add the permissions onto the channels just created 
+        failedAdds = {'memberRole': [], 'channel': []}
         for channelIdx, channel in enumerate(created_channels['text_channels']):
-            created_channel = channel
-            away_team_member = created_channels['away_members'][channelIdx]
-            home_team_member = created_channels['home_members'][channelIdx]
+            created_channel                     = channel
+            away_team_member                    = created_channels['away_members'][channelIdx]
+            home_team_member                    = created_channels['home_members'][channelIdx]
 
-            away_overwrite = discord.PermissionOverwrite()
-            away_overwrite.read_messages = True
-            away_overwrite.send_messages = True
+            away_overwrite                      = discord.PermissionOverwrite()
+            away_overwrite.read_messages        = True
+            away_overwrite.send_messages        = True
 
-            home_overwrite = discord.PermissionOverwrite()
-            home_overwrite.read_messages = True
-            home_overwrite.send_messages = True
+            home_overwrite                      = discord.PermissionOverwrite()
+            home_overwrite.read_messages        = True
+            home_overwrite.send_messages        = True
 
-            admin_overwrite = discord.PermissionOverwrite()
-            admin_overwrite.read_messages = True
-            admin_overwrite.send_messages = True
-            admin_overwrite.manage_channels = True
-            admin_overwrite.manage_messages = True
+            admin_overwrite                     = discord.PermissionOverwrite()
+            admin_overwrite.read_messages       = True
+            admin_overwrite.send_messages       = True
+            admin_overwrite.manage_channels     = True
+            admin_overwrite.manage_messages     = True
 
+            # NOTE: This assumes that len(created_channels['text_channels']) == len(matches_dict['away_team'])
             if away_team_member:
                 await created_channel.set_permissions(away_team_member, overwrite=away_overwrite)
+            else:
+                failedAdds['memberRole'].append(matches_dict['away_team_discord_captain'][channelIdx])
+                failedAdds['channel'].append(created_channel.name)
             if home_team_member:
                 await created_channel.set_permissions(home_team_member, overwrite=home_overwrite)
+            else:
+                failedAdds['memberRole'].append(matches_dict['home_team_discord_captain'][channelIdx])
+                failedAdds['channel'].append(created_channel.name)
             if cxp_manager_role:
                 await created_channel.set_permissions(cxp_manager_role, overwrite=admin_overwrite)
+            else:
+                failedAdds['memberRole'].append('CXP Manager')
+                failedAdds['channel'].append(created_channel.name)
             if admin_role:
                 await created_channel.set_permissions(admin_role, overwrite=admin_overwrite)
+            else:
+                failedAdds['memberRole'].append('Admin Role')
+                failedAdds['channel'].append(created_channel.name)
 
             print('Added permissions to recently created channel.')
+
+        # Print out how many channels were created and check failedAdds
+        print('There have been ' + str(numChannelsCreated) + ' channels created!')
+        if len(failedAdds['memberRole']) > 0:
+            print('The following are channels that failed to have some members or roles added to them:')
+
+            for failedChannelIdx, failedChannel in enumerate(failedAdds['channel']):
+                failedMemberRole = failedAdds['memberRole'][failedChannelIdx]
+                print('Channel: ' + failedChannel + ', Member or role: ' + failedMemberRole)
+        else:
+            print('All channels had roles and members added successfully!')
 
         success = 1
 
