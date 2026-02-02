@@ -1,0 +1,31 @@
+week,awayTeam,homeTeam
+1,Midway University,Oklahoma Christian University
+1,Midway University,Farmingdale State College
+1,Oklahoma Christian University,Newberry College
+1,Farmingdale State College,Arizona State University
+1,Newberry College,University of Cincinnati
+1,University of Cincinnati,Arizona State University
+2,Midway University,Newberry College
+2,Midway University,University of Cincinnati
+2,Oklahoma Christian University,Farmingdale State College
+2,Oklahoma Christian University,Arizona State University
+2,Farmingdale State College,University of Cincinnati
+2,Newberry College,Arizona State University
+3,Oklahoma Christian University,Midway University
+3,Midway University,Arizona State University
+3,Oklahoma Christian University,University of Cincinnati
+3,Farmingdale State College,Newberry College
+3,Arizona State University,Farmingdale State College
+3,University of Cincinnati,Newberry College
+4,University of Cincinnati,Midway University
+4,Arizona State University,Midway University
+4,Newberry College,Oklahoma Christian University
+4,Arizona State University,Oklahoma Christian University
+4,Newberry College,Farmingdale State College
+4,University of Cincinnati,Farmingdale State College
+5,Farmingdale State College,Midway University
+5,Newberry College,Midway University
+5,Farmingdale State College,Oklahoma Christian University
+5,University of Cincinnati,Oklahoma Christian University
+5,Arizona State University,Newberry College
+5,Arizona State University,University of Cincinnati
